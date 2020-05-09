@@ -1,0 +1,272 @@
+{
+  "id": "DHhd9aq1CGRAdhq2K7M9",
+  "name": "Java keywords",
+  "description": "Reserved words in the java programming language that cannot be used as identifiers.",
+  "items": [
+    {
+      "name": "abstract",
+      "description": "Abstract is used to implement the abstraction in java. A method which does not have method definition must be declared as abstract and the class containing it must be declared as abstract.",
+      "spellings": []
+    },
+    {
+      "name": "assert",
+      "description": "Assert describes a predicate statement) placed in a java-program to indicate that the developer thinks that the predicate is always true at that place.",
+      "spellings": []
+    },
+    {
+      "name": "boolean",
+      "description": "Defines a boolean variable for the values true or false only.",
+      "spellings": []
+    },
+    {
+      "name": "break",
+      "description": "Used to end the execution in the current loop body.",
+      "spellings": []
+    },
+    {
+      "name": "byte",
+      "description": "The byte keyword is used to declare a field that can hold an 8-bit signed two's complement integer. This keyword is also used to declare that a method returns a value of the primitive type byte.",
+      "spellings": []
+    },
+    {
+      "name": "case",
+      "description": "A statement in the switch block can be labeled with one or more case or default labels. The switch statement evaluates its expression, then executes all statements that follow the matching case label; see switch.",
+      "spellings": []
+    },
+    {
+      "name": "catch",
+      "description": "Used in conjunction with a try block and an optional finally block. The statements in the catch block specify what to do if a specific type of exception is thrown by the try block.",
+      "spellings": []
+    },
+    {
+      "name": "char",
+      "description": "Defines a character variable capable of holding any character of the java source file's character set.",
+      "spellings": []
+    },
+    {
+      "name": "class",
+      "description": "A type that defines the implementation of a particular kind of object.",
+      "spellings": []
+    },
+    {
+      "name": "continue",
+      "description": "Used to resume program execution at the end of the current loop body. If followed by a label, continue resumes execution at the end of the enclosing labeled loop body.",
+      "spellings": []
+    },
+    {
+      "name": "default",
+      "description": "The default keyword can optionally be used in a switch statement to label a block of statements to be executed if no case matches the specified value; see switch.",
+      "spellings": []
+    },
+    {
+      "name": "do",
+      "description": "The do keyword is used in conjunction with while to create a do-while loop, which executes a block of statements associated with the loop and then tests a boolean expression associated with the while.",
+      "spellings": []
+    },
+    {
+      "name": "double",
+      "description": "The double keyword is used to declare a variable that can hold a 64-bit double precision IEEE 754 floating-point number. This keyword is also used to declare that a method returns a value of the primitive type double.",
+      "spellings": []
+    },
+    {
+      "name": "else",
+      "description": "The else keyword is used in conjunction with if to create an if-else statement, which tests a boolean expression; if the expression evaluates to true, the block of statements associated with the if are evaluated.",
+      "spellings": []
+    },
+    {
+      "name": "enum",
+      "description": "A Java keyword used to declare an enumerated type. Enumerations extend the base class Enum.",
+      "spellings": []
+    },
+    {
+      "name": "extends",
+      "description": "Used in a class declaration to specify the superclass; used in an interface declaration to specify one or more superinterfaces. ",
+      "spellings": []
+    },
+    {
+      "name": "final",
+      "description": "Define an entity once that cannot be changed nor derived from later. More specifically: a final class cannot be subclassed, a final method cannot be overridden, and a final variable can occur at most once as a left-hand expression on an executed command.",
+      "spellings": []
+    },
+    {
+      "name": "finally",
+      "description": "Used to define a block of statements for a block defined previously by the try keyword.",
+      "spellings": []
+    },
+    {
+      "name": "float",
+      "description": "The float keyword is used to declare a variable that can hold a 32-bit single precision IEEE 754 floating-point number. This keyword is also used to declare that a method returns a value of the primitive type float.",
+      "spellings": []
+    },
+    {
+      "name": "for",
+      "description": "The for keyword is used to create a for loop, which specifies a variable initialization, a boolean expression, and an incrementation.",
+      "spellings": []
+    },
+    {
+      "name": "if",
+      "description": "The if keyword is used to create an if statement, which tests a boolean expression; if the expression evaluates to true, the block of statements associated with the if statement is executed.",
+      "spellings": []
+    },
+    {
+      "name": "implements",
+      "description": "Included in a class declaration to specify one or more interfaces that are implemented by the current class. A class inherits the types and abstract methods declared by the interfaces.",
+      "spellings": []
+    },
+    {
+      "name": "import",
+      "description": "Used at the beginning of a source file to specify classes or entire Java packages to be referred to later without including their package names in the reference. Since J2SE 5.0, import statements can import static members of a class.",
+      "spellings": []
+    },
+    {
+      "name": "instanceof",
+      "description": "A binary operator that takes an object reference as its first operand and a class or interface as its second operand and produces a boolean result.",
+      "spellings": []
+    },
+    {
+      "name": "int",
+      "description": "The int keyword is used to declare a variable that can hold a 32-bit signed two's complement integer. This keyword is also used to declare that a method returns a value of the primitive type int.",
+      "spellings": []
+    },
+    {
+      "name": "interface",
+      "description": "Used to declare a special type of class that only contains abstract or default methods, constant and static interfaces. It can later be implemented by classes that declare the interface with the implements keyword.",
+      "spellings": []
+    },
+    {
+      "name": "long",
+      "description": "The long keyword is used to declare a variable that can hold a 64-bit signed two's complement integer. This keyword is also used to declare that a method returns a value of the primitive type long.",
+      "spellings": []
+    },
+    {
+      "name": "native",
+      "description": "Used in method declarations to specify that the method is not implemented in the same Java source file, but rather in another language.",
+      "spellings": []
+    },
+    {
+      "name": "new",
+      "description": "Used to create an instance of a class or array object.",
+      "spellings": []
+    },
+    {
+      "name": "package",
+      "description": "A group of types. Packages are declared with the package keyword.",
+      "spellings": []
+    },
+    {
+      "name": "private",
+      "description": "The private keyword is used in the declaration of a method, field, or inner class; private members can only be accessed by other members of their own class.",
+      "spellings": []
+    },
+    {
+      "name": "protected",
+      "description": "The protected keyword is used in the declaration of a method, field, or inner class; protected members can only be accessed by members of their own class, that class's subclasses or classes from the same package.",
+      "spellings": []
+    },
+    {
+      "name": "public",
+      "description": "The public keyword is used in the declaration of a class, method, or field; public classes, methods, and fields can be accessed by the members of any class.",
+      "spellings": []
+    },
+    {
+      "name": "return",
+      "description": "Used to finish the execution of a method. It can be followed by a value required by the method definition that is returned to the caller.",
+      "spellings": []
+    },
+    {
+      "name": "short",
+      "description": "The short keyword is used to declare a field that can hold a 16-bit signed two's complement integer. This keyword is also used to declare that a method returns a value of the primitive type short.",
+      "spellings": []
+    },
+    {
+      "name": "static",
+      "description": "Used to declare a field, method, or inner class as a class field. Classes maintain one copy of class fields regardless of how many instances exist of that class. static also is used to define a method as a class method.",
+      "spellings": []
+    },
+    {
+      "name": "strictfp",
+      "description": "A Java keyword used to restrict the precision and rounding of floating point calculations to ensure portability.",
+      "spellings": []
+    },
+    {
+      "name": "super",
+      "description": "Used to access members of a class inherited by the class in which it appears. Allows a subclass to access overridden methods and hidden members of its superclass.",
+      "spellings": []
+    },
+    {
+      "name": "switch",
+      "description": "The switch keyword is used in conjunction with case and default to create a switch statement, which evaluates a variable, matches its value to a specific case, and executes the block of statements associated with that case.",
+      "spellings": []
+    },
+    {
+      "name": "synchronized",
+      "description": "Used in the declaration of a method or code block to acquire the mutex lock for an object while the current thread executes the code. For static methods, the object locked is the class's Class.",
+      "spellings": []
+    },
+    {
+      "name": "this",
+      "description": "Used to represent an instance of the class in which it appears. this can be used to access class members and as a reference to the current instance.",
+      "spellings": []
+    },
+    {
+      "name": "throw",
+      "description": "Causes the declared exception instance to be thrown.",
+      "spellings": []
+    },
+    {
+      "name": "throws",
+      "description": "Used in method declarations to specify which exceptions are not handled within the method but rather passed to the next higher level of the program.",
+      "spellings": []
+    },
+    {
+      "name": "transient",
+      "description": "Declares that an instance field is not part of the default serialized form of an object. When an object is serialized, only the values of its non-transient instance fields are included in the default serial representation.",
+      "spellings": []
+    },
+    {
+      "name": "try",
+      "description": "Defines a block of statements that have exception handling. If an exception is thrown inside the try block, an optional catch block can handle declared exception types.",
+      "spellings": []
+    },
+    {
+      "name": "void",
+      "description": "The void keyword is used to declare that a method does not return any value.",
+      "spellings": []
+    },
+    {
+      "name": "volatile",
+      "description": "Used in field declarations to specify that the variable is modified asynchronously by concurrently running threads. Methods, classes and interfaces thus cannot be declared volatile, nor can local variables or parameters.",
+      "spellings": []
+    },
+    {
+      "name": "while",
+      "description": "The while keyword is used to create a while loop, which tests a boolean expression and executes the block of statements associated with the loop if the expression evaluates to true; this continues until the expression evaluates to false.",
+      "spellings": []
+    },
+    {
+      "name": "true",
+      "description": "A boolean literal value.",
+      "spellings": []
+    },
+    {
+      "name": "null",
+      "description": "A reference literal value.",
+      "spellings": []
+    },
+    {
+      "name": "false",
+      "description": "A boolean literal value.",
+      "spellings": []
+    },
+    {
+      "name": "const",
+      "description": "Although reserved as a keyword in Java, const is not used and has no function.",
+      "spellings": []
+    },
+    {
+      "name": "goto",
+      "description": "Although reserved as a keyword in Java, goto is not used and has no function.",
+      "spellings": []
+    }
+  ]
+}

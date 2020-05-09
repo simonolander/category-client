@@ -1,0 +1,772 @@
+{
+  "id": "ihaM5azta9MqbBAGTT4X",
+  "name": "Pokémon",
+  "description": "Names of pokémon in first gen",
+  "items": [
+    {
+      "name": "Bulbasaur",
+      "description": "Pokemon #1",
+      "spellings": []
+    },
+    {
+      "name": "Ivysaur",
+      "description": "Pokemon #2",
+      "spellings": []
+    },
+    {
+      "name": "Venusaur",
+      "description": "Pokemon #3",
+      "spellings": []
+    },
+    {
+      "name": "Charmander",
+      "description": "Pokemon #4",
+      "spellings": []
+    },
+    {
+      "name": "Charmeleon",
+      "description": "Pokemon #5",
+      "spellings": []
+    },
+    {
+      "name": "Charizard",
+      "description": "Pokemon #6",
+      "spellings": []
+    },
+    {
+      "name": "Squirtle",
+      "description": "Pokemon #7",
+      "spellings": []
+    },
+    {
+      "name": "Wartortle",
+      "description": "Pokemon #8",
+      "spellings": []
+    },
+    {
+      "name": "Blastoise",
+      "description": "Pokemon #9",
+      "spellings": []
+    },
+    {
+      "name": "Caterpie",
+      "description": "Pokemon #10",
+      "spellings": []
+    },
+    {
+      "name": "Metapod",
+      "description": "Pokemon #11",
+      "spellings": []
+    },
+    {
+      "name": "Butterfree",
+      "description": "Pokemon #12",
+      "spellings": []
+    },
+    {
+      "name": "Weedle",
+      "description": "Pokemon #13",
+      "spellings": []
+    },
+    {
+      "name": "Kakuna",
+      "description": "Pokemon #14",
+      "spellings": []
+    },
+    {
+      "name": "Beedrill",
+      "description": "Pokemon #15",
+      "spellings": []
+    },
+    {
+      "name": "Pidgey",
+      "description": "Pokemon #16",
+      "spellings": []
+    },
+    {
+      "name": "Pidgeotto",
+      "description": "Pokemon #17",
+      "spellings": []
+    },
+    {
+      "name": "Pidgeot",
+      "description": "Pokemon #18",
+      "spellings": []
+    },
+    {
+      "name": "Rattata",
+      "description": "Pokemon #19",
+      "spellings": []
+    },
+    {
+      "name": "Raticate",
+      "description": "Pokemon #20",
+      "spellings": []
+    },
+    {
+      "name": "Spearow",
+      "description": "Pokemon #21",
+      "spellings": []
+    },
+    {
+      "name": "Fearow",
+      "description": "Pokemon #22",
+      "spellings": []
+    },
+    {
+      "name": "Ekans",
+      "description": "Pokemon #23",
+      "spellings": []
+    },
+    {
+      "name": "Arbok",
+      "description": "Pokemon #24",
+      "spellings": []
+    },
+    {
+      "name": "Pikachu",
+      "description": "Pokemon #25",
+      "spellings": []
+    },
+    {
+      "name": "Raichu",
+      "description": "Pokemon #26",
+      "spellings": []
+    },
+    {
+      "name": "Sandshrew",
+      "description": "Pokemon #27",
+      "spellings": []
+    },
+    {
+      "name": "Sandslash",
+      "description": "Pokemon #28",
+      "spellings": []
+    },
+    {
+      "name": "Nidoran♀",
+      "description": "Pokemon #29",
+      "spellings": [
+        "nidoran",
+        "nidoran female",
+        "female nidoran"
+      ]
+    },
+    {
+      "name": "Nidorina",
+      "description": "Pokemon #30",
+      "spellings": []
+    },
+    {
+      "name": "Nidoqueen",
+      "description": "Pokemon #31",
+      "spellings": []
+    },
+    {
+      "name": "Nidoran♂",
+      "description": "Pokemon #32",
+      "spellings": [
+        "nidoran male",
+        "male nidoran"
+      ]
+    },
+    {
+      "name": "Nidorino",
+      "description": "Pokemon #33",
+      "spellings": []
+    },
+    {
+      "name": "Nidoking",
+      "description": "Pokemon #34",
+      "spellings": []
+    },
+    {
+      "name": "Clefairy",
+      "description": "Pokemon #35",
+      "spellings": []
+    },
+    {
+      "name": "Clefable",
+      "description": "Pokemon #36",
+      "spellings": []
+    },
+    {
+      "name": "Vulpix",
+      "description": "Pokemon #37",
+      "spellings": []
+    },
+    {
+      "name": "Ninetales",
+      "description": "Pokemon #38",
+      "spellings": []
+    },
+    {
+      "name": "Jigglypuff",
+      "description": "Pokemon #39",
+      "spellings": []
+    },
+    {
+      "name": "Wigglytuff",
+      "description": "Pokemon #40",
+      "spellings": []
+    },
+    {
+      "name": "Zubat",
+      "description": "Pokemon #41",
+      "spellings": []
+    },
+    {
+      "name": "Golbat",
+      "description": "Pokemon #42",
+      "spellings": []
+    },
+    {
+      "name": "Oddish",
+      "description": "Pokemon #43",
+      "spellings": []
+    },
+    {
+      "name": "Gloom",
+      "description": "Pokemon #44",
+      "spellings": []
+    },
+    {
+      "name": "Vileplume",
+      "description": "Pokemon #45",
+      "spellings": []
+    },
+    {
+      "name": "Paras",
+      "description": "Pokemon #46",
+      "spellings": []
+    },
+    {
+      "name": "Parasect",
+      "description": "Pokemon #47",
+      "spellings": []
+    },
+    {
+      "name": "Venonat",
+      "description": "Pokemon #48",
+      "spellings": []
+    },
+    {
+      "name": "Venomoth",
+      "description": "Pokemon #49",
+      "spellings": []
+    },
+    {
+      "name": "Diglett",
+      "description": "Pokemon #50",
+      "spellings": []
+    },
+    {
+      "name": "Dugtrio",
+      "description": "Pokemon #51",
+      "spellings": []
+    },
+    {
+      "name": "Meowth",
+      "description": "Pokemon #52",
+      "spellings": []
+    },
+    {
+      "name": "Persian",
+      "description": "Pokemon #53",
+      "spellings": []
+    },
+    {
+      "name": "Psyduck",
+      "description": "Pokemon #54",
+      "spellings": []
+    },
+    {
+      "name": "Golduck",
+      "description": "Pokemon #55",
+      "spellings": []
+    },
+    {
+      "name": "Mankey",
+      "description": "Pokemon #56",
+      "spellings": []
+    },
+    {
+      "name": "Primeape",
+      "description": "Pokemon #57",
+      "spellings": []
+    },
+    {
+      "name": "Growlithe",
+      "description": "Pokemon #58",
+      "spellings": []
+    },
+    {
+      "name": "Arcanine",
+      "description": "Pokemon #59",
+      "spellings": []
+    },
+    {
+      "name": "Poliwag",
+      "description": "Pokemon #60",
+      "spellings": []
+    },
+    {
+      "name": "Poliwhirl",
+      "description": "Pokemon #61",
+      "spellings": []
+    },
+    {
+      "name": "Poliwrath",
+      "description": "Pokemon #62",
+      "spellings": []
+    },
+    {
+      "name": "Abra",
+      "description": "Pokemon #63",
+      "spellings": []
+    },
+    {
+      "name": "Kadabra",
+      "description": "Pokemon #64",
+      "spellings": []
+    },
+    {
+      "name": "Alakazam",
+      "description": "Pokemon #65",
+      "spellings": []
+    },
+    {
+      "name": "Machop",
+      "description": "Pokemon #66",
+      "spellings": []
+    },
+    {
+      "name": "Machoke",
+      "description": "Pokemon #67",
+      "spellings": []
+    },
+    {
+      "name": "Machamp",
+      "description": "Pokemon #68",
+      "spellings": []
+    },
+    {
+      "name": "Bellsprout",
+      "description": "Pokemon #69",
+      "spellings": []
+    },
+    {
+      "name": "Weepinbell",
+      "description": "Pokemon #70",
+      "spellings": []
+    },
+    {
+      "name": "Victreebel",
+      "description": "Pokemon #71",
+      "spellings": []
+    },
+    {
+      "name": "Tentacool",
+      "description": "Pokemon #72",
+      "spellings": []
+    },
+    {
+      "name": "Tentacruel",
+      "description": "Pokemon #73",
+      "spellings": []
+    },
+    {
+      "name": "Geodude",
+      "description": "Pokemon #74",
+      "spellings": []
+    },
+    {
+      "name": "Graveler",
+      "description": "Pokemon #75",
+      "spellings": []
+    },
+    {
+      "name": "Golem",
+      "description": "Pokemon #76",
+      "spellings": []
+    },
+    {
+      "name": "Ponyta",
+      "description": "Pokemon #77",
+      "spellings": []
+    },
+    {
+      "name": "Rapidash",
+      "description": "Pokemon #78",
+      "spellings": []
+    },
+    {
+      "name": "Slowpoke",
+      "description": "Pokemon #79",
+      "spellings": []
+    },
+    {
+      "name": "Slowbro",
+      "description": "Pokemon #80",
+      "spellings": []
+    },
+    {
+      "name": "Magnemite",
+      "description": "Pokemon #81",
+      "spellings": []
+    },
+    {
+      "name": "Magneton",
+      "description": "Pokemon #82",
+      "spellings": []
+    },
+    {
+      "name": "Farfetch\"d",
+      "description": "Pokemon #83",
+      "spellings": []
+    },
+    {
+      "name": "Doduo",
+      "description": "Pokemon #84",
+      "spellings": []
+    },
+    {
+      "name": "Dodrio",
+      "description": "Pokemon #85",
+      "spellings": []
+    },
+    {
+      "name": "Seel",
+      "description": "Pokemon #86",
+      "spellings": []
+    },
+    {
+      "name": "Dewgong",
+      "description": "Pokemon #87",
+      "spellings": []
+    },
+    {
+      "name": "Grimer",
+      "description": "Pokemon #88",
+      "spellings": []
+    },
+    {
+      "name": "Muk",
+      "description": "Pokemon #89",
+      "spellings": []
+    },
+    {
+      "name": "Shellder",
+      "description": "Pokemon #90",
+      "spellings": []
+    },
+    {
+      "name": "Cloyster",
+      "description": "Pokemon #91",
+      "spellings": []
+    },
+    {
+      "name": "Gastly",
+      "description": "Pokemon #92",
+      "spellings": []
+    },
+    {
+      "name": "Haunter",
+      "description": "Pokemon #93",
+      "spellings": []
+    },
+    {
+      "name": "Gengar",
+      "description": "Pokemon #94",
+      "spellings": []
+    },
+    {
+      "name": "Onix",
+      "description": "Pokemon #95",
+      "spellings": []
+    },
+    {
+      "name": "Drowzee",
+      "description": "Pokemon #96",
+      "spellings": []
+    },
+    {
+      "name": "Hypno",
+      "description": "Pokemon #97",
+      "spellings": []
+    },
+    {
+      "name": "Krabby",
+      "description": "Pokemon #98",
+      "spellings": []
+    },
+    {
+      "name": "Kingler",
+      "description": "Pokemon #99",
+      "spellings": []
+    },
+    {
+      "name": "Voltorb",
+      "description": "Pokemon #100",
+      "spellings": []
+    },
+    {
+      "name": "Electrode",
+      "description": "Pokemon #101",
+      "spellings": []
+    },
+    {
+      "name": "Exeggcute",
+      "description": "Pokemon #102",
+      "spellings": []
+    },
+    {
+      "name": "Exeggutor",
+      "description": "Pokemon #103",
+      "spellings": []
+    },
+    {
+      "name": "Cubone",
+      "description": "Pokemon #104",
+      "spellings": []
+    },
+    {
+      "name": "Marowak",
+      "description": "Pokemon #105",
+      "spellings": []
+    },
+    {
+      "name": "Hitmonlee",
+      "description": "Pokemon #106",
+      "spellings": []
+    },
+    {
+      "name": "Hitmonchan",
+      "description": "Pokemon #107",
+      "spellings": []
+    },
+    {
+      "name": "Lickitung",
+      "description": "Pokemon #108",
+      "spellings": []
+    },
+    {
+      "name": "Koffing",
+      "description": "Pokemon #109",
+      "spellings": []
+    },
+    {
+      "name": "Weezing",
+      "description": "Pokemon #110",
+      "spellings": []
+    },
+    {
+      "name": "Rhyhorn",
+      "description": "Pokemon #111",
+      "spellings": []
+    },
+    {
+      "name": "Rhydon",
+      "description": "Pokemon #112",
+      "spellings": []
+    },
+    {
+      "name": "Chansey",
+      "description": "Pokemon #113",
+      "spellings": []
+    },
+    {
+      "name": "Tangela",
+      "description": "Pokemon #114",
+      "spellings": []
+    },
+    {
+      "name": "Kangaskhan",
+      "description": "Pokemon #115",
+      "spellings": []
+    },
+    {
+      "name": "Horsea",
+      "description": "Pokemon #116",
+      "spellings": []
+    },
+    {
+      "name": "Seadra",
+      "description": "Pokemon #117",
+      "spellings": []
+    },
+    {
+      "name": "Goldeen",
+      "description": "Pokemon #118",
+      "spellings": []
+    },
+    {
+      "name": "Seaking",
+      "description": "Pokemon #119",
+      "spellings": []
+    },
+    {
+      "name": "Staryu",
+      "description": "Pokemon #120",
+      "spellings": []
+    },
+    {
+      "name": "Starmie",
+      "description": "Pokemon #121",
+      "spellings": []
+    },
+    {
+      "name": "Mr. Mime",
+      "description": "Pokemon #122",
+      "spellings": [
+        "mister mime",
+        "mime"
+      ]
+    },
+    {
+      "name": "Scyther",
+      "description": "Pokemon #123",
+      "spellings": []
+    },
+    {
+      "name": "Jynx",
+      "description": "Pokemon #124",
+      "spellings": []
+    },
+    {
+      "name": "Electabuzz",
+      "description": "Pokemon #125",
+      "spellings": []
+    },
+    {
+      "name": "Magmar",
+      "description": "Pokemon #126",
+      "spellings": []
+    },
+    {
+      "name": "Pinsir",
+      "description": "Pokemon #127",
+      "spellings": []
+    },
+    {
+      "name": "Tauros",
+      "description": "Pokemon #128",
+      "spellings": []
+    },
+    {
+      "name": "Magikarp",
+      "description": "Pokemon #129",
+      "spellings": []
+    },
+    {
+      "name": "Gyarados",
+      "description": "Pokemon #130",
+      "spellings": []
+    },
+    {
+      "name": "Lapras",
+      "description": "Pokemon #131",
+      "spellings": []
+    },
+    {
+      "name": "Ditto",
+      "description": "Pokemon #132",
+      "spellings": []
+    },
+    {
+      "name": "Eevee",
+      "description": "Pokemon #133",
+      "spellings": []
+    },
+    {
+      "name": "Vaporeon",
+      "description": "Pokemon #134",
+      "spellings": []
+    },
+    {
+      "name": "Jolteon",
+      "description": "Pokemon #135",
+      "spellings": []
+    },
+    {
+      "name": "Flareon",
+      "description": "Pokemon #136",
+      "spellings": []
+    },
+    {
+      "name": "Porygon",
+      "description": "Pokemon #137",
+      "spellings": []
+    },
+    {
+      "name": "Omanyte",
+      "description": "Pokemon #138",
+      "spellings": []
+    },
+    {
+      "name": "Omastar",
+      "description": "Pokemon #139",
+      "spellings": []
+    },
+    {
+      "name": "Kabuto",
+      "description": "Pokemon #140",
+      "spellings": []
+    },
+    {
+      "name": "Kabutops",
+      "description": "Pokemon #141",
+      "spellings": []
+    },
+    {
+      "name": "Aerodactyl",
+      "description": "Pokemon #142",
+      "spellings": []
+    },
+    {
+      "name": "Snorlax",
+      "description": "Pokemon #143",
+      "spellings": []
+    },
+    {
+      "name": "Articuno",
+      "description": "Pokemon #144",
+      "spellings": []
+    },
+    {
+      "name": "Zapdos",
+      "description": "Pokemon #145",
+      "spellings": []
+    },
+    {
+      "name": "Moltres",
+      "description": "Pokemon #146",
+      "spellings": []
+    },
+    {
+      "name": "Dratini",
+      "description": "Pokemon #147",
+      "spellings": []
+    },
+    {
+      "name": "Dragonair",
+      "description": "Pokemon #148",
+      "spellings": []
+    },
+    {
+      "name": "Dragonite",
+      "description": "Pokemon #149",
+      "spellings": []
+    },
+    {
+      "name": "Mewtwo",
+      "description": "Pokemon #150",
+      "spellings": []
+    },
+    {
+      "name": "Mew",
+      "description": "Pokemon #151",
+      "spellings": []
+    }
+  ]
+}

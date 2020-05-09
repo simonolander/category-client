@@ -1,0 +1,12 @@
+{
+  "name": "upload",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^8.10.0"
+  },
+  "scripts": {
+    "upload": "node index.js"
+  }
+}
