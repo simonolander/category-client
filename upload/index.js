@@ -7,7 +7,7 @@ admin.initializeApp({
 
 const firestore = admin.firestore();
 
-async function deleteCollection (collection) {
+async function deleteCollection(collection) {
     if (typeof collection === "string") {
         collection = firestore.collection(collection);
     }
@@ -18,21 +18,25 @@ async function deleteCollection (collection) {
             await deleteCollection(collection)
         }
         await document.delete();
-        console.log(`Deleted document ${document.id}`)
+        console.log(`Deleted document ${document.path}`)
     }
 }
 
 (async () => {
-
+    const categories = [
+        require("./data/category/java-keywords"),
+        require("./data/category/swedish-alphabet"),
+        require("./data/category/pokemon"),
+        require("./data/category/prime-numbers-below-twenty.json"),
+    ];
     const categoryCollectionName = "category";
-    const categories =
-        [
-            require("./data/category/java-keywords"),
-            require("./data/category/swedish-alphabet"),
-            require("./data/category/pokemon")
-        ];
 
-    await deleteCollection(categoryCollectionName);
+    const collections = await firestore.listCollections()
+    console.log("Fetched collections")
+    for (let collection of collections) {
+        await deleteCollection(collection)
+        console.log(`Deleted collection ${collection.path}`)
+    }
 
     for (const category of categories) {
         await firestore.collection(categoryCollectionName)

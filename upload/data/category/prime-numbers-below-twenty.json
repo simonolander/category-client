@@ -1,0 +1,47 @@
+{
+  "id": "683b09365a7ca0a8bb77",
+  "name": "Prime numbers below twenty",
+  "description": "",
+  "items": [
+    {
+      "name": "2",
+      "description": "1st prime number",
+      "spellings": ["two"]
+    },
+    {
+      "name": "3",
+      "description": "2nd prime number",
+      "spellings": ["three"]
+    },
+    {
+      "name": "5",
+      "description": "3rd prime number",
+      "spellings": ["five"]
+    },
+    {
+      "name": "7",
+      "description": "4th prime number",
+      "spellings": ["seven"]
+    },
+    {
+      "name": "11",
+      "description": "5th prime number",
+      "spellings": ["eleven"]
+    },
+    {
+      "name": "13",
+      "description": "6th prime number",
+      "spellings": ["thirteen"]
+    },
+    {
+      "name": "17",
+      "description": "7th prime number",
+      "spellings": ["seventeen"]
+    },
+    {
+      "name": "19",
+      "description": "8th prime number",
+      "spellings": ["nineteen"]
+    }
+  ]
+}

@@ -4,9 +4,17 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "casual": "^1.6.2",
+    "jest": "^25.5.4",
+    "ts-jest": "^25.5.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "typescript-collections": "^1.3.3"
   }
 }

@@ -1,8 +1,17 @@
 import {Context} from "../Context";
 import {NotSignedInError} from "../error/NotSignedInError";
 import {categoryRepository, gameRepository, Repository} from "../repository";
-import {CategoryNotFoundError, GameNotFoundError} from "../error/NotFoundError";
-import {Game, getCurrentGuesser, getRemainingParticipants, Guess} from "../../../common/src";
+import {CategoryNotFoundError, GameNotFoundError, GameNotRunningError} from "../error/NotFoundError";
+import {
+    addGuessToGame,
+    findCategoryItemByGuess,
+    Game,
+    getCurrentGuesser,
+    getRemainingGuessTime,
+    Guess,
+    isGameRunning,
+    isGuessCorrect
+} from "../../../common/src";
 import {AuthenticationError, ForbiddenError, UserInputError} from "apollo-server-express";
 
 export async function createGame(parent: undefined, args: {}, {user}: Context): Promise<Game> {
@@ -53,19 +62,21 @@ export async function joinGame(parent: undefined, {gameId}: { gameId: string }, 
 
 export async function makeGuess(
     parent: undefined,
-    args: { guessValue: string, gameId: string },
+    {gameId, guessValue}: { guessValue: string, gameId: string },
     {user}: Context): Promise<Game> {
 
     if (!user) {
         throw new NotSignedInError()
     }
 
-    const game = await gameRepository.findById(args.gameId);
+    let game = await gameRepository.findById(gameId);
     if (!game) {
-        throw new GameNotFoundError(args.gameId)
+        throw new GameNotFoundError(gameId)
     }
 
-    // TODO Check game started, not finished etc
+    if (!isGameRunning(game)) {
+        throw new GameNotRunningError(gameId)
+    }
 
     if (!game.categoryId) {
         throw new UserInputError(`Game ${game.id} has no category yet`)
@@ -81,25 +92,19 @@ export async function makeGuess(
         throw new CategoryNotFoundError(game.categoryId)
     }
 
-    const categoryItem = category.items.find(item => item.name === args.guessValue) || null;
-
+    const categoryItem = findCategoryItemByGuess(category, guessValue)
+    const isIncorrect = !categoryItem
+    const alreadyGuessed = categoryItem && game.guesses.some(guess => isGuessCorrect(guess) && guess?.categoryItem?.name === categoryItem.name);
+    const error = isIncorrect ? "wrong" : alreadyGuessed ? "already guessed" : null
     const guess: Guess = {
         id: Repository.generateId(),
-        categoryItem,
+        categoryItem: categoryItem,
         createdTime: Date.now(),
         guesser: user,
-        value: args.guessValue
+        value: guessValue,
+        error
     }
-
-    const guesses = [...game.guesses, guess]
-
-    const remainingParticipants = getRemainingParticipants({...game, guesses});
-
-    return gameRepository.save({
-        ...game,
-        guesses,
-        finishedTime: remainingParticipants.length === 0 ? Date.now() : null
-    })
+    return gameRepository.save(addGuessToGame(game, guess, category, Date.now()))
 }
 
 export async function startGame(parent: undefined, {gameId, categoryId}: { gameId: string, categoryId: string }, {user}: Context): Promise<Game> {
@@ -163,6 +168,51 @@ export async function leaveGame(parent: undefined, {gameId}: { gameId: string },
         ...game,
         participants: game.participants.filter(participant => participant.id !== user.id)
     })
+}
+
+export async function timeout(parent: undefined, {gameId}: { gameId: string }, {user}: Context): Promise<Game> {
+    if (!user) {
+        throw new NotSignedInError()
+    }
+
+    const game = await gameRepository.findById(gameId);
+    if (!game) {
+        throw new GameNotFoundError(gameId)
+    }
+
+    if (!isGameRunning(game)) {
+        throw new GameNotRunningError(game.id)
+    }
+
+    if (!game.categoryId) {
+        throw new UserInputError(`Game ${game.id} has no category yet`)
+    }
+
+    const category = await categoryRepository.findById(game.categoryId);
+    if (!category) {
+        throw new CategoryNotFoundError(game.categoryId)
+    }
+
+    const remainingGuessTime = getRemainingGuessTime(game, Date.now());
+    if (remainingGuessTime > 0) {
+        return game
+    }
+
+    const currentGuesser = getCurrentGuesser(game);
+    if (!currentGuesser) {
+        return game
+    }
+
+    const guess: Guess = {
+        id: Repository.generateId(),
+        categoryItem: null,
+        createdTime: Date.now(),
+        guesser: currentGuesser,
+        value: "",
+        error: "timed out"
+    }
+
+    return gameRepository.save(addGuessToGame(game, guess, category, Date.now()))
 }
 
 // noinspection JSUnusedLocalSymbols

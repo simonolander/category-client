@@ -11,21 +11,31 @@ export class CategoryNotFoundError extends NotFoundError {
         super(id, "Category");
     }
 }
+
 export class CategoryItemNotFoundError extends NotFoundError {
     constructor(id: string) {
         super(id, "Category");
     }
 }
+
 export class GameNotFoundError extends NotFoundError {
     constructor(id: string) {
         super(id, "Game");
     }
 }
+
+export class GameNotRunningError extends UserInputError {
+    constructor(id: string) {
+        super(`Game ${id} is not running`);
+    }
+}
+
 export class GuessNotFoundError extends NotFoundError {
     constructor(id: string) {
         super(id, "Guess");
     }
 }
+
 export class UserNotFoundError extends NotFoundError {
     constructor(id: string) {
         super(id, "User");

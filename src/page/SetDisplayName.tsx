@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import React, {useState} from "react";
 import {changeDisplayName} from "../redux/Store";
+import {Title} from "../Components/Title";
 
 export default function SetDisplayName() {
     const dispatch = useDispatch();
@@ -14,14 +15,16 @@ export default function SetDisplayName() {
     }
 
     return (
-        <div>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+            <Title/>
             <form onSubmit={submit}>
-                <fieldset disabled={saving}>
+                <fieldset disabled={saving} style={{display: "flex", flexDirection: "column", minWidth: "30vw"}}>
                     <label>
                         <p>Display name</p>
                         <input value={displayName} onChange={event => setDisplayName(event.target.value)} required/>
                     </label>
-                    <input type="submit" value="Submit"/>
+                    <button type="submit">Continue</button>
+                    <legend>What should we call you?</legend>
                 </fieldset>
             </form>
         </div>

@@ -22,7 +22,7 @@ import * as credentials from "./serviceAccount.json"
 import {categoryRepository} from "./repository";
 import {Context} from "./Context";
 import {Category} from "../../common/src";
-import {createGame, joinGame, leaveGame, makeGuess, startGame} from "./resolver/resolver";
+import {createGame, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
 
 admin.initializeApp({
     credential: admin.credential.cert(credentials),
@@ -36,6 +36,7 @@ const typeDefs = gql`
     type Query {
         hello: String
         categories: [Category]
+        category(categoryId: ID!): Category
     }
 
     type Mutation {
@@ -44,6 +45,7 @@ const typeDefs = gql`
         leaveGame(gameId: ID!): Game
         startGame(gameId: ID!, categoryId: ID!): Game
         makeGuess(gameId: ID!, guessValue: String!): Game
+        timeout(gameId: ID!): Game
     }
 
     type User {
@@ -86,6 +88,9 @@ const resolvers = {
     Query: {
         async categories(parent: undefined, args: {}, context: Context): Promise<Category[]> {
             return categoryRepository.findAll()
+        },
+        async category(parent: undefined, {categoryId}: { categoryId: string }, context: Context): Promise<Category | null> {
+            return categoryRepository.findById(categoryId)
         }
     },
     Mutation: {
@@ -93,7 +98,8 @@ const resolvers = {
         joinGame,
         makeGuess,
         leaveGame,
-        startGame
+        startGame,
+        timeout
     },
 };
 
@@ -115,6 +121,10 @@ async function context({req}: { req: Request }): Promise<Context> {
         const auth = admin.auth();
         const decodedIdToken = await auth.verifyIdToken(idToken);
         const userRecord = await auth.getUser(decodedIdToken.uid);
+
+        // TODO Remove wait
+        await new Promise(resolve => setTimeout(resolve, 1))
+
         return {
             user: {
                 id: userRecord.uid,

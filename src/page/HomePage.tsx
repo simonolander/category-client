@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
 import {gql, useMutation} from "@apollo/client";
+import {AppName} from "../Constants";
+import classNames from "classnames";
 
 const CREATE_GAME = gql`
     mutation CreateGame {
@@ -20,7 +22,7 @@ interface TData {
 
 export default function HomePage() {
     const {push} = useHistory();
-    const [createGame, {data, loading, error}] = useMutation<TData>(CREATE_GAME);
+    const [createGame, {data, loading: creatingGame, error}] = useMutation<TData>(CREATE_GAME);
 
     useEffect(() => {
         if (data) {
@@ -28,17 +30,27 @@ export default function HomePage() {
         }
     }, [data])
 
-    if (loading) {
-        return <div>Loading</div>
-    }
-
     if (error) {
         return <pre>{error.message}</pre>
     }
 
     return (
-        <div>
-            <button onClick={() => createGame()}>Create new game</button>
+        <div className="section">
+            <div className="container">
+                <header className="is-centered">
+                    <h1 className="title">{AppName}</h1>
+                    <button
+                        disabled={creatingGame}
+                        className={classNames({
+                            button: true,
+                            "is-loading": creatingGame
+                        })}
+                        onClick={() => createGame()}
+                    >
+                        Create new game
+                    </button>
+                </header>
+            </div>
         </div>
     );
 }
