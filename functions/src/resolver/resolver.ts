@@ -11,7 +11,7 @@ import {
     Guess,
     isGameRunning,
     isGuessCorrect
-} from "../../../common/src";
+} from "common/src/main";
 import {AuthenticationError, ForbiddenError, UserInputError} from "apollo-server-express";
 
 export async function createGame(parent: undefined, args: {}, {user}: Context): Promise<Game> {

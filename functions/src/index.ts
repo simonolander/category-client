@@ -21,7 +21,7 @@ import {ApolloServer, gql} from "apollo-server-express"
 import * as credentials from "./serviceAccount.json"
 import {categoryRepository} from "./repository";
 import {Context} from "./Context";
-import {Category} from "../../common/src";
+import {Category} from "common/src/main";
 import {createGame, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
 
 admin.initializeApp({

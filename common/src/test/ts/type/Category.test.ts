@@ -1,4 +1,4 @@
-import {CategoryItem, Category, findCategoryItemByGuess} from "main";
+import {Category, CategoryItem, findCategoryItemByGuess} from "../../../main";
 
 const bulbasaur: CategoryItem = {
     name: "Bulbasaur",

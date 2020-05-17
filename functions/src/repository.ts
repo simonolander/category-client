@@ -1,7 +1,7 @@
 import {JsonDecoder} from "ts.data.json";
 import admin from "firebase-admin";
 import {randomBytes} from "crypto"
-import {categoryDecoder, gameDecoder} from "../../common/src";
+import {categoryDecoder, gameDecoder} from "common/src/main";
 
 interface Entity {
     readonly id: string;

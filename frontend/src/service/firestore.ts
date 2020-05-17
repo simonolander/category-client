@@ -1,5 +1,5 @@
 import firebase from "../Components/Firebase";
-import {Game, gameDecoder} from "../common";
+import {Game, gameDecoder} from "common/build/src/main";
 
 const firestore = firebase.firestore();
 

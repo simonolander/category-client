@@ -3339,6 +3339,11 @@ ts-jest@^25.5.1:
     semver "6.x"
     yargs-parser "18.x"
 
+ts.data.json@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ts.data.json/-/ts.data.json-1.1.0.tgz#24fd85524c9f2f93cf6a3f3e714b31c1e08dbb6d"
+  integrity sha512-bdZJ19x6HVq7MTnCmSHDcOxipcVWhM8T86VaxScBd2awV/h1BW27iKL+DoFM4Nt5f9HUdp5V4IUGDHLrttLKyA==
+
 tunnel-agent@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"

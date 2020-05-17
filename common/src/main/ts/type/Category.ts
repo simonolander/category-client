@@ -1,5 +1,6 @@
 import {JsonDecoder} from "ts.data.json";
-import {CategoryItem, categoryItemDecoder, levenshtein} from "main";
+import {CategoryItem, categoryItemDecoder} from "./CategoryItem";
+import {levenshtein} from "../..";
 
 export interface Category {
     readonly id: string;
