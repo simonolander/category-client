@@ -5,6 +5,22 @@ const seed = casual.integer()
 casual.seed(seed)
 console.info(`Seed: ${seed}`)
 
+it.each<[string, string, number | undefined, number]>([
+    ["aaa", "bbb", undefined, 3],
+    ["a", "bbb", undefined, 3],
+    ["a cat", "ac dc", undefined, 3],
+    ["A", "a", undefined, 1],
+    ["a long string", "a very long string", undefined, 5],
+    ["the dog is the best pet", "the cat is the worst pet", undefined, 6],
+    ["zuSut4", "Rv6pQ", 2, 2],
+    ["k", "muk", 2, 2],
+    ["k", "muk", undefined, 2],
+    ["Nidoroni", "Nidorina", undefined, 2],
+    ["Nidoroni", "Nidoran♀", undefined, 2],
+])('lev("%s", "%s", %s) === %d', (a, b, limit, expected) => {
+    expect(levenshtein(a, b, limit)).toEqual(expected)
+})
+
 it('limit < 0 -> lev(a, b, limit) throws', function () {
     const a = casual.string
     const b = casual.string
@@ -93,30 +109,6 @@ it('limit > 0 -> lev("abc", "acb", limit) === 1', function () {
     expect(levenshtein("abc", "acb", limit)).toEqual(1)
 });
 
-it('lev("aaa", "bbb") === 3', function () {
-    expect(levenshtein("aaa", "bbb")).toEqual(3)
-});
-
-it('lev("a", "bbb") === 3', function () {
-    expect(levenshtein("a", "bbb")).toEqual(3)
-});
-
-it('lev("a cat", "ac dc") === 3', function () {
-    expect(levenshtein("a cat", "ac dc")).toEqual(3)
-});
-
-it('lev("A", "a") === 1', function () {
-    expect(levenshtein("A", "a")).toEqual(1)
-});
-
-it('lev("a long string", "a very long string") === 5', function () {
-    expect(levenshtein("a long string", "a very long string")).toEqual(5)
-});
-
-it('lev("the dog is the best pet", "the cat is the worst pet") === 6', function () {
-    expect(levenshtein("the dog is the best pet", "the cat is the worst pet")).toEqual(6)
-});
-
 it('0 <= limit < 5 -> lev("a long string", "a very long string", limit) === limit', function () {
     const limit = casual.integer(0, 5)
     expect(levenshtein("a long string", "a very long string", limit)).toEqual(limit)
@@ -127,11 +119,4 @@ it('0 <= limit <= lev(a, b) <- lev(a, b, limit) === limit', function () {
     const b = casual.string
     const limit = casual.integer(0, levenshtein(a, b))
     expect(levenshtein(a, b, limit)).toEqual(limit)
-});
-
-it('lev("zuSut4", "Rv6pQ", 2) === 2', function () {
-    const a = "zuSut4"
-    const b = "Rv6pQ"
-    const limit = 2
-    expect(levenshtein(a, b, limit)).toEqual(2)
 });

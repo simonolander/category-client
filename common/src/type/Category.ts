@@ -47,7 +47,7 @@ export function findCategoryItemByGuess(category: Category, guess: string): Cate
     const maxLevenshteinDistance = 2
     const closestItemsByName = category.items.reduce(
         (reduction: { distance: number; items: CategoryItem[] }, item) => {
-            const distance = levenshtein(item.name.toLowerCase(), lowerCaseGuess, maxLevenshteinDistance);
+            const distance = levenshtein(item.name.toLowerCase(), lowerCaseGuess, maxLevenshteinDistance + 1);
             if (distance === reduction.distance) {
                 reduction.items.push(item)
                 return reduction
@@ -71,7 +71,7 @@ export function findCategoryItemByGuess(category: Category, guess: string): Cate
 
     const closestItemsBySpelling = category.items.reduce(
         (reduction: { distance: number; items: CategoryItem[] }, item) => {
-            const distance = item.spellings.reduce((previousDistance, spelling) => Math.min(previousDistance, levenshtein(spelling, lowerCaseGuess, maxLevenshteinDistance)), Infinity)
+            const distance = item.spellings.reduce((previousDistance, spelling) => Math.min(previousDistance, levenshtein(spelling, lowerCaseGuess, maxLevenshteinDistance + 1)), Infinity)
             if (distance === reduction.distance) {
                 reduction.items.push(item)
                 return reduction
