@@ -1,4 +1,5 @@
 import {PriorityQueue} from "typescript-collections"
+
 export function levenshtein(columnString: string, rowString: string, limit: number = Math.max(columnString.length, rowString.length)): number {
     if (limit < 0 || !Number.isFinite(limit) || !Number.isInteger(limit)) {
         throw Error(`Illegal limit: ${limit}`)

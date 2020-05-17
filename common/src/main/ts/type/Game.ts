@@ -1,7 +1,5 @@
 import {JsonDecoder} from "ts.data.json";
-import {User, userDecoder} from "./User";
-import {Guess, guessDecoder, isGuessCorrect} from "./Guess";
-import {Category} from "./Category";
+import {Category, Guess, guessDecoder, isGuessCorrect, User, userDecoder} from "main";
 
 export interface Game {
     readonly id: string;

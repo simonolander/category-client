@@ -1,6 +1,5 @@
-import {User, userDecoder} from "./User";
 import {JsonDecoder} from "ts.data.json";
-import {CategoryItem, categoryItemDecoder} from "./CategoryItem";
+import {CategoryItem, categoryItemDecoder, User, userDecoder} from "main";
 
 export type GuessError = "already guessed" | "wrong" | "timed out"
 export const guessErrorDecoder: JsonDecoder.Decoder<GuessError> = JsonDecoder.oneOf(

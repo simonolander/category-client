@@ -1,5 +1,0 @@
-export * from "./type/Category"
-export * from "./type/CategoryItem"
-export * from "./type/Game"
-export * from "./type/Guess"
-export * from "./type/User"

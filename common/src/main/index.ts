@@ -1,0 +1,6 @@
+export * from "main/ts/type/Category"
+export * from "main/ts/type/CategoryItem"
+export * from "main/ts/type/Game"
+export * from "main/ts/type/Guess"
+export * from "main/ts/type/User"
+export * from "main/ts/utility/levenshtein"

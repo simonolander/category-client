@@ -1,5 +1,5 @@
-import {levenshtein} from "./levenshtein";
 import casual from "casual"
+import {levenshtein} from "main";
 
 const seed = casual.integer()
 casual.seed(seed)
