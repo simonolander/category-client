@@ -1,7 +1,7 @@
 import {configureStore, createAsyncThunk, createReducer} from "@reduxjs/toolkit";
 import {DefaultRootState} from "react-redux";
 import firebase from "firebase";
-import {User} from "../../common/src";
+import {User} from "common";
 
 declare module "react-redux" {
     interface DefaultRootState {

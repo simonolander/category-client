@@ -17,7 +17,7 @@ import {
     isGameFinished,
     isGameRunning,
     isGameStarted
-} from "../common";
+} from "common";
 import {useSelector} from "react-redux";
 import {gql, useMutation, useQuery} from "@apollo/client";
 import classNames from "classnames";
