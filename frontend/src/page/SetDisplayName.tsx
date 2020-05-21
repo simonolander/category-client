@@ -1,7 +1,7 @@
 import {useDispatch} from "react-redux";
 import React, {useState} from "react";
 import {changeDisplayName} from "../redux/Store";
-import {Title} from "../Components/Title";
+import {Title} from "../component/Title";
 
 export default function SetDisplayName() {
     const dispatch = useDispatch();

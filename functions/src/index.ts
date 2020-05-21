@@ -21,7 +21,7 @@ import {ApolloServer, gql} from "apollo-server-express"
 import * as credentials from "./serviceAccount.json"
 import {categoryRepository} from "./repository";
 import {Context} from "./Context";
-import {Category} from "common/src/main";
+import {Category} from "shared";
 import {createGame, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
 
 admin.initializeApp({
@@ -86,10 +86,10 @@ const typeDefs = gql`
 
 const resolvers = {
     Query: {
-        async categories(parent: undefined, args: {}, context: Context): Promise<Category[]> {
+        async categories(parent: undefined, args: {}, ctx: Context): Promise<Category[]> {
             return categoryRepository.findAll()
         },
-        async category(parent: undefined, {categoryId}: { categoryId: string }, context: Context): Promise<Category | null> {
+        async category(parent: undefined, {categoryId}: { categoryId: string }, ctx: Context): Promise<Category | null> {
             return categoryRepository.findById(categoryId)
         }
     },

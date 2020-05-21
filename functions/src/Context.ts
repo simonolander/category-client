@@ -1,4 +1,4 @@
-import {User} from "common/src/main";
+import {User} from "shared";
 
 export interface Context {
     readonly user?: User;

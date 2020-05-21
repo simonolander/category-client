@@ -1,10 +1,11 @@
 {
-  "name": "common",
+  "name": "shared",
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "build": "yarn install && tsc",
+    "package": "yarn build && yarn test && rm -rf package && mkdir package && cp -r build/src/main/* package/ && cp package.json package/",
+    "build": "tsc",
     "test": "jest"
   },
   "devDependencies": {

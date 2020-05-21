@@ -11,7 +11,7 @@ import {
     Guess,
     isGameRunning,
     isGuessCorrect
-} from "common/src/main";
+} from "shared";
 import {AuthenticationError, ForbiddenError, UserInputError} from "apollo-server-express";
 
 export async function createGame(parent: undefined, args: {}, {user}: Context): Promise<Game> {
@@ -69,7 +69,7 @@ export async function makeGuess(
         throw new NotSignedInError()
     }
 
-    let game = await gameRepository.findById(gameId);
+    const game = await gameRepository.findById(gameId);
     if (!game) {
         throw new GameNotFoundError(gameId)
     }
@@ -94,7 +94,7 @@ export async function makeGuess(
 
     const categoryItem = findCategoryItemByGuess(category, guessValue)
     const isIncorrect = !categoryItem
-    const alreadyGuessed = categoryItem && game.guesses.some(guess => isGuessCorrect(guess) && guess?.categoryItem?.name === categoryItem.name);
+    const alreadyGuessed = categoryItem && game.guesses.some(previousGuess => isGuessCorrect(previousGuess) && previousGuess?.categoryItem?.name === categoryItem.name);
     const error = isIncorrect ? "wrong" : alreadyGuessed ? "already guessed" : null
     const guess: Guess = {
         id: Repository.generateId(),
@@ -217,5 +217,5 @@ export async function timeout(parent: undefined, {gameId}: { gameId: string }, {
 
 // noinspection JSUnusedLocalSymbols
 export async function templateResolver(parent: undefined, args: {}, context: Context): Promise<never> {
-    throw "not implemented"
+    throw new Error("not implemented")
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {subscribeGame} from "../service/firestore";
 import {useParams} from 'react-router-dom';
 import {
@@ -17,7 +17,7 @@ import {
     isGameFinished,
     isGameRunning,
     isGameStarted
-} from "common/build/src/main";
+} from "shared";
 import {useSelector} from "react-redux";
 import {gql, useMutation, useQuery} from "@apollo/client";
 import classNames from "classnames";
@@ -93,15 +93,15 @@ interface GetCategoryResult {
 function useAnimationFrame(callback: (time: number) => void) {
     const handle = useRef(0);
 
-    function animate(time: number) {
-        callback(time)
-        handle.current = requestAnimationFrame(animate);
-    }
-
     useEffect(() => {
+        function animate(time: number) {
+            callback(time)
+            handle.current = requestAnimationFrame(animate);
+        }
+
         handle.current = requestAnimationFrame(animate);
         return () => cancelAnimationFrame(handle.current);
-    }, []);
+    }, [callback]);
 }
 
 function StatusIcon({guess: {error}}: { guess: Guess }) {
@@ -126,7 +126,7 @@ function StatusIcon({guess: {error}}: { guess: Guess }) {
             )
         case null:
             return (
-                <span className="icon" title="Correct">
+                <span className="icon has-text-primary" title="Correct">
                     <i className="fas fa-check"/>
                 </span>
             )
@@ -296,7 +296,8 @@ export default function GamePage() {
         const [makeGuess, {loading: guessing, error: guessError}] = useMutation(MAKE_GUESS);
         const [timeout] = useMutation(TIMEOUT);
 
-        useAnimationFrame(time => setTime(Date.now()))
+        const setCurrentTime = useCallback(() => setTime(Date.now()), [setTime])
+        useAnimationFrame(setCurrentTime)
 
         const remainingGuessTime = getRemainingGuessTime(game, time)
         useEffect(() => {

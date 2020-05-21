@@ -1,7 +1,7 @@
 import {JsonDecoder} from "ts.data.json";
 import admin from "firebase-admin";
 import {randomBytes} from "crypto"
-import {categoryDecoder, gameDecoder} from "common/src/main";
+import {categoryDecoder, gameDecoder} from "shared";
 
 interface Entity {
     readonly id: string;
@@ -42,7 +42,7 @@ export class Repository<TData extends Entity> {
     async findAll(): Promise<TData[]> {
         const documentSnapshot = await admin.firestore().collection(this.collection).get()
         const values = [];
-        for (let doc of documentSnapshot.docs) {
+        for (const doc of documentSnapshot.docs) {
             const value = this.decode(doc)
             if (value) {
                 values.push(value);

@@ -1,4 +1,4 @@
-import {User} from "../../../common/build/src/main/ts/type/User";
+import {User} from "shared";
 import firebase from "firebase";
 import axios from "axios"
 
