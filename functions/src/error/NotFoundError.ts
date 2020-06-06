@@ -20,7 +20,7 @@ export class CategoryItemNotFoundError extends NotFoundError {
 
 export class GameNotFoundError extends NotFoundError {
     constructor(id: string) {
-        super(id, "Game");
+        super(id, "GameEntity");
     }
 }
 

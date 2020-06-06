@@ -1,46 +1,46 @@
 import {JsonDecoder} from "ts.data.json";
-import admin from "firebase-admin";
 import {randomBytes} from "crypto"
-import {categoryDecoder, gameDecoder} from "shared";
+import admin from "firebase-admin";
+import {Category, categoryDecoder, fromGameEntity, gameDecoder, IEntity, IStorable} from "shared";
 
-interface Entity {
-    readonly id: string;
-}
+export class Repository<TEntity extends IEntity, TClass extends IStorable<TEntity>> {
 
-export class Repository<TData extends Entity> {
-    private readonly collection: string;
-    private readonly decoder: JsonDecoder.Decoder<TData>;
-
-    constructor(collection: string, decoder: JsonDecoder.Decoder<TData>) {
-        this.collection = collection;
-        this.decoder = decoder;
+    constructor(
+        private readonly collection: string,
+        private readonly decoder: JsonDecoder.Decoder<TEntity>,
+        private readonly fromEntity: (entity: TEntity) => TClass | null) {
     }
 
-    private decode(documentSnapshot: FirebaseFirestore.DocumentSnapshot) {
+    private decode(documentSnapshot: FirebaseFirestore.DocumentSnapshot): TClass | null {
         if (!documentSnapshot.exists) {
             return null
         }
         const documentData = documentSnapshot.data();
-        const maybeValue = this.decoder.decode(documentData);
-        if (!maybeValue.isOk()) {
-            console.error(`Could not decode firestore object ${documentSnapshot.ref.path}: ${maybeValue.error}`, documentData)
+        const maybeEntity = this.decoder.decode(documentData);
+        if (!maybeEntity.isOk()) {
+            console.error(`Could not decode firestore object ${documentSnapshot.ref.path}: ${maybeEntity.error}`, documentData)
             return null
         }
-        if (maybeValue.value.id !== documentSnapshot.id) {
-            console.error(`Mismatch between firestore id and entity id in ${documentSnapshot.ref.path}: ${documentSnapshot.id} !== ${maybeValue.value.id}`, documentData)
+        if (maybeEntity.value.id !== documentSnapshot.id) {
+            console.error(`Mismatch between firestore id and entity id in ${documentSnapshot.ref.path}: ${documentSnapshot.id} !== ${maybeEntity.value.id}`, documentData)
         }
-        return maybeValue.value;
+        return this.fromEntity(maybeEntity.value)
     }
 
-    async findById(id: string): Promise<TData | null> {
+    async findById(id: string): Promise<TClass | null> {
         if (!id) {
             return null
         }
-        return this.decode(await admin.firestore().collection(this.collection).doc(id).get())
+        return await admin.firestore().collection(this.collection)
+            .doc(id)
+            .get()
+            .then(snapshot => this.decode(snapshot))
     }
 
-    async findAll(): Promise<TData[]> {
-        const documentSnapshot = await admin.firestore().collection(this.collection).get()
+    async findAll(): Promise<TClass[]> {
+        const documentSnapshot = await admin.firestore()
+            .collection(this.collection)
+            .get()
         const values = [];
         for (const doc of documentSnapshot.docs) {
             const value = this.decode(doc)
@@ -51,8 +51,12 @@ export class Repository<TData extends Entity> {
         return values
     }
 
-    async save(value: TData): Promise<TData> {
-        await admin.firestore().collection(this.collection).doc(value.id).set(value)
+    async save(value: TClass): Promise<TClass> {
+        const entity = value.toEntity()
+        await admin.firestore()
+            .collection(this.collection)
+            .doc(entity.id)
+            .set(entity)
         return value;
     }
 
@@ -64,5 +68,5 @@ export class Repository<TData extends Entity> {
     }
 }
 
-export const categoryRepository = new Repository("category", categoryDecoder);
-export const gameRepository = new Repository("game", gameDecoder);
+export const categoryRepository = new Repository("category", categoryDecoder, Category.fromEntity);
+export const gameRepository = new Repository("game", gameDecoder, fromGameEntity);

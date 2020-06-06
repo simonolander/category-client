@@ -1,4 +1,4 @@
-import {Category, CategoryItem, findCategoryItemByGuess} from "../../../main";
+import {Category, CategoryItem} from "../../../main";
 
 const bulbasaur: CategoryItem = {
     name: "Bulbasaur",
@@ -67,11 +67,11 @@ const mew: CategoryItem = {
 }
 
 const category: Category =
-    {
-        id: "Hb3vxyf",
-        name: "Pokémon subset",
-        description: "Description of category",
-        items: [
+    new Category(
+        "Hb3vxyf",
+        "Pokémon subset",
+        "Description of category",
+        [
             bulbasaur,
             nidoran_female,
             nidorina,
@@ -84,7 +84,7 @@ const category: Category =
             mrmime,
             mew,
         ]
-    }
+    )
 
 it.each<[string, CategoryItem | null]>([
     ["bulbasaur", bulbasaur],
@@ -122,5 +122,5 @@ it.each<[string, CategoryItem | null]>([
     ["Nidorin", nidorina],
     ["Nidoroni", nidoran_female], // Because Nidoran♀ is the only one with the spelling "nidoran"
 ])(`find("%s") is %o`, (guess, categoryItem) => {
-    expect(findCategoryItemByGuess(category, guess)).toEqual(categoryItem)
+    expect(category.getItemByGuess(guess)).toEqual(categoryItem)
 })

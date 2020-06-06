@@ -19,10 +19,10 @@ import * as admin from 'firebase-admin';
 import {Request} from 'express'
 import {ApolloServer, gql} from "apollo-server-express"
 import * as credentials from "./serviceAccount.json"
-import {categoryRepository} from "./repository";
 import {Context} from "./Context";
-import {Category} from "shared";
 import {createGame, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
+import {CategoryEntity} from "shared";
+import {categoryRepository} from "./repository";
 
 admin.initializeApp({
     credential: admin.credential.cert(credentials),
@@ -40,10 +40,10 @@ const typeDefs = gql`
     }
 
     type Mutation {
-        createGame: Game
+        createGame(previousGameId: ID): Game
         joinGame(gameId: ID!): Game
         leaveGame(gameId: ID!): Game
-        startGame(gameId: ID!, categoryId: ID!): Game
+        startGame(gameId: ID!, categoryId: ID!, guessTime: Int!): Game
         makeGuess(gameId: ID!, guessValue: String!): Game
         timeout(gameId: ID!): Game
     }
@@ -69,7 +69,7 @@ const typeDefs = gql`
     type Game {
         id: String
         admin: User
-        categoryId: String
+        category: Category
         guesses: [Guess]
         participants: [User]
         createdTime: Int
@@ -86,11 +86,13 @@ const typeDefs = gql`
 
 const resolvers = {
     Query: {
-        async categories(parent: undefined, args: {}, ctx: Context): Promise<Category[]> {
+        async categories(parent: undefined, args: {}, ctx: Context): Promise<CategoryEntity[]> {
             return categoryRepository.findAll()
+                .then(categories => categories.map(category => category.toEntity()))
         },
-        async category(parent: undefined, {categoryId}: { categoryId: string }, ctx: Context): Promise<Category | null> {
+        async category(parent: undefined, {categoryId}: { categoryId: string }, ctx: Context): Promise<CategoryEntity | null> {
             return categoryRepository.findById(categoryId)
+                .then(category => category && category.toEntity())
         }
     },
     Mutation: {
@@ -99,7 +101,7 @@ const resolvers = {
         makeGuess,
         leaveGame,
         startGame,
-        timeout
+        timeout,
     },
 };
 

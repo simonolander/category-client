@@ -1,39 +1,20 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {useHistory} from 'react-router-dom';
-import {gql, useMutation} from "@apollo/client";
 import {AppName} from "../Constants";
 import classNames from "classnames";
-
-const CREATE_GAME = gql`
-    mutation CreateGame {
-        createGame {
-            id
-        }
-    }
-`
-
-interface Game {
-    readonly id: string;
-}
-
-interface TData {
-    readonly createGame: Game
-}
+import {ErrorPage} from "../component/ErrorPage";
+import {is} from "remote-data-ts";
+import {useCreateGame} from "../graphql/mutation/CreateGame";
 
 export default function HomePage() {
     const {push} = useHistory();
-    const [createGame, {data, loading: creatingGame, error}] = useMutation<TData>(CREATE_GAME);
+    const [createGame, remoteData] = useCreateGame();
 
-    useEffect(() => {
-        if (data) {
-            push(`/game/${data.createGame.id}`)
-        }
-    }, [data])
-
-    if (error) {
-        return <pre>{error.message}</pre>
+    if (is.failure(remoteData)) {
+        return <ErrorPage error={remoteData.error}/>
     }
 
+    const creatingGame = is.loading(remoteData)
     return (
         <div className="section">
             <div className="container">
@@ -45,7 +26,13 @@ export default function HomePage() {
                             button: true,
                             "is-loading": creatingGame
                         })}
-                        onClick={() => createGame()}
+                        onClick={async () => {
+                            const remoteData = await createGame();
+                            const gameId = remoteData.data.createGame?.id
+                            if (gameId) {
+                                push(`/game/${gameId}`)
+                            }
+                        }}
                     >
                         Create new game
                     </button>

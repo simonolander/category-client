@@ -3,15 +3,27 @@ import {Route, Switch} from "react-router-dom";
 import HomePage from "./page/HomePage";
 import GamePage from "./page/GamePage";
 import {useSelector} from "react-redux";
-import SetDisplayName from "./page/SetDisplayName";
+import AnonymousPage from "./page/AnonymousPage";
 import 'bulma/css/bulma.css'
 import {AppName} from "./Constants";
 
 function App() {
     const username = useSelector(state => state.user.name);
 
-    if (!username) {
-        return <SetDisplayName/>
+    let content;
+    if (username) {
+        content = (
+            <Switch>
+                <Route exact path="/">
+                    <HomePage/>
+                </Route>
+                <Route exact path="/game/:gameId">
+                    <GamePage/>
+                </Route>
+            </Switch>
+        )
+    } else {
+        content = <AnonymousPage/>
     }
 
     return (
@@ -30,14 +42,7 @@ function App() {
                     </div>
                 </div>
             </nav>
-            <Switch>
-                <Route exact path="/">
-                    <HomePage/>
-                </Route>
-                <Route exact path="/game/:gameId">
-                    <GamePage/>
-                </Route>
-            </Switch>
+            {content}
         </div>
     );
 }

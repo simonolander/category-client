@@ -2,8 +2,11 @@ import React from "react";
 
 export function Loading() {
     return (
-        <div style={{display: "flex", marginTop: "10vh", alignItems: "center", flexDirection: "column"}}>
-            <p style={{fontSize: "xx-large"}}>Loading</p>
-        </div>
+        <section className="section">
+            <div className="container">
+                <h1 className="title">Loading</h1>
+                <progress className="progress is-small is-light" max="100"/>
+            </div>
+        </section>
     )
 }

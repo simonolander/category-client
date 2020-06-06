@@ -1,0 +1,8 @@
+.progress.is-short {
+    max-width: 168px;
+}
+
+.progress.is-xsmall {
+    height: 0.5em;
+    max-width: 168px;
+}

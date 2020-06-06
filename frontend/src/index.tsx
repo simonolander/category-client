@@ -8,6 +8,7 @@ import {initializeStore} from "./redux/Store";
 import {ApolloClient, ApolloLink, ApolloProvider, HttpLink, InMemoryCache} from "@apollo/client"
 import firebase from "firebase";
 import {setContext} from "@apollo/link-context"
+import "./css/main.css"
 
 const firebaseConfig = {
     apiKey: "AIzaSyC5ce_rmF-DkhmhUBIghNVpcBjF2ul_3sg",
@@ -23,6 +24,8 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
+const host = "http://localhost:5001"
 
 async function render() {
     const store = await initializeStore()
@@ -47,9 +50,20 @@ async function render() {
                 }
             }),
             new HttpLink({
-                uri: 'http://localhost:5001/category-131ad/us-central1/graphql',
+                uri: `${host}/category-131ad/us-central1/graphql`,
             })
-        )
+        ),
+        // defaultOptions: {
+        //     mutate: {
+        //         errorPolicy: "all"
+        //     },
+        //     query: {
+        //         errorPolicy: "all"
+        //     },
+        //     watchQuery: {
+        //         errorPolicy: "all"
+        //     }
+        // }
     });
 
     ReactDOM.render(

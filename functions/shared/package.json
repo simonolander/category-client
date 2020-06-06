@@ -4,9 +4,10 @@
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "package": "yarn build && yarn test && rm -rf package && mkdir package && cp -r build/src/main/* package/ && cp package.json package/",
+    "package": "yarn install && yarn index && rm -rf build && yarn build && yarn test && rm -rf package && mkdir package && cp -r build/src/main/* package/ && cp package.json package/",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "index": "cd src/main && ls ts/**/*.ts | sed 's/.ts$//g' | awk '{print \"export * from \\\"./\"$1\"\\\"\"}' > index.ts"
   },
   "devDependencies": {
     "@types/jest": "^25.2.2",
@@ -16,6 +17,7 @@
     "typescript": "^3.8.3"
   },
   "dependencies": {
+    "firebase": "^7.14.5",
     "ts.data.json": "^1.1.0",
     "typescript-collections": "^1.3.3"
   }

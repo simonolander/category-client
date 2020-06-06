@@ -1,42 +1,57 @@
 import {Context} from "../Context";
 import {NotSignedInError} from "../error/NotSignedInError";
-import {categoryRepository, gameRepository, Repository} from "../repository";
 import {CategoryNotFoundError, GameNotFoundError, GameNotRunningError} from "../error/NotFoundError";
-import {
-    addGuessToGame,
-    findCategoryItemByGuess,
-    Game,
-    getCurrentGuesser,
-    getRemainingGuessTime,
-    Guess,
-    isGameRunning,
-    isGuessCorrect
-} from "shared";
 import {AuthenticationError, ForbiddenError, UserInputError} from "apollo-server-express";
+import {Correct, Duplicate, Incorrect} from "../../shared/src/main";
+import {
+    GameEntity,
+    Lobby,
+    maximumGuessTime,
+    minimumGuessTime,
+    TimedOut
+} from "shared";
+import {categoryRepository, gameRepository, Repository} from "../repository";
 
-export async function createGame(parent: undefined, args: {}, {user}: Context): Promise<Game> {
+export async function createGame(parent: undefined, {previousGameId}: { previousGameId?: string }, {user}: Context): Promise<GameEntity> {
     if (!user) {
         throw new AuthenticationError("You need to be signed in to create a new lobby")
     }
 
-    return gameRepository.save({
-        id: Repository.generateId(),
-        participants: [user],
-        admin: user,
-        categoryId: null,
-        guesses: [],
-        createdTime: Date.now(),
-        startedTime: null,
-        finishedTime: null,
-        guessTime: 30000
-    })
+    const gameId = Repository.generateId()
+
+    if (previousGameId) {
+        const previousGame = await gameRepository.findById(previousGameId)
+        if (!previousGame) {
+            throw new GameNotFoundError(previousGameId)
+        }
+        if (!previousGame.isFinishedGame()) {
+            throw new UserInputError(`Can't set game ${previousGameId} as previousGame. Game ${previousGameId} has not finished.`)
+        }
+        if (previousGame.admin.id !== user.id) {
+            throw new ForbiddenError(`User ${user.id} not allowed to modify game ${previousGameId}`)
+        }
+        if (previousGame.nextGameId) {
+            throw new UserInputError(`Game ${previousGameId} already has a next game`)
+        }
+        await gameRepository.save(previousGame.withNextGame(gameId))
+    }
+
+    return gameRepository.save(
+        new Lobby(
+            gameId,
+            user,
+            [user],
+            new Date()
+        )
+    ).then(lobby => lobby.toEntity())
 }
 
-export async function joinGame(parent: undefined, {gameId}: { gameId: string }, {user}: Context):
-    Promise<Game | null> {
-    if (!
-        user
-    ) {
+export async function joinGame(
+    parent: undefined,
+    {gameId}: { gameId: string },
+    {user}: Context
+): Promise<GameEntity | null> {
+    if (!user) {
         throw new AuthenticationError("You need to be signed in to join a lobby")
     }
 
@@ -45,25 +60,18 @@ export async function joinGame(parent: undefined, {gameId}: { gameId: string }, 
         throw new UserInputError(`Game ${gameId} doesn't exist`)
     }
 
-    const isParticipant = game.participants.some(participant => participant.id === user.id)
-    if (isParticipant) {
-        throw new UserInputError(`User ${user.id} already participating in lobby ${gameId}`)
+    if (!game.isLobby()) {
+        throw new UserInputError(`Game ${game.id} is not in lobby`)
     }
 
-    if (game.startedTime) {
-        throw new UserInputError(`Game ${game.id} has already started`)
-    }
-
-    return gameRepository.save({
-        ...game,
-        participants: [...game.participants, user]
-    })
+    return gameRepository.save(game.addParticipant(user))
+        .then(game => game.toEntity())
 }
 
 export async function makeGuess(
     parent: undefined,
     {gameId, guessValue}: { guessValue: string, gameId: string },
-    {user}: Context): Promise<Game> {
+    {user}: Context): Promise<GameEntity> {
 
     if (!user) {
         throw new NotSignedInError()
@@ -74,103 +82,114 @@ export async function makeGuess(
         throw new GameNotFoundError(gameId)
     }
 
-    if (!isGameRunning(game)) {
+    if (!game.isRunningGame()) {
         throw new GameNotRunningError(gameId)
     }
 
-    if (!game.categoryId) {
-        throw new UserInputError(`Game ${game.id} has no category yet`)
-    }
-
-    const currentGuesser = getCurrentGuesser(game);
+    const currentGuesser = game.getCurrentGuesser();
     if (currentGuesser?.id !== user.id) {
         throw new UserInputError(`User ${user.id} guessed out of turn`)
     }
 
-    const category = await categoryRepository.findById(game.categoryId);
-    if (!category) {
-        throw new CategoryNotFoundError(game.categoryId)
+    const categoryItem = game.category.getItemByGuess(guessValue)
+    const alreadyGuessed = categoryItem
+        && game.guesses.some(previousGuess =>
+            previousGuess.isCorrect() && previousGuess.categoryItem.name === categoryItem.name
+        )
+    let guess;
+    if (!categoryItem) {
+        guess = new Incorrect(
+            Repository.generateId(),
+            guessValue,
+            user,
+            new Date()
+        )
+    } else if (alreadyGuessed) {
+        guess = new Duplicate(
+            Repository.generateId(),
+            guessValue,
+            user,
+            new Date(),
+            categoryItem
+        )
+    } else {
+        guess = new Correct(
+            Repository.generateId(),
+            guessValue,
+            user,
+            new Date(),
+            categoryItem
+        )
     }
 
-    const categoryItem = findCategoryItemByGuess(category, guessValue)
-    const isIncorrect = !categoryItem
-    const alreadyGuessed = categoryItem && game.guesses.some(previousGuess => isGuessCorrect(previousGuess) && previousGuess?.categoryItem?.name === categoryItem.name);
-    const error = isIncorrect ? "wrong" : alreadyGuessed ? "already guessed" : null
-    const guess: Guess = {
-        id: Repository.generateId(),
-        categoryItem: categoryItem,
-        createdTime: Date.now(),
-        guesser: user,
-        value: guessValue,
-        error
-    }
-    return gameRepository.save(addGuessToGame(game, guess, category, Date.now()))
+    return gameRepository.save(game.addGuess(guess))
+        .then(game => game.toEntity())
 }
 
-export async function startGame(parent: undefined, {gameId, categoryId}: { gameId: string, categoryId: string }, {user}: Context): Promise<Game> {
+export async function startGame(
+    parent: undefined,
+    {
+        gameId,
+        categoryId,
+        guessTime
+    }: {
+        gameId: string,
+        categoryId: string,
+        guessTime: number
+    },
+    {user}: Context
+): Promise<GameEntity> {
     if (!user) {
         throw new NotSignedInError()
     }
-    const [category, game] = await Promise.all([
+    const [category, lobby] = await Promise.all([
         categoryRepository.findById(categoryId),
         gameRepository.findById(gameId)
     ]);
     if (!category) {
         throw new CategoryNotFoundError(categoryId)
     }
-    if (!game) {
+    if (!lobby) {
         throw new GameNotFoundError(gameId)
     }
-    if (game.admin.id !== user.id) {
-        throw new ForbiddenError(`User ${user.id} not allowed to start game lobby ${gameId}`)
+    if (!lobby.isLobby()) {
+        throw new UserInputError(`Game ${gameId} needs to be in lobby`)
     }
-    if (game.startedTime) {
-        throw new UserInputError(`Game already started`)
+    if (lobby.admin.id !== user.id) {
+        throw new ForbiddenError(`User ${user.id} not allowed to start game ${gameId}`)
     }
-    if (game.finishedTime) {
-        throw new UserInputError(`Game already finished`)
+    if (!Number.isInteger(guessTime) || guessTime < minimumGuessTime || guessTime > maximumGuessTime) {
+        throw new UserInputError(`Invalid guessTime (${guessTime}): must be an integer between ${minimumGuessTime} and ${maximumGuessTime}`)
     }
 
-    await gameRepository.save({
-        ...game,
-        categoryId,
-        startedTime: Date.now()
-    })
-
-    return game
+    return gameRepository.save(lobby.start(category, guessTime, new Date()))
+        .then(game => game.toEntity())
 }
 
-export async function leaveGame(parent: undefined, {gameId}: { gameId: string }, {user}: Context): Promise<Game | null> {
+export async function leaveGame(parent: undefined, {gameId}: { gameId: string }, {user}: Context): Promise<GameEntity | null> {
     if (!user) {
         throw new AuthenticationError("You need to be signed in to leave a lobby")
     }
 
-    const game = await gameRepository.findById(gameId);
-    if (!game) {
+    const lobby = await gameRepository.findById(gameId);
+    if (!lobby) {
         throw new UserInputError(`Game ${gameId} doesn't exist`)
     }
 
-    const isAdmin = game.admin.id === user.id;
+    if (!lobby.isLobby()) {
+        throw new UserInputError(`Game ${gameId} is not in lobby`)
+    }
+
+    const isAdmin = lobby.admin.id === user.id;
     if (isAdmin) {
         throw new UserInputError(`User ${user.id} is admin in ${gameId} and cannot leave`)
     }
 
-    const isParticipant = game.participants.some(participant => participant.id === user.id)
-    if (!isParticipant) {
-        throw new UserInputError(`User ${user.id} already not participating in lobby ${gameId}`)
-    }
-
-    if (game.finishedTime) {
-        throw new UserInputError(`Game ${game.id} has already finished`)
-    }
-
-    return gameRepository.save({
-        ...game,
-        participants: game.participants.filter(participant => participant.id !== user.id)
-    })
+    return gameRepository.save(lobby.removeParticipant(user))
+        .then(game => game.toEntity())
 }
 
-export async function timeout(parent: undefined, {gameId}: { gameId: string }, {user}: Context): Promise<Game> {
+export async function timeout(parent: undefined, {gameId}: { gameId: string }, {user}: Context): Promise<GameEntity> {
     if (!user) {
         throw new NotSignedInError()
     }
@@ -180,39 +199,29 @@ export async function timeout(parent: undefined, {gameId}: { gameId: string }, {
         throw new GameNotFoundError(gameId)
     }
 
-    if (!isGameRunning(game)) {
+    if (!game.isRunningGame()) {
         throw new GameNotRunningError(game.id)
     }
 
-    if (!game.categoryId) {
-        throw new UserInputError(`Game ${game.id} has no category yet`)
-    }
-
-    const category = await categoryRepository.findById(game.categoryId);
-    if (!category) {
-        throw new CategoryNotFoundError(game.categoryId)
-    }
-
-    const remainingGuessTime = getRemainingGuessTime(game, Date.now());
+    const remainingGuessTime = game.getRemainingGuessTime(new Date());
     if (remainingGuessTime > 0) {
-        return game
+        return game.toEntity()
     }
 
-    const currentGuesser = getCurrentGuesser(game);
+    const currentGuesser = game.getCurrentGuesser();
     if (!currentGuesser) {
-        return game
+        console.error(`No current guesser for running game ${gameId}`)
+        return game.toEntity()
     }
 
-    const guess: Guess = {
-        id: Repository.generateId(),
-        categoryItem: null,
-        createdTime: Date.now(),
-        guesser: currentGuesser,
-        value: "",
-        error: "timed out"
-    }
+    const guess = new TimedOut(
+        Repository.generateId(),
+        currentGuesser,
+        new Date(),
+    )
 
-    return gameRepository.save(addGuessToGame(game, guess, category, Date.now()))
+    return gameRepository.save(game.addGuess(guess))
+        .then(game => game.toEntity())
 }
 
 // noinspection JSUnusedLocalSymbols

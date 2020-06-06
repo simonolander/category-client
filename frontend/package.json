@@ -9,15 +9,17 @@
     "axios": "^0.19.2",
     "bulma": "^0.8.2",
     "classnames": "^2.2.6",
-    "firebase": "^7.14.0",
+    "firebase": "^7.14.6",
+    "fp-ts": "^2.6.1",
     "graphql": "^15.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.5",
-    "ts.data.json": "^1.1.0",
-    "shared": "file:../functions/shared/package"
+    "remote-data-ts": "^2.1.0",
+    "shared": "file:../functions/shared/package",
+    "ts.data.json": "^1.1.0"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
@@ -41,10 +43,10 @@
     ]
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/classnames": "^2.2.10",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
