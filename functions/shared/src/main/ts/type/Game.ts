@@ -1,6 +1,7 @@
 import {guessConverter, TGuess} from "./Guess";
 import {IStorable} from "./IStorable";
 import {Category, GameEntity, User} from "../..";
+import {shuffle} from "../utility/random";
 
 export type TGame = Lobby | RunningGame | FinishedGame
 
@@ -214,7 +215,7 @@ export class Lobby extends AGame {
         return new RunningGame(
             this.id,
             this.admin,
-            this.participants,
+            shuffle(this.participants),
             this.createdTime,
             category,
             [],
