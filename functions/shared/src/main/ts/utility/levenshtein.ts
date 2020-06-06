@@ -28,8 +28,11 @@ export function levenshtein(columnString: string, rowString: string, limit: numb
     const queue = new PriorityQueue<[number, number, number]>(([a], [b]) => b - a)
     const visited: boolean[][] = []
     queue.add([0, 0, 0])
-    let position
-    while (position = queue.dequeue()) {
+    while (true) {
+        const position = queue.dequeue()
+        if (!position) {
+            break;
+        }
         const [distance, rowIndex, columnIndex] = position
         if (distance >= limit) {
             continue

@@ -65,7 +65,7 @@ export async function joinGame(
     }
 
     return gameRepository.save(game.addParticipant(user))
-        .then(game => game.toEntity())
+        .then(savedGame => savedGame.toEntity())
 }
 
 export async function makeGuess(
@@ -123,7 +123,7 @@ export async function makeGuess(
     }
 
     return gameRepository.save(game.addGuess(guess))
-        .then(game => game.toEntity())
+        .then(savedGame => savedGame.toEntity())
 }
 
 export async function startGame(
@@ -221,7 +221,7 @@ export async function timeout(parent: undefined, {gameId}: { gameId: string }, {
     )
 
     return gameRepository.save(game.addGuess(guess))
-        .then(game => game.toEntity())
+        .then(savedGame => savedGame.toEntity())
 }
 
 // noinspection JSUnusedLocalSymbols

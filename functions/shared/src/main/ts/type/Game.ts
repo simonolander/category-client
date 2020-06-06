@@ -20,7 +20,7 @@ export function fromGameEntity(entity: GameEntity): TGame | null {
     }
 
     const guesses = []
-    for (let guessEntity of entity.guesses) {
+    for (const guessEntity of entity.guesses) {
         const guess = guessConverter.fromFirestore(guessEntity)
         if (guess) {
             guesses.push(guess)
@@ -127,7 +127,7 @@ abstract class AStartedGame extends AGame {
 
     getNotGuessedCategoryItems() {
         const guessedCategoryItemNames = new Set()
-        for (let guess of this.guesses) {
+        for (const guess of this.guesses) {
             if (guess.isCorrect()) {
                 guessedCategoryItemNames.add(guess.categoryItem.name)
             }

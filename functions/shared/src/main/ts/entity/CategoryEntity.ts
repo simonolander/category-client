@@ -1,7 +1,6 @@
 import {JsonDecoder} from "ts.data.json";
 import {CategoryItem, categoryItemDecoder} from "./CategoryItem";
-import {IStorable} from "shared/ts/type/IStorable";
-import {levenshtein} from "../..";
+import {IStorable, levenshtein} from "../..";
 
 export interface CategoryEntity {
     readonly id: string;
@@ -47,7 +46,7 @@ export class Category implements IStorable<CategoryEntity> {
         }
 
         for (const item of this.items) {
-            for (let spelling of item.spellings) {
+            for (const spelling of item.spellings) {
                 if (spelling.toLowerCase() === lowerCaseGuess) {
                     return item
                 }
