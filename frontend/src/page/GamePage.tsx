@@ -59,6 +59,131 @@ function StatusIcon({guess}: { guess: TGuess }) {
     }
 }
 
+function AdminControls({game}: {game: Lobby}) {
+    const [selectedCategoryId, setSelectedCategoryId] = useState<string>("")
+    const [startGame, startGameRemoteData] = useStartGame();
+    const starting = is.loading(startGameRemoteData)
+
+    const CategoriesSelect = function () {
+        const categoriesRemoteData = useCategories()
+        let selectedCategory = undefined
+        const classes: { [key: string]: boolean } = {
+            "select": true,
+            "is-fullwidth": true
+        }
+        let options
+        if (is.loading(categoriesRemoteData) || is.notAsked(categoriesRemoteData)) {
+            classes["is-loading"] = true
+            options = [
+                <option key="loading" disabled hidden value="">Loading categories</option>
+            ]
+        } else if (is.failure(categoriesRemoteData)) {
+            classes["is-danger"] = true
+            options = [
+                <option key="error" disabled hidden value="">Error loading categories</option>
+            ]
+        } else {
+            options = [
+                <option key="select" disabled hidden value="">Select a category</option>,
+                ...categoriesRemoteData.data.categories.map(({id, name}) => (
+                    <option key={id} value={id}>{name}</option>
+                ))
+            ]
+            selectedCategory = categoriesRemoteData.data.categories.find(category => category.id === selectedCategoryId)
+        }
+
+        return (
+            <div className="field">
+                <label className="label">Category</label>
+                <div className="control">
+                    <div
+                        className={classNames(classes)}
+                    >
+                        <select
+                            name="categoryId"
+                            required
+                            disabled={starting}
+                            onChange={event => setSelectedCategoryId(event.currentTarget.value)}
+                            value={selectedCategoryId}
+                        >
+                            {options}
+                        </select>
+                    </div>
+                </div>
+                <p className="help">{selectedCategory?.description}</p>
+            </div>
+        )
+    }
+
+    return (
+        <section className="section">
+            <div className="container">
+                <h1 className="title">Game options</h1>
+                <form onSubmit={async event => {
+                    event.preventDefault()
+                    const formData = new FormData(event.currentTarget)
+                    const categoryId = formData.get("categoryId")
+                    const guessTime = formData.get("guessTime")
+                    if (typeof categoryId !== "string") {
+                        throw new Error(`Invalid categoryId: ${categoryId}`)
+                    }
+                    if (typeof guessTime !== "string") {
+                        throw new Error(`Invalid guessTime: ${guessTime}`)
+                    }
+                    await startGame({
+                        variables: {
+                            categoryId,
+                            gameId: game.id,
+                            guessTime: Number.parseInt(guessTime) * 1000
+                        }
+                    })
+                }}>
+                    <div className="columns">
+                        <div className="column is-one-quarter">
+                            <CategoriesSelect/>
+                        </div>
+                        <div className="column is-one-quarter">
+                            <div className="field">
+                                <label className="label">Guess time (seconds)</label>
+                                <div className="control has-icons-left">
+                                    <input
+                                        className="input"
+                                        name="guessTime"
+                                        required
+                                        disabled={starting}
+                                        type="number"
+                                        min={minimumGuessTime / 1000}
+                                        max={maximumGuessTime / 1000}
+                                        defaultValue={30}
+                                    />
+                                    <span className="icon is-small is-left">
+                                    <i className="fas fa-hourglass-end"/>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="field">
+                        <div className="control">
+                            <button
+                                type="submit"
+                                disabled={starting}
+                                className={classNames({
+                                    "button": true,
+                                    "is-loading": starting,
+                                    "is-primary": true
+                                })}
+                            >
+                                Start game
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    )
+}
+
 function LobbyView({game, userId}: { game: Lobby, userId: string }) {
     const [leaveGame, leaveGameRD] = useLeaveGame()
     const [joinGame, joinGameRD] = useJoinGame()
@@ -69,131 +194,6 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
         variables: {
             gameId: game.id
         }
-    }
-
-    const AdminControls = function () {
-        const [selectedCategoryId, setSelectedCategoryId] = useState<string>("")
-        const [startGame, startGameRemoteData] = useStartGame();
-        const starting = is.loading(startGameRemoteData)
-
-        const CategoriesSelect = function () {
-            const categoriesRemoteData = useCategories()
-            let selectedCategory = undefined
-            const classes: { [key: string]: boolean } = {
-                "select": true,
-                "is-fullwidth": true
-            }
-            let options
-            if (is.loading(categoriesRemoteData) || is.notAsked(categoriesRemoteData)) {
-                classes["is-loading"] = true
-                options = [
-                    <option key="loading" disabled hidden value="">Loading categories</option>
-                ]
-            } else if (is.failure(categoriesRemoteData)) {
-                classes["is-danger"] = true
-                options = [
-                    <option key="error" disabled hidden value="">Error loading categories</option>
-                ]
-            } else {
-                options = [
-                    <option key="select" disabled hidden value="">Select a category</option>,
-                    ...categoriesRemoteData.data.categories.map(({id, name}) => (
-                        <option key={id} value={id}>{name}</option>
-                    ))
-                ]
-                selectedCategory = categoriesRemoteData.data.categories.find(category => category.id === selectedCategoryId)
-            }
-
-            return (
-                <div className="field">
-                    <label className="label">Category</label>
-                    <div className="control">
-                        <div
-                            className={classNames(classes)}
-                        >
-                            <select
-                                name="categoryId"
-                                required
-                                disabled={starting}
-                                onChange={event => setSelectedCategoryId(event.currentTarget.value)}
-                                value={selectedCategoryId}
-                            >
-                                {options}
-                            </select>
-                        </div>
-                    </div>
-                    <p className="help">{selectedCategory?.description}</p>
-                </div>
-            )
-        }
-
-        return (
-            <section className="section">
-                <div className="container">
-                    <h1 className="title">Game options</h1>
-                    <form onSubmit={async event => {
-                        event.preventDefault()
-                        const formData = new FormData(event.currentTarget)
-                        const categoryId = formData.get("categoryId")
-                        const guessTime = formData.get("guessTime")
-                        if (typeof categoryId !== "string") {
-                            throw new Error(`Invalid categoryId: ${categoryId}`)
-                        }
-                        if (typeof guessTime !== "string") {
-                            throw new Error(`Invalid guessTime: ${guessTime}`)
-                        }
-                        await startGame({
-                            variables: {
-                                categoryId,
-                                gameId: game.id,
-                                guessTime: Number.parseInt(guessTime) * 1000
-                            }
-                        })
-                    }}>
-                        <div className="columns">
-                            <div className="column is-one-quarter">
-                                <CategoriesSelect/>
-                            </div>
-                            <div className="column is-one-quarter">
-                                <div className="field">
-                                    <label className="label">Guess time (seconds)</label>
-                                    <div className="control has-icons-left">
-                                        <input
-                                            className="input"
-                                            name="guessTime"
-                                            required
-                                            disabled={starting}
-                                            type="number"
-                                            min={minimumGuessTime / 1000}
-                                            max={maximumGuessTime / 1000}
-                                            defaultValue={30}
-                                        />
-                                        <span className="icon is-small is-left">
-                                    <i className="fas fa-hourglass-end"/>
-                                </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="field">
-                            <div className="control">
-                                <button
-                                    type="submit"
-                                    disabled={starting}
-                                    className={classNames({
-                                        "button": true,
-                                        "is-loading": starting,
-                                        "is-primary": true
-                                    })}
-                                >
-                                    Start game
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        )
     }
 
     return (
@@ -242,7 +242,7 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
                     )}
                 </div>
             </section>
-            {game.admin.id === userId && <AdminControls/>}
+            {game.admin.id === userId && <AdminControls game={game}/>}
             <section className="section">
                 <div className="container">
                     <h1 className="title">Players</h1>
