@@ -9,6 +9,7 @@ import {ApolloClient, ApolloLink, ApolloProvider, HttpLink, InMemoryCache} from 
 import firebase from "firebase";
 import {setContext} from "@apollo/link-context"
 import "./css/main.css"
+import {graphqlHost} from "./Constants";
 
 const firebaseConfig = {
     apiKey: "AIzaSyC5ce_rmF-DkhmhUBIghNVpcBjF2ul_3sg",
@@ -25,7 +26,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-const host = "http://localhost:5001"
+const localhost = ""
 
 async function render() {
     const store = await initializeStore()
@@ -50,7 +51,7 @@ async function render() {
                 }
             }),
             new HttpLink({
-                uri: `${host}/category-131ad/us-central1/graphql`,
+                uri: graphqlHost,
             })
         ),
         // defaultOptions: {
