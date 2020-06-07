@@ -310,7 +310,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                         <tr>
                             <th>Name</th>
                             <th>Last guess</th>
-                            <th>Item</th>
+                            <th>Object</th>
                             <th>Description</th>
                             <th>Status</th>
                             <th>Time</th>
@@ -428,7 +428,7 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                     <h2 className="subtitle">
                         {remainingParticipants.length === 0 && "Everybody lost!"}
                         {remainingParticipants.length === 1 && `${remainingParticipants[0].name} won this game!`}
-                        {remainingParticipants.length > 1 && "There was no single winner in this game. All the items in the category where guessed!"}
+                        {remainingParticipants.length > 1 && "There was no single winner in this game. All the objects in the category where guessed!"}
                     </h2>
                     <NextGameSection/>
                 </div>
@@ -476,7 +476,7 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                         <p title="content">{game.guesses.filter(guess => guess.isCorrect()).length}</p>
                     </div>
                     <div className="field">
-                        <label className="label">Remaining unguessed items</label>
+                        <label className="label">Remaining unguessed objects</label>
                         <p title="content">{game.getNotGuessedCategoryItems().length}</p>
                     </div>
                 </div>
@@ -490,7 +490,7 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                             <th>#</th>
                             <th>Guesser</th>
                             <th>Guessed value</th>
-                            <th>Item</th>
+                            <th>Object</th>
                             <th>Description</th>
                             <th>Status</th>
                         </tr>
