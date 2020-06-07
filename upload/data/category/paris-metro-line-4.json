@@ -1,0 +1,137 @@
+{
+  "id": "pvPdCTSF",
+  "name": "Metro stations, Paris, Line 4",
+  "description": "The names of the metro stations on line number 4 in Paris, as of 2020.",
+  "items": [
+    {
+      "name": "Porte de Clignancourt",
+      "description": "",
+      "spellings": ["clignancourt"]
+    },
+    {
+      "name": "Simplon",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Marcadet – Poissonniers",
+      "description": "",
+      "spellings": ["marcadet poissonniers", "poissonniers", "marcadet"]
+    },
+    {
+      "name": "Château Rouge",
+      "description": "",
+      "spellings": ["chateau rouge"]
+    },
+    {
+      "name": "Barbès – Rochechouart",
+      "description": "Barbès – Rochechouart has an exhibit on the occupation of Paris during World War II, including newspaper clippings, photos, and a map showing the insurrection of Paris in August 1944",
+      "spellings": ["barbes rochechouart", "barbes", "rochechouart"]
+    },
+    {
+      "name": "Gare du Nord",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Gare de l'Est",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Château d'Eau",
+      "description": "",
+      "spellings": ["chateau d'eau"]
+    },
+    {
+      "name": "Strasbourg – Saint-Denis",
+      "description": "",
+      "spellings": ["strasbourg-saint-denis", "strasbourg", "saint-denis"]
+    },
+    {
+      "name": "Réaumur – Sébastopol",
+      "description": "Réaumur – Sébastopol has an interactive exhibition devoted to the Conservatoire National des Arts et Metiers (CNAM), located nearby. There are also LCD screens that include interviews and short films on the teaching of the conservatory.",
+      "spellings": ["reaumur sebastopol", "sebastopol", "reaumur"]
+    },
+    {
+      "name": "Étienne Marcel",
+      "description": "",
+      "spellings": ["etienne marcel"]
+    },
+    {
+      "name": "Châtelet",
+      "description": "",
+      "spellings": ["chatelet les halles", "chatelet", "les halles"]
+    },
+    {
+      "name": "Cité",
+      "description": "Both Cité and [REDACTED] contain dark-colored metal structures that serve as interconnecting levels between the platform level and the entry/ticketing level.",
+      "spellings": ["cite"]
+    },
+    {
+      "name": "Saint-Michel",
+      "description": "Both Saint-Michel and [REDACTED] contain dark-colored metal structures that serve as interconnecting levels between the platform level and the entry/ticketing level.",
+      "spellings": ["saint-michel notre-dame", "notre-dame", "saint-michel"]
+    },
+    {
+      "name": "Odéon",
+      "description": "Odéon has a small exhibit on the northbound platform that is dedicated to Georges Jacques Danton; it includes a bust of the French revolutionary, and a copy of the decree proclaiming the First Republic in 1792.",
+      "spellings": ["odeon"]
+    },
+    {
+      "name": "Saint-Germain-des-Prés",
+      "description": "Saint-Germain-des-Prés is lined with decor evoking the history of literary creation in the district. Extracts of literary works are projected onto the roof, the station being devoid of the usual billboards. This exhibit showcases the stories of young talent in literature.",
+      "spellings": ["saint-germain-des-pres", "st-germain-des-pres", "saint germain des pres", "st germain des pres", "saint germain", "st germain"]
+    },
+    {
+      "name": "Saint-Sulpice",
+      "description": "",
+      "spellings": ["saint sulpice", "st sulpice"]
+    },
+    {
+      "name": "Saint-Placide",
+      "description": "",
+      "spellings": ["saint placide", "st placide"]
+    },
+    {
+      "name": "Montparnasse – Bienvenüe",
+      "description": "Montparnasse – Bienvenüe contains an exhibit honoring principal engineer of the Paris Métro, Fulgence Bienvenüe. It has been naturally selected as an exhibition space on the network technology and literary history of the subway in 2000 during its centennial. Many books citing excerpts from the subway especially adorn the grand hall that connects each of the four metro lines in the station (4, 6, 12, and 13).",
+      "spellings": ["montparnasse bienvenue", "montparnasse", "bienvenue"]
+    },
+    {
+      "name": "Vavin",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Raspail",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Denfert-Rochereau",
+      "description": "",
+      "spellings": ["denfert rochereau", "rochereau", "denfert"]
+    },
+    {
+      "name": "Mouton-Duvernet",
+      "description": "Mouton-Duvernet was once adorned with orange wall tiles when it was renovated in 1970. The orange styling quickly became known as the \"Mouton style\". However, the station was renovated again during the 2000s, reverting its theme back to the classic white tile.",
+      "spellings": ["mouton duvernet", "mouton", "duvernet"]
+    },
+    {
+      "name": "Alésia",
+      "description": "",
+      "spellings": ["alesia"]
+    },
+    {
+      "name": "Porte d'Orléans",
+      "description": "",
+      "spellings": ["porte d'orleans", "orleans"]
+    },
+    {
+      "name": "Mairie de Montrouge",
+      "description": "",
+      "spellings": ["montrouge"]
+    }
+  ]
+}
