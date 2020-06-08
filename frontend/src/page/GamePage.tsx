@@ -59,7 +59,7 @@ function StatusIcon({guess}: { guess: TGuess }) {
     }
 }
 
-function AdminControls({game}: {game: Lobby}) {
+function AdminControls({game}: { game: Lobby }) {
     const [selectedCategoryId, setSelectedCategoryId] = useState<string>("")
     const [startGame, startGameRemoteData] = useStartGame();
     const starting = is.loading(startGameRemoteData)
@@ -383,12 +383,8 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
 
 function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }) {
     const {push} = useHistory();
-    const participantMap = game.getParticipantMap()
     const remainingParticipants = game.getRemainingParticipants()
-    const correctGuessCount = game.getCorrectGuessCount()
     const admin = game.admin.id === userId
-    const sortedCorrectGuessCount = Object.entries(correctGuessCount)
-        .sort(([, left], [, right]) => right - right)
     const NextGameSection = function () {
         const [createGame, remoteData] = useCreateGame({variables: {previousGameId: game.id}});
         if (game.nextGameId) {
@@ -445,17 +441,13 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                         </tr>
                         </thead>
                         <tbody>
-                        {sortedCorrectGuessCount.map(([id, score]) => {
-                            const placementNumber = 1 + sortedCorrectGuessCount.filter(count => count[1] > score).length
-                            const placement = ordinal(placementNumber)
-                            return (
-                                <tr key={id}>
-                                    <td>{placement}</td>
-                                    <td>{participantMap[id].name}</td>
-                                    <td>{score}</td>
-                                </tr>
-                            )
-                        })}
+                        {game.getPlacements().map(placement => (
+                            <tr key={placement.participant.id}>
+                                <td>{ordinal(placement.placement)}</td>
+                                <td>{placement.participant.name}</td>
+                                <td>{placement.numberOfCorrectGuesses}</td>
+                            </tr>
+                        ))}
                         </tbody>
                     </table>
                 </div>

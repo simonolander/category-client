@@ -151,6 +151,22 @@ abstract class AStartedGame extends AGame {
         }
         return correctGuessCount
     }
+
+    getIncorrectGuessCount(): { [p: string]: number } {
+        const incorrectGuessCount: { [key: string]: number } = {}
+        for (const {id} of this.participants) {
+            incorrectGuessCount[id] = 0
+        }
+        for (const {guesser: {id}} of this.guesses) {
+            incorrectGuessCount[id] = 0
+        }
+        for (const guess of this.guesses) {
+            if (!guess.isCorrect()) {
+                incorrectGuessCount[guess.guesser.id] += 1
+            }
+        }
+        return incorrectGuessCount
+    }
 }
 
 export class Lobby extends AGame {
@@ -186,7 +202,7 @@ export class Lobby extends AGame {
     }
 
     addParticipant(user: User): Lobby {
-        if (this.hasParticipant(user)) {
+        if (this.hasParticipant(user)) {
             return this
         }
 
@@ -199,7 +215,7 @@ export class Lobby extends AGame {
     }
 
     removeParticipant(user: User): Lobby {
-        if (!this.hasParticipant(user)) {
+        if (!this.hasParticipant(user)) {
             return this
         }
 
@@ -396,5 +412,38 @@ export class FinishedGame extends AStartedGame {
             participants: this.participants,
             startedTime: this.startedTime.getTime(),
         }
+    }
+
+    getPlacements(): { numberOfIncorrectGuesses: number; numberOfCorrectGuesses: number; placement: number; participant: User }[] {
+        const numberOfCorrectGuesses: { [key: string]: number } = {}
+        const numberOfIncorrectGuesses: { [key: string]: number } = {}
+        for (let participant of this.participants) {
+            numberOfCorrectGuesses[participant.id] = 0
+            numberOfIncorrectGuesses[participant.id] = 0
+        }
+        for (let guess of this.guesses) {
+            const guesserId = guess.guesser.id;
+            console.assert(typeof numberOfCorrectGuesses[guesserId] === "number")
+            console.assert(typeof numberOfIncorrectGuesses[guesserId] === "number")
+            if (guess.isCorrect()) {
+                numberOfCorrectGuesses[guesserId] += 1
+            } else {
+                numberOfIncorrectGuesses[guesserId] += 1
+            }
+        }
+        return this.participants.map(participant => {
+            return {
+                participant,
+                numberOfCorrectGuesses: numberOfCorrectGuesses[participant.id],
+                numberOfIncorrectGuesses: numberOfIncorrectGuesses[participant.id],
+            }
+        }).map(((value, index, array) => ({
+            ...value,
+            placement: 1 + array.filter(other =>
+                numberOfCorrectGuesses[other.participant.id] === value.numberOfCorrectGuesses
+                    ? numberOfIncorrectGuesses[other.participant.id] < value.numberOfIncorrectGuesses
+                    : numberOfCorrectGuesses[other.participant.id] > value.numberOfCorrectGuesses
+            ).length
+        }))).sort((a, b) => a.placement - b.placement)
     }
 }
