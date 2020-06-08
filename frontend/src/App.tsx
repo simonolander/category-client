@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
 import HomePage from "./page/HomePage";
 import GamePage from "./page/GamePage";
 import {useSelector} from "react-redux";
@@ -29,11 +29,13 @@ function App() {
     return (
         <div>
             <nav className="navbar has-shadow is-spaced">
-                <div className="navbar-brand">
-                    <div className="navbar-item">
-                        <span>{AppName}</span>
+                <Link to="/">
+                    <div className="navbar-brand">
+                        <div className="navbar-item">
+                            <span>{AppName}</span>
+                        </div>
                     </div>
-                </div>
+                </Link>
                 <div className="navbar-menu">
                     <div className="navbar-end">
                         <div className="navbar-item">
