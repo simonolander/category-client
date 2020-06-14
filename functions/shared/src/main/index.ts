@@ -1,6 +1,7 @@
 export * from "./ts/entity/CategoryEntity"
 export * from "./ts/entity/CategoryItem"
 export * from "./ts/entity/GameEntity"
+export * from "./ts/entity/GameEntityFragment"
 export * from "./ts/entity/GuessEntity"
 export * from "./ts/entity/IEntity"
 export * from "./ts/entity/User"

@@ -3,13 +3,7 @@ import {NotSignedInError} from "../error/NotSignedInError";
 import {CategoryNotFoundError, GameNotFoundError, GameNotRunningError} from "../error/NotFoundError";
 import {AuthenticationError, ForbiddenError, UserInputError} from "apollo-server-express";
 import {Correct, Duplicate, Incorrect} from "../../shared/src/main";
-import {
-    GameEntity,
-    Lobby,
-    maximumGuessTime,
-    minimumGuessTime,
-    TimedOut
-} from "shared";
+import {GameEntity, Lobby, maximumGuessTime, minimumGuessTime, TimedOut} from "shared";
 import {categoryRepository, gameRepository, Repository} from "../repository";
 
 export async function createGame(parent: undefined, {previousGameId}: { previousGameId?: string }, {user}: Context): Promise<GameEntity> {
@@ -222,6 +216,22 @@ export async function timeout(parent: undefined, {gameId}: { gameId: string }, {
 
     return gameRepository.save(game.addGuess(guess))
         .then(savedGame => savedGame.toEntity())
+}
+
+export async function games(
+    parent: undefined,
+    args: { limit?: number, startAt?: string, endAt?: string, orderByField?: string, orderByDirection?: 'asc' | 'desc' },
+    context: Context
+): Promise<GameEntity[]> {
+    const defaultLimit = 1000
+    return gameRepository.findAll({
+        limit: args.limit || defaultLimit,
+        startAt: args.startAt,
+        endAt: args.endAt,
+        orderByField: args.orderByField,
+        orderByDirection: args.orderByDirection
+    })
+        .then(games => games.map(game => game.toEntity()))
 }
 
 // noinspection JSUnusedLocalSymbols

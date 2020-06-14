@@ -25,7 +25,9 @@
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prod": "sed -i '' 's/const prod = false/const prod = true/g' src/Constants.ts",
+    "dev": "sed -i '' 's/const prod = true/const prod = false/g' src/Constants.ts"
   },
   "eslintConfig": {
     "extends": "react-app"

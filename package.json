@@ -1,6 +1,7 @@
 {
     "scripts": {
         "upload": "cd upload && yarn upload",
-        "shared": "(cd functions/shared && rm -rf package && yarn package) && for project in upload functions frontend; do (cd ${project} && rm -rf node_modules/shared && yarn install --ignore-engines --check-files); done"
+        "shared": "(cd functions/shared && rm -rf package && yarn package) && for project in upload functions frontend; do (cd ${project} && rm -rf node_modules/shared && yarn install --ignore-engines --check-files); done",
+        "host": "(cd frontend && yarn prod && yarn build && yarn dev) && firebase deploy --only=hosting"
     }
 }

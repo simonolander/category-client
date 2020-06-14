@@ -20,7 +20,7 @@ import {Request} from 'express'
 import {ApolloServer, gql} from "apollo-server-express"
 import * as credentials from "./serviceAccount.json"
 import {Context} from "./Context";
-import {createGame, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
+import {createGame, games, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
 import {CategoryEntity} from "shared";
 import {categoryRepository} from "./repository";
 
@@ -37,6 +37,7 @@ const typeDefs = gql`
         hello: String
         categories: [Category]
         category(categoryId: ID!): Category
+        games(limit: Int, startAt: String, endAt: String, orderByField: GameOrderByField, orderByDirection: OrderByDirection): [Game]
     }
 
     type Mutation {
@@ -50,7 +51,7 @@ const typeDefs = gql`
 
     type User {
         id: ID
-        displayName: String
+        name: String
     }
 
     type Category {
@@ -66,21 +67,36 @@ const typeDefs = gql`
         spellings: [String]
     }
 
+    type Guess {
+        id: String
+        value: String
+        guesser: User
+        createdTime: Float
+        categoryItem: CategoryItem
+        error: String
+    }
+
     type Game {
         id: String
         admin: User
         category: Category
         guesses: [Guess]
         participants: [User]
-        createdTime: Int
-        startedTime: Int
-        finishedTime: Int
+        createdTime: Float
+        startedTime: Float
+        finishedTime: Float
+        guessTime: Int
+        nextGameId: String
     }
-
-    type Guess {
-        value: String
-        guesser: User
-        createdTime: String
+    
+    enum GameOrderByField {
+        id
+        createdTime
+    }
+    
+    enum OrderByDirection {
+        asc
+        desc
     }
 `
 
@@ -93,7 +109,8 @@ const resolvers = {
         async category(parent: undefined, {categoryId}: { categoryId: string }, ctx: Context): Promise<CategoryEntity | null> {
             return categoryRepository.findById(categoryId)
                 .then(category => category && category.toEntity())
-        }
+        },
+        games
     },
     Mutation: {
         createGame,
@@ -109,13 +126,13 @@ async function context({req}: { req: Request }): Promise<Context> {
     const authHeader = req.headers.authorization;
     if (!authHeader) {
         console.warn("Missing authorization header")
-        return {}
+        return {req}
     }
 
     const authorizationPrefix = "Bearer "
     if (!authHeader.startsWith(authorizationPrefix)) {
         console.warn(`Invalid authorization header, must have the format '${authorizationPrefix}<token>'`)
-        return {}
+        return {req}
     }
     const idToken = authHeader.substring(authorizationPrefix.length)
 
@@ -131,11 +148,12 @@ async function context({req}: { req: Request }): Promise<Context> {
             user: {
                 id: userRecord.uid,
                 name: userRecord.displayName || "anon"
-            }
+            },
+            req
         }
     } catch (e) {
         console.warn(e.message)
-        return {}
+        return {req}
     }
 }
 
