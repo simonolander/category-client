@@ -1,7 +1,6 @@
 import {guessConverter, TGuess} from "./Guess";
 import {IStorable} from "./IStorable";
-import {Category, GameEntity, User} from "../..";
-import {shuffle} from "../utility/random";
+import {Category, GameEntity, shuffle, User} from "../..";
 
 export type TGame = Lobby | RunningGame | FinishedGame
 
@@ -417,11 +416,11 @@ export class FinishedGame extends AStartedGame {
     getPlacements(): { numberOfIncorrectGuesses: number; numberOfCorrectGuesses: number; placement: number; participant: User }[] {
         const numberOfCorrectGuesses: { [key: string]: number } = {}
         const numberOfIncorrectGuesses: { [key: string]: number } = {}
-        for (let participant of this.participants) {
+        for (const participant of this.participants) {
             numberOfCorrectGuesses[participant.id] = 0
             numberOfIncorrectGuesses[participant.id] = 0
         }
-        for (let guess of this.guesses) {
+        for (const guess of this.guesses) {
             const guesserId = guess.guesser.id;
             console.assert(typeof numberOfCorrectGuesses[guesserId] === "number")
             console.assert(typeof numberOfIncorrectGuesses[guesserId] === "number")

@@ -231,7 +231,7 @@ export async function games(
         orderByField: args.orderByField,
         orderByDirection: args.orderByDirection
     })
-        .then(games => games.map(game => game.toEntity()))
+        .then(gamez => gamez.map(game => game.toEntity()))
 }
 
 // noinspection JSUnusedLocalSymbols
