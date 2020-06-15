@@ -1,0 +1,542 @@
+{
+  "id": "2LG1FfY3QEoRyJntizNmBl0lFJmt5Y7jNKVjA",
+  "name": "C# keywords",
+  "description": "Reserved words in the C# programming language that cannot be used as identifiers.",
+  "items": [
+    {
+      "name": "abstract",
+      "description": "The abstract modifier indicates that the thing being modified has a missing or incomplete implementation. The abstract modifier can be used with classes, methods, properties, indexers, and events. Use the abstract modifier in a class declaration to indicate that a class is intended only to be a base class of other classes, not instantiated on its own. Members marked as abstract must be implemented by non-abstract classes that derive from the abstract class.",
+      "spellings": []
+    },
+    {
+      "name": "as",
+      "description": "You can use the following operators and expressions to perform type checking or type conversion.",
+      "spellings": []
+    },
+    {
+      "name": "base",
+      "description": "The base keyword is used to access members of the base class from within a derived class.",
+      "spellings": []
+    },
+    {
+      "name": "bool",
+      "description": "The bool type keyword is an alias for the .NET System.Boolean structure type that represents a Boolean value, which can be either true or false.",
+      "spellings": []
+    },
+    {
+      "name": "break",
+      "description": "The break statement terminates the closest enclosing loop or switch statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.",
+      "spellings": []
+    },
+    {
+      "name": "byte",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "case",
+      "description": "This article covers the switch statement. For information on the switch expression (introduced in C# 8.0), see the article on switch expressions in the expressions and operators section.",
+      "spellings": []
+    },
+    {
+      "name": "catch",
+      "description": "The try-catch statement consists of a try block followed by one or more catch clauses, which specify handlers for different exceptions.",
+      "spellings": []
+    },
+    {
+      "name": "char",
+      "description": "The char type keyword is an alias for the .NET System.Char structure type that represents a Unicode UTF-16 character.",
+      "spellings": []
+    },
+    {
+      "name": "checked",
+      "description": "The checked keyword is used to explicitly enable overflow checking for integral-type arithmetic operations and conversions.",
+      "spellings": []
+    },
+    {
+      "name": "class",
+      "description": "Classes are declared using the keyword class, as shown in the following example.",
+      "spellings": []
+    },
+    {
+      "name": "const",
+      "description": "You use the const keyword to declare a constant field or a constant local. Constant fields and locals aren&#39;t variables and may not be modified. Constants can be numbers, Boolean values, strings, or a null reference. Don’t create a constant to represent information that you expect to change at any time. For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company. These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes. See also the readonly keyword. For example.",
+      "spellings": []
+    },
+    {
+      "name": "continue",
+      "description": "The continue statement passes control to the next iteration of the enclosing while, do, for, or foreach statement in which it appears.",
+      "spellings": []
+    },
+    {
+      "name": "decimal",
+      "description": "The floating-point numeric types represent real numbers. All floating-point numeric types are value types. They are also simple types and can be initialized with literals. All floating-point numeric types support arithmetic, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "default",
+      "description": "The default keyword can be used in two ways.",
+      "spellings": []
+    },
+    {
+      "name": "delegate",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "do",
+      "description": "The do statement executes a statement or a block of statements while a specified Boolean expression evaluates to true. Because that expression is evaluated after each execution of the loop, a do-while loop executes one or more times. This differs from the while loop, which executes zero or more times.",
+      "spellings": []
+    },
+    {
+      "name": "double",
+      "description": "The floating-point numeric types represent real numbers. All floating-point numeric types are value types. They are also simple types and can be initialized with literals. All floating-point numeric types support arithmetic, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "else",
+      "description": "An if statement identifies which statement to run based on the value of a Boolean expression. In the following example, the bool variable condition is set to true and then checked in the if statement. The output is The variable is set to true..",
+      "spellings": []
+    },
+    {
+      "name": "enum",
+      "description": "An enumeration type (or enum type) is a value type defined by a set of named constants of the underlying integral numeric type. To define an enumeration type, use the enum keyword and specify the names of enum members.",
+      "spellings": []
+    },
+    {
+      "name": "event",
+      "description": "The event keyword is used to declare an event in a publisher class.",
+      "spellings": []
+    },
+    {
+      "name": "explicit",
+      "description": "A user-defined type can define a custom implicit or explicit conversion from or to another type.",
+      "spellings": []
+    },
+    {
+      "name": "extern",
+      "description": "The extern modifier is used to declare a method that is implemented externally. A common use of the extern modifier is with the DllImport attribute when you are using Interop services to call into unmanaged code. In this case, the method must also be declared as static, as shown in the following example.",
+      "spellings": []
+    },
+    {
+      "name": "false",
+      "description": "The bool type keyword is an alias for the .NET System.Boolean structure type that represents a Boolean value, which can be either true or false.",
+      "spellings": []
+    },
+    {
+      "name": "finally",
+      "description": "By using a finally block, you can clean up any resources that are allocated in a try block, and you can run code even if an exception occurs in the try block. Typically, the statements of a finally block run when control leaves a try statement. The transfer of control can occur as a result of normal execution, of execution of a break, continue, goto, or return statement, or of propagation of an exception out of the try statement.",
+      "spellings": []
+    },
+    {
+      "name": "fixed",
+      "description": "The fixed statement prevents the garbage collector from relocating a movable variable. The fixed statement is only permitted in an unsafe context. You can also use the fixed keyword to create fixed size buffers.",
+      "spellings": []
+    },
+    {
+      "name": "float",
+      "description": "The floating-point numeric types represent real numbers. All floating-point numeric types are value types. They are also simple types and can be initialized with literals. All floating-point numeric types support arithmetic, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "for",
+      "description": "The for statement executes a statement or a block of statements while a specified Boolean expression evaluates to true.",
+      "spellings": []
+    },
+    {
+      "name": "foreach",
+      "description": "The foreach statement executes a statement or a block of statements for each element in an instance of the type that implements the System.Collections.IEnumerable or System.Collections.Generic.IEnumerable<T> interface. The foreach statement isn&#39;t limited to those types and can be applied to an instance of any type that satisfies the following conditions.",
+      "spellings": []
+    },
+    {
+      "name": "goto",
+      "description": "The goto statement transfers the program control directly to a labeled statement.",
+      "spellings": []
+    },
+    {
+      "name": "if",
+      "description": "An if statement identifies which statement to run based on the value of a Boolean expression. In the following example, the bool variable condition is set to true and then checked in the if statement. The output is The variable is set to true..",
+      "spellings": []
+    },
+    {
+      "name": "implicit",
+      "description": "A user-defined type can define a custom implicit or explicit conversion from or to another type.",
+      "spellings": []
+    },
+    {
+      "name": "in",
+      "description": "The in keyword is used in four contexts.",
+      "spellings": []
+    },
+    {
+      "name": "int",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "interface",
+      "description": "An interface defines a contract. Any class or struct that implements that contract must provide an implementation of the members defined in the interface. Beginning with C# 8.0, an interface may define a default implementation for members. It may also define static members in order to provide a single implementation for common functionality.",
+      "spellings": []
+    },
+    {
+      "name": "internal",
+      "description": "The internal keyword is an access modifier for types and type members.",
+      "spellings": []
+    },
+    {
+      "name": "is",
+      "description": "The is operator checks if the result of an expression is compatible with a given type, or (starting with C# 7.0) tests an expression against a pattern. For information about the type-testing is operator see the is operator section of the Type-testing and cast operators article.",
+      "spellings": []
+    },
+    {
+      "name": "lock",
+      "description": "The lock statement acquires the mutual-exclusion lock for a given object, executes a statement block, and then releases the lock. While a lock is held, the thread that holds the lock can again acquire and release the lock. Any other thread is blocked from acquiring the lock and waits until the lock is released.",
+      "spellings": []
+    },
+    {
+      "name": "long",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "namespace",
+      "description": "The namespace keyword is used to declare a scope that contains a set of related objects. You can use a namespace to organize code elements and to create globally unique types.",
+      "spellings": []
+    },
+    {
+      "name": "new",
+      "description": "The new operator creates a new instance of a type.",
+      "spellings": []
+    },
+    {
+      "name": "null",
+      "description": "The null keyword is a literal that represents a null reference, one that does not refer to any object. null is the default value of reference-type variables. Ordinary value types cannot be null, except for nullable value types.",
+      "spellings": []
+    },
+    {
+      "name": "object",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "operator",
+      "description": "A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation in case one or both of the operands are of that type. The Overloadable operators section shows which C# operators can be overloaded.",
+      "spellings": []
+    },
+    {
+      "name": "out",
+      "description": "You can use the out keyword in two contexts.",
+      "spellings": []
+    },
+    {
+      "name": "override",
+      "description": "The override modifier is required to extend or modify the abstract or virtual implementation of an inherited method, property, indexer, or event.",
+      "spellings": []
+    },
+    {
+      "name": "params",
+      "description": "By using the params keyword, you can specify a method parameter that takes a variable number of arguments. The parameter type must be a single-dimensional array.",
+      "spellings": []
+    },
+    {
+      "name": "private",
+      "description": "The private keyword is a member access modifier.",
+      "spellings": []
+    },
+    {
+      "name": "protected",
+      "description": "The protected keyword is a member access modifier.",
+      "spellings": []
+    },
+    {
+      "name": "public",
+      "description": "The public keyword is an access modifier for types and type members. Public access is the most permissive access level. There are no restrictions on accessing public members, as in this example.",
+      "spellings": []
+    },
+    {
+      "name": "readonly",
+      "description": "The readonly keyword is a modifier that can be used in four contexts.",
+      "spellings": []
+    },
+    {
+      "name": "ref",
+      "description": "The ref keyword indicates a value that is passed by reference. It is used in four different contexts.",
+      "spellings": []
+    },
+    {
+      "name": "return",
+      "description": "The return statement terminates execution of the method in which it appears and returns control to the calling method. It can also return an optional value. If the method is a void type, the return statement can be omitted.",
+      "spellings": []
+    },
+    {
+      "name": "sbyte",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "sealed",
+      "description": "When applied to a class, the sealed modifier prevents other classes from inheriting from it. In the following example, class B inherits from class A, but no class can inherit from class B.",
+      "spellings": []
+    },
+    {
+      "name": "short",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "sizeof",
+      "description": "The sizeof operator returns the number of bytes occupied by a variable of a given type. The argument to the sizeof operator must be the name of an unmanaged type or a type parameter that is constrained to be an unmanaged type.",
+      "spellings": []
+    },
+    {
+      "name": "stackalloc",
+      "description": "A stackalloc expression allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You cannot explicitly free the memory allocated with stackalloc. A stack allocated memory block is not subject to garbage collection and doesn&#39;t have to be pinned with a fixed statement.",
+      "spellings": []
+    },
+    {
+      "name": "static",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "string",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "struct",
+      "description": "A structure type (or struct type) is a value type that can encapsulate data and related functionality. You use the struct keyword to define a structure type.",
+      "spellings": []
+    },
+    {
+      "name": "switch",
+      "description": "This article covers the switch statement. For information on the switch expression (introduced in C# 8.0), see the article on switch expressions in the expressions and operators section.",
+      "spellings": []
+    },
+    {
+      "name": "this",
+      "description": "The this keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.",
+      "spellings": []
+    },
+    {
+      "name": "throw",
+      "description": "Signals the occurrence of an exception during program execution.",
+      "spellings": []
+    },
+    {
+      "name": "true",
+      "description": "The bool type keyword is an alias for the .NET System.Boolean structure type that represents a Boolean value, which can be either true or false.",
+      "spellings": []
+    },
+    {
+      "name": "try",
+      "description": "The try-catch statement consists of a try block followed by one or more catch clauses, which specify handlers for different exceptions.",
+      "spellings": []
+    },
+    {
+      "name": "typeof",
+      "description": "You can use the following operators and expressions to perform type checking or type conversion.",
+      "spellings": []
+    },
+    {
+      "name": "uint",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "ulong",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "unchecked",
+      "description": "The unchecked keyword is used to suppress overflow-checking for integral-type arithmetic operations and conversions.",
+      "spellings": []
+    },
+    {
+      "name": "unsafe",
+      "description": "The unsafe keyword denotes an unsafe context, which is required for any operation involving pointers. For more information, see Unsafe Code and Pointers.",
+      "spellings": []
+    },
+    {
+      "name": "ushort",
+      "description": "The integral numeric types represent integer numbers. All integral numeric types are value types. They are also simple types and can be initialized with literals. All integral numeric types support arithmetic, bitwise logical, comparison, and equality operators.",
+      "spellings": []
+    },
+    {
+      "name": "using",
+      "description": "The using keyword has three major uses.",
+      "spellings": []
+    },
+    {
+      "name": "virtual",
+      "description": "The virtual keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. For example, this method can be overridden by any class that inherits it.",
+      "spellings": []
+    },
+    {
+      "name": "void",
+      "description": "You use void as the return type of a method (or a local function) to specify that the method doesn&#39;t return a value.",
+      "spellings": []
+    },
+    {
+      "name": "volatile",
+      "description": "The volatile keyword indicates that a field might be modified by multiple threads that are executing at the same time. The compiler, the runtime system, and even hardware may rearrange reads and writes to memory locations for performance reasons. Fields that are declared volatile are not subject to these optimizations. Adding the volatile modifier ensures that all threads will observe volatile writes performed by any other thread in the order in which they were performed. There is no guarantee of a single total ordering of volatile writes as seen from all threads of execution.",
+      "spellings": []
+    },
+    {
+      "name": "while",
+      "description": "The while statement executes a statement or a block of statements while a specified Boolean expression evaluates to true. Because that expression is evaluated before each execution of the loop, a while loop executes zero or more times. This differs from the do loop, which executes one or more times.",
+      "spellings": []
+    },
+    {
+      "name": "add",
+      "description": "The add contextual keyword is used to define a custom event accessor that is invoked when client code subscribes to your event. If you supply a custom add accessor, you must also supply a remove accessor.",
+      "spellings": []
+    },
+    {
+      "name": "alias",
+      "description": "You might have to reference two versions of assemblies that have the same fully-qualified type names. For example, you might have to use two or more versions of an assembly in the same application. By using an external assembly alias, the namespaces from each assembly can be wrapped inside root-level namespaces named by the alias, which enables them to be used in the same file.",
+      "spellings": []
+    },
+    {
+      "name": "ascending",
+      "description": "The ascending contextual keyword is used in the orderby clause in query expressions to specify that the sort order is from smallest to largest. Because ascending is the default sort order, you do not have to specify it.",
+      "spellings": []
+    },
+    {
+      "name": "async",
+      "description": "Use the async modifier to specify that a method, lambda expression, or anonymous method is asynchronous. If you use this modifier on a method or expression, it&#39;s referred to as an async method. The following example defines an async method named ExampleMethodAsync.",
+      "spellings": []
+    },
+    {
+      "name": "await",
+      "description": "The await operator suspends evaluation of the enclosing async method until the asynchronous operation represented by its operand completes. When the asynchronous operation completes, the await operator returns the result of the operation, if any. When the await operator is applied to the operand that represents an already completed operation, it returns the result of the operation immediately without suspension of the enclosing method. The await operator doesn&#39;t block the thread that evaluates the async method. When the await operator suspends the enclosing async method, the control returns to the caller of the method.",
+      "spellings": []
+    },
+    {
+      "name": "by",
+      "description": "The by contextual keyword is used in the group clause in a query expression to specify how the returned items should be grouped. For more information, see group clause.",
+      "spellings": []
+    },
+    {
+      "name": "descending",
+      "description": "The descending contextual keyword is used in the orderby clause in query expressions to specify that the sort order is from largest to smallest.",
+      "spellings": []
+    },
+    {
+      "name": "dynamic",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "equals",
+      "description": "The equals contextual keyword is used in a join clause in a query expression to compare the elements of two sequences. For more information, see join clause.",
+      "spellings": []
+    },
+    {
+      "name": "from",
+      "description": "A query expression must begin with a from clause. Additionally, a query expression can contain sub-queries, which also begin with a from clause. The from clause specifies the following.",
+      "spellings": []
+    },
+    {
+      "name": "get",
+      "description": "The get keyword defines an accessor method in a property or indexer that returns the property value or the indexer element. For more information, see Properties, Auto-Implemented Properties and Indexers.",
+      "spellings": []
+    },
+    {
+      "name": "global",
+      "description": "Use the namespace alias qualifier :: to access a member of an aliased namespace. You can use the :: qualifier only between two identifiers. The left-hand identifier can be any of the following aliases.",
+      "spellings": []
+    },
+    {
+      "name": "group",
+      "description": "The group clause returns a sequence of IGrouping<TKey,TElement> objects that contain zero or more items that match the key value for the group. For example, you can group a sequence of strings according to the first letter in each string. In this case, the first letter is the key and has a type char, and is stored in the Key property of each IGrouping<TKey,TElement>; object. The compiler infers the type of the key.",
+      "spellings": []
+    },
+    {
+      "name": "into",
+      "description": "The into contextual keyword can be used to create a temporary identifier to store the results of a group, join or select clause into a new identifier. This identifier can itself be a generator for additional query commands. When used in a group or select clause, the use of the new identifier is sometimes referred to as a continuation.",
+      "spellings": []
+    },
+    {
+      "name": "join",
+      "description": "The join clause is useful for associating elements from different source sequences that have no direct relationship in the object model. The only requirement is that the elements in each source share some value that can be compared for equality. For example, a food distributor might have a list of suppliers of a certain product, and a list of buyers. A join clause can be used, for example, to create a list of the suppliers and buyers of that product who are all in the same specified region.",
+      "spellings": []
+    },
+    {
+      "name": "let",
+      "description": "In a query expression, it is sometimes useful to store the result of a sub-expression in order to use it in subsequent clauses. You can do this with the let keyword, which creates a new range variable and initializes it with the result of the expression you supply. Once initialized with a value, the range variable cannot be used to store another value. However, if the range variable holds a queryable type, it can be queried.",
+      "spellings": []
+    },
+    {
+      "name": "nameof",
+      "description": "A nameof expression produces the name of a variable, type, or member as the string constant.",
+      "spellings": []
+    },
+    {
+      "name": "on",
+      "description": "The on contextual keyword is used in the join clause of a query expression to specify the join condition.",
+      "spellings": []
+    },
+    {
+      "name": "orderby",
+      "description": "In a query expression, the orderby clause causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order. Multiple keys can be specified in order to perform one or more secondary sort operations. The sorting is performed by the default comparer for the type of the element. The default sort order is ascending. You can also specify a custom comparer. However, it is only available by using method-based syntax. For more information, see Sorting Data.",
+      "spellings": []
+    },
+    {
+      "name": "partial",
+      "description": "Partial type definitions allow for the definition of a class, struct, or interface to be split into multiple files.",
+      "spellings": []
+    },
+    {
+      "name": "partial",
+      "description": "A partial method has its signature defined in one part of a partial type, and its implementation defined in another part of the type. Partial methods enable class designers to provide method hooks, similar to event handlers, that developers may decide to implement or not. If the developer does not supply an implementation, the compiler removes the signature at compile time. The following conditions apply to partial methods.",
+      "spellings": []
+    },
+    {
+      "name": "remove",
+      "description": "The remove contextual keyword is used to define a custom event accessor that is invoked when client code unsubscribes from your event. If you supply a custom remove accessor, you must also supply an add accessor.",
+      "spellings": []
+    },
+    {
+      "name": "select",
+      "description": "In a query expression, the select clause specifies the type of values that will be produced when the query is executed. The result is based on the evaluation of all the previous clauses and on any expressions in the select clause itself. A query expression must terminate with either a select clause or a group clause.",
+      "spellings": []
+    },
+    {
+      "name": "set",
+      "description": "The set keyword defines an accessor method in a property or indexer that assigns a value to the property or the indexer element. For more information and examples, see Properties, Auto-Implemented Properties, and Indexers.",
+      "spellings": []
+    },
+    {
+      "name": "unmanaged",
+      "description": "The where clause in a generic definition specifies constraints on the types that are used as arguments for type parameters in a generic type, method, delegate, or local function. Constraints can specify interfaces, base classes, or require a generic type to be a reference, value, or unmanaged type. They declare capabilities that the type argument must have.",
+      "spellings": []
+    },
+    {
+      "name": "value",
+      "description": "The contextual keyword value is used in the set accessor in property and indexer declarations. It is similar to an input parameter of a method. The word value references the value that client code is attempting to assign to the property or indexer. In the following example, MyDerivedClass has a property called Name that uses the value parameter to assign a new string to the backing field name. From the point of view of client code, the operation is written as a simple assignment.",
+      "spellings": []
+    },
+    {
+      "name": "var",
+      "description": "Beginning in Visual C# 3.0, variables that are declared at method scope can have an implicit &#34;type&#34; var. An implicitly typed local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type. The following two declarations of i are functionally equivalent.",
+      "spellings": []
+    },
+    {
+      "name": "when",
+      "description": "You can use the when contextual keyword to specify a filter condition in two contexts.",
+      "spellings": []
+    },
+    {
+      "name": "where",
+      "description": "The where clause is used in a query expression to specify which elements from the data source will be returned in the query expression. It applies a Boolean condition (predicate) to each source element (referenced by the range variable) and returns those for which the specified condition is true. A single query expression may contain multiple where clauses and a single clause may contain multiple predicate subexpressions.",
+      "spellings": []
+    },
+    {
+      "name": "yield",
+      "description": "When you use the yield contextual keyword in a statement, you indicate that the method, operator, or get accessor in which it appears is an iterator. Using yield to define an iterator removes the need for an explicit extra class (the class that holds the state for an enumeration, see IEnumerator<T> for an example) when you implement the IEnumerable and IEnumerator pattern for a custom collection type.",
+      "spellings": []
+    }
+  ]
+}
