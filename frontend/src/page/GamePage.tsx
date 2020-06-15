@@ -435,9 +435,9 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                     <table className="table">
                         <thead>
                         <tr>
-                            <td>Placement</td>
-                            <td>Name</td>
-                            <td>Score</td>
+                            <th>Placement</th>
+                            <th>Name</th>
+                            <th>Score</th>
                         </tr>
                         </thead>
                         <tbody>

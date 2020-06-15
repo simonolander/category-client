@@ -29,6 +29,7 @@ async function deleteCollection(collection) {
         require("./data/category/pokemon"),
         require("./data/category/prime-numbers-below-twenty.json"),
         require("./data/category/paris-metro-line-4.json"),
+        require("./data/category/c-sharp-keywords.json"),
     ];
     const categoryCollectionName = "category";
 
