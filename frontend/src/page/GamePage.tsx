@@ -174,7 +174,10 @@ function AdminControls({game}: { game: Lobby }) {
                                     "is-primary": true
                                 })}
                             >
-                                Start game
+                                <span className="icon">
+                                    <i className="fas fa-play"/>
+                                </span>
+                                <span>Start game</span>
                             </button>
                         </div>
                     </div>

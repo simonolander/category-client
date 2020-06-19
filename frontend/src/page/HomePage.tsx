@@ -26,7 +26,7 @@ function GamesTableView() {
     return (
         <section className="section">
             <div className="container">
-                <h1 className="title">{title}</h1>
+                <h1 className="title is-4">{title}</h1>
                 <table className="table">
                     <thead>
                     <tr>
@@ -43,12 +43,10 @@ function GamesTableView() {
                         let status
                         if (game.isLobby()) {
                             status = "Lobby"
-                        }
-                        else if (game.isRunningGame()) {
+                        } else if (game.isRunningGame()) {
                             status = "Running"
                             categoryName = game.category.name
-                        }
-                        else {
+                        } else {
                             status = "Finished"
                             categoryName = game.category.name
                         }
@@ -81,29 +79,46 @@ export default function HomePage() {
     const creatingGame = is.loading(remoteData)
     return (
         <div>
-            <div className="section">
+            <section className="section">
                 <div className="container">
-                    <header className="is-centered">
-                        <h1 className="title">{AppName}</h1>
-                        <button
-                            disabled={creatingGame}
-                            className={classNames({
-                                button: true,
-                                "is-loading": creatingGame
-                            })}
-                            onClick={async () => {
-                                const remoteData = await createGame();
-                                const gameId = remoteData.data.createGame?.id
-                                if (gameId) {
-                                    push(`/game/${gameId}`)
-                                }
-                            }}
-                        >
-                            Create new game
-                        </button>
-                    </header>
+                    <h1 className="title">{AppName}</h1>
+                    <h2 className="title is-4">About</h2>
+                    <p className="content">
+                        {AppName} is a quiz game where you need to guess objects in a category.
+                        A category can be almost anything, for example songs
+                        by <span className="is-italic">Linkin Park</span>
+                        , <span className="is-italic">countries in Asia</span>,
+                        or <span className="is-italic">names of Disney princesses</span>.
+                        Each player takes turn to guess an object in the category,
+                        e.g. <span className="is-italic">In The End</span>.
+                        A guess is correct if it corresponds to an object in the category, and if that object hasn't
+                        been previously guessed. Last player standing wins.
+                    </p>
+                    <p className="content">
+                        You can either create a new game, or search for a game to join below.
+                    </p>
+                    <button
+                        disabled={creatingGame}
+                        className={classNames({
+                            "button": true,
+                            "is-primary": true,
+                            "is-loading": creatingGame,
+                        })}
+                        onClick={async () => {
+                            const remoteData = await createGame();
+                            const gameId = remoteData.data.createGame?.id
+                            if (gameId) {
+                                push(`/game/${gameId}`)
+                            }
+                        }}
+                    >
+                        <span className="icon">
+                            <i className="fas fa-game"/>
+                        </span>
+                        <span>Create new game</span>
+                    </button>
                 </div>
-            </div>
+            </section>
             <GamesTableView/>
         </div>
     );
