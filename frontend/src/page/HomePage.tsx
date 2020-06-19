@@ -34,7 +34,7 @@ function GamesTableView() {
                         <th>Status</th>
                         <th>Category</th>
                         <th>Admin</th>
-                        <th>Participants</th>
+                        <th className="is-hidden-mobile">Participants</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -53,11 +53,11 @@ function GamesTableView() {
 
                         return (
                             <tr key={game.id}>
-                                <td><Link className="is-family-code" to={`/game/${game.id}`}>{game.id}</Link></td>
+                                <td><Link className="is-family-code is-word-break-all" to={`/game/${game.id}`}>{game.id}</Link></td>
                                 <td>{status}</td>
                                 <td>{categoryName}</td>
                                 <td>{game.admin.name}</td>
-                                <td>{game.participants.length}</td>
+                                <td className="is-hidden-mobile">{game.participants.length}</td>
                             </tr>
                         )
                     })}
@@ -84,7 +84,7 @@ export default function HomePage() {
                     <h1 className="title">{AppName}</h1>
                     <h2 className="title is-4">About</h2>
                     <p className="content">
-                        {AppName} is a quiz game where you need to guess objects in a category.
+                        {AppName} is a quiz game where you guess objects in a category.
                         A category can be almost anything, for example songs
                         by <span className="is-italic">Linkin Park</span>
                         , <span className="is-italic">countries in Asia</span>,
@@ -97,26 +97,31 @@ export default function HomePage() {
                     <p className="content">
                         You can either create a new game, or search for a game to join below.
                     </p>
-                    <button
-                        disabled={creatingGame}
-                        className={classNames({
-                            "button": true,
-                            "is-primary": true,
-                            "is-loading": creatingGame,
-                        })}
-                        onClick={async () => {
-                            const remoteData = await createGame();
-                            const gameId = remoteData.data.createGame?.id
-                            if (gameId) {
-                                push(`/game/${gameId}`)
-                            }
-                        }}
-                    >
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <button
+                                disabled={creatingGame}
+                                className={classNames({
+                                    "button": true,
+                                    "is-primary": true,
+                                    "is-fullwidth": true,
+                                    "is-loading": creatingGame,
+                                })}
+                                onClick={async () => {
+                                    const remoteData = await createGame();
+                                    const gameId = remoteData.data.createGame?.id
+                                    if (gameId) {
+                                        push(`/game/${gameId}`)
+                                    }
+                                }}
+                            >
                         <span className="icon">
-                            <i className="fas fa-game"/>
+                            <i className="fas fa-gamepad"/>
                         </span>
-                        <span>Create new game</span>
-                    </button>
+                                <span>Create new game</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <GamesTableView/>

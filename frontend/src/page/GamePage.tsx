@@ -313,8 +313,8 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                         <tr>
                             <th>Name</th>
                             <th>Last guess</th>
-                            <th>Object</th>
-                            <th>Description</th>
+                            <th className="is-hidden-mobile">Object</th>
+                            <th className="is-hidden-mobile">Description</th>
                             <th>Status</th>
                             <th>Time</th>
                         </tr>
@@ -327,8 +327,8 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                 <tr key={id}>
                                     <td>{name}</td>
                                     <td>{latestGuess?.value}</td>
-                                    <td>{latestGuess?.categoryItem?.name}</td>
-                                    <td>{latestGuess?.categoryItem?.description}</td>
+                                    <td className="is-hidden-mobile">{latestGuess?.categoryItem?.name}</td>
+                                    <td className="is-hidden-mobile">{latestGuess?.categoryItem?.description}</td>
                                     <td>{latestGuess && <StatusIcon guess={latestGuess}/>}</td>
                                     <td className="is-family-code">{isCurrentGuesser && (remainingGuessTime / 1000).toFixed(2)}</td>
                                 </tr>

@@ -6,3 +6,7 @@
     height: 0.5em;
     max-width: 168px;
 }
+
+.is-word-break-all {
+    word-break: break-all;
+}
