@@ -118,7 +118,7 @@ function AdminControls({game}: { game: Lobby }) {
     return (
         <section className="section">
             <div className="container">
-                <h1 className="title">Game options</h1>
+                <h1 className="title is-4"><i className="fas fa-cog"/> Game options</h1>
                 <form onSubmit={async event => {
                     event.preventDefault()
                     const formData = new FormData(event.currentTarget)
@@ -163,22 +163,27 @@ function AdminControls({game}: { game: Lobby }) {
                             </div>
                         </div>
                     </div>
-                    <div className="field">
-                        <div className="control">
-                            <button
-                                type="submit"
-                                disabled={starting}
-                                className={classNames({
-                                    "button": true,
-                                    "is-loading": starting,
-                                    "is-primary": true
-                                })}
-                            >
-                                <span className="icon">
-                                    <i className="fas fa-play"/>
-                                </span>
-                                <span>Start game</span>
-                            </button>
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="field">
+                                <div className="control">
+                                    <button
+                                        type="submit"
+                                        disabled={starting}
+                                        className={classNames({
+                                            "button": true,
+                                            "is-primary": true,
+                                            "is-fullwidth": true,
+                                            "is-loading": starting,
+                                        })}
+                                    >
+                                    <span className="icon">
+                                        <i className="fas fa-play"/>
+                                    </span>
+                                        <span>Start game</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -201,54 +206,69 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
 
     return (
         <div>
-            <section className="hero">
-                <div className="hero-body">
-                    <div className="container">
-                        <h1 className="title is-spaced">
-                            Waiting for players to join
-                        </h1>
-                        <h2 className="subtitle">
-                            Share this link to anyone you would like to invite
-                        </h2>
-                        <pre>{window.location.href}</pre>
-                    </div>
-                </div>
+            <section className="section">
                 <div className="container">
+                    <h1 className="title">Lobby</h1>
+                    <h1 className="subtitle">Waiting for players to join</h1>
+                    <p className="content">Share this link to anyone you would like to invite</p>
+                    <pre className="content">{window.location.href}</pre>
                     {game.canJoinGame(userId) && (
-                        <button
-                            onClick={() => joinGame(options)}
-                            disabled={joining}
-                            className={classNames({
-                                "button": true,
-                                "is-large": true,
-                                "is-loading": joining,
-                                "is-primary": true,
-                            })}
-                        >
-                            Click here to join
-                        </button>
+                        <div className="columns">
+                            <div className="column is-narrow">
+                                <div className="field">
+                                    <div className="control">
+                                        <button
+                                            disabled={joining}
+                                            onClick={() => joinGame(options)}
+                                            className={classNames({
+                                                "button": true,
+                                                "is-loading": joining,
+                                                "is-primary": true,
+                                                "is-fullwidth": true,
+                                            })}
+                                        >
+                                            <span className="icon">
+                                                <i className="fas fa-user-plus"/>
+                                            </span>
+                                            <span>Join game</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     )}
                     {game.canLeaveGame(userId) && (
-                        <button
-                            onClick={() => leaveGame(options)}
-                            disabled={leaving}
-                            className={classNames({
-                                "button": true,
-                                "is-large": true,
-                                "is-loading": leaving,
-                                "is-warning": true,
-                                "is-outlined": false,
-                            })}
-                        >
-                            Leave game
-                        </button>
+                        <div className="columns">
+                            <div className="column is-narrow">
+                                <div className="field">
+                                    <div className="control">
+                                        <button
+                                            onClick={() => leaveGame(options)}
+                                            disabled={leaving}
+                                            className={classNames({
+                                                "button": true,
+                                                "is-loading": leaving,
+                                                "is-warning": true,
+                                                "is-light": true,
+                                                "is-fullwidth": true,
+                                            })}
+                                        >
+                                            <span className="icon">
+                                                <i className="fas fa-user-minus"/>
+                                            </span>
+                                            <span>Leave game</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     )}
                 </div>
             </section>
             {game.admin.id === userId && <AdminControls game={game}/>}
             <section className="section">
                 <div className="container">
-                    <h1 className="title">Players</h1>
+                    <h1 className="title is-4"><i className="fas fa-users"/> Players</h1>
                     <table className="table">
                         <thead>
                         <tr>
@@ -261,8 +281,8 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
                                 game.admin.id === id
                                     ? (
                                         <span className="icon has-text-warning" title="Admin">
-                                                <i className="fas fa-crown"/>
-                                            </span>
+                                            <i className="fas fa-crown"/>
+                                        </span>
                                     )
                                     : null
                             const you = id === userId
@@ -347,33 +367,42 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                     .finally(() => setGuessValue(""))
                             }}
                         >
-                            <div className="field">
-                                <label className="label">Guess</label>
-                                <div className="control">
-                                    <input
-                                        name="guessValue"
-                                        disabled={guessing}
-                                        autoFocus
-                                        required
-                                        className="input"
-                                        value={guessValue}
-                                        onChange={event => setGuessValue(event.target.value)}
-                                    />
+                            <div className="columns">
+                                <div className="column is-one-third">
+                                    <div className="field">
+                                        <label className="label">Guess</label>
+                                        <div className="control">
+                                            <input
+                                                name="guessValue"
+                                                disabled={guessing}
+                                                autoFocus
+                                                required
+                                                className="input"
+                                                value={guessValue}
+                                                onChange={event => setGuessValue(event.target.value)}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="field">
-                                <div className="control">
-                                    <button
-                                        type="submit"
-                                        disabled={guessing}
-                                        className={classNames({
-                                            "button": true,
-                                            "is-loading": guessing,
-                                            "is-primary": true
-                                        })}
-                                    >
-                                        Make guess
-                                    </button>
+                            <div className="columns">
+                                <div className="column is-narrow">
+                                    <div className="field">
+                                        <div className="control">
+                                            <button
+                                                type="submit"
+                                                disabled={guessing}
+                                                className={classNames({
+                                                    "button": true,
+                                                    "is-loading": guessing,
+                                                    "is-primary": true,
+                                                    "is-fullwidth": true,
+                                                })}
+                                            >
+                                                Make guess
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </form>

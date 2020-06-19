@@ -10,3 +10,9 @@
 .is-word-break-all {
     word-break: break-all;
 }
+
+.is-ellipsized {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
