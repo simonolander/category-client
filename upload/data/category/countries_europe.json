@@ -1,0 +1,277 @@
+{
+  "id": "x9PF9pL5j9VdwEjBfZoLI",
+  "name": "Countries in Europe",
+  "description": "Names of countries in Europe, 2020.",
+  "items": [
+    {
+      "name": "Albania",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Andorra",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Armenia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Austria",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Azerbaijan",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Belarus",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Belgium",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "description": "",
+      "spellings": [
+        "bosnia herzegovina",
+        "bosnia",
+        "herzegovina"
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Croatia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Cyprus",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Czechia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Denmark",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Estonia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Finland",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "France",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Georgia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Germany",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Greece",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Hungary",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Iceland",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Ireland",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Italy",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Kazakhstan",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Kosovo",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Latvia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Liechtenstein",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Lithuania",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Luxembourg",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Malta",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Moldova",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Monaco",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Montenegro",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Netherlands",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "North Macedonia",
+      "description": "North Macedonia changed its name in 2019 from just Macedonia due a dispute with Greece.",
+      "spellings": []
+    },
+    {
+      "name": "Norway",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Poland",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Portugal",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Romania",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Russia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "San Marino",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Serbia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Slovakia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Slovenia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Spain",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Sweden",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Switzerland",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Turkey",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Ukraine",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "United Kingdom",
+      "description": "",
+      "spellings": [
+        "england",
+        "great britain",
+        "britain",
+        "scotland",
+        "north ireland",
+        "wales"
+      ]
+    },
+    {
+      "name": "Vatican City (Holy See)",
+      "description": "",
+      "spellings": [
+        "vatican",
+        "vatican city",
+        "holy see"
+      ]
+    }
+  ]
+}
