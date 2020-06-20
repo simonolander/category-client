@@ -485,12 +485,7 @@
     },
     {
       "name": "partial",
-      "description": "Partial type definitions allow for the definition of a class, struct, or interface to be split into multiple files.",
-      "spellings": []
-    },
-    {
-      "name": "partial",
-      "description": "A partial method has its signature defined in one part of a partial type, and its implementation defined in another part of the type. Partial methods enable class designers to provide method hooks, similar to event handlers, that developers may decide to implement or not. If the developer does not supply an implementation, the compiler removes the signature at compile time. The following conditions apply to partial methods.",
+      "description": "Partial type definitions allow for the definition of a class, struct, or interface to be split into multiple files. A partial method has its signature defined in one part of a partial type, and its implementation defined in another part of the type.",
       "spellings": []
     },
     {

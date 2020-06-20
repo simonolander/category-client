@@ -1,4 +1,5 @@
 const admin = require("firebase-admin")
+const shared = require("../functions/shared/package/index.js")
 
 admin.initializeApp({
     credential: admin.credential.cert(require("./serviceAccount.json")),
@@ -22,6 +23,29 @@ async function deleteCollection(collection) {
     }
 }
 
+function verifyCategory(category) {
+    const decode = shared.categoryDecoder.decode(category);
+    if (!decode.isOk()) {
+        throw new Error(decode.error)
+    }
+    const itemNames = {}
+    for (const item of category.items) {
+        if (itemNames[item.name]) {
+            throw new Error(`Multiple instance of item name ${item.name} in category ${category.name}`)
+        }
+        itemNames[item.name] = true
+    }
+    const spellings = {}
+    for (const item of category.items) {
+        for (const spelling of item.spellings) {
+            if (spellings[spelling]) {
+                throw new Error(`Multiple instance of spelling ${spelling} in category ${category.name}`)
+            }
+            spellings[spelling] = true
+        }
+    }
+}
+
 (async () => {
     const categories = [
         require("./data/category/java-keywords"),
@@ -37,9 +61,13 @@ async function deleteCollection(collection) {
     ];
     const categoryCollectionName = "category";
 
+    for (const category of categories) {
+        verifyCategory(category)
+    }
+
     const collections = await firestore.listCollections()
     console.log("Fetched collections")
-    for (let collection of collections) {
+    for (const collection of collections) {
         await deleteCollection(collection)
         console.log(`Deleted collection ${collection.path}`)
     }
