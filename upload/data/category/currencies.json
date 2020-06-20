@@ -1204,7 +1204,7 @@
       "description": "Central African CFA franc (XAF, Fr) is used in Cameroon, Central African Republic, Chad, Republic of the Congo, Equatorial Guinea as well as in Gabon.",
       "spellings": [
         "xaf",
-        "central african franc"
+        "central african franc",
       ]
     },
     {
@@ -1221,6 +1221,7 @@
       "spellings": [
         "xof",
         "cfa",
+        "cfa franc",
         "west african franc"
       ]
     },
