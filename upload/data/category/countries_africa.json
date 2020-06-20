@@ -1,279 +1,304 @@
 {
-  "id": "x9PF9pL5j9VdwEjBfZoLI",
-  "name": "Countries in Europe",
-  "description": "Names of countries in Europe, as of 2020.",
+  "id": "FNAujGy2MMyAVdLDrZIFU",
+  "name": "Countries in Africa",
+  "description": "Names of countries in Africa, as of 2020.",
   "items": [
     {
-      "name": "Albania",
+      "name": "Algeria",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Andorra",
+      "name": "Angola",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Armenia",
+      "name": "Benin",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Austria",
+      "name": "Botswana",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Azerbaijan",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Belarus",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Belgium",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Bosnia and Herzegovina",
+      "name": "Burkina Faso",
       "description": "",
       "spellings": [
-        "bosnia herzegovina",
-        "bosnia",
-        "herzegovina"
+        "burkina",
+        "faso"
       ]
     },
     {
-      "name": "Bulgaria",
+      "name": "Burundi",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Croatia",
+      "name": "Cabo Verde",
       "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Cyprus",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Czechia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Denmark",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Estonia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Finland",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "France",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Georgia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Germany",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Greece",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Hungary",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Iceland",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Ireland",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Italy",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Kazakhstan",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Kosovo",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Latvia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Liechtenstein",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Lithuania",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Luxembourg",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Malta",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Moldova",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Monaco",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Montenegro",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Netherlands",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "North Macedonia",
-      "description": "North Macedonia changed its name in 2019 from just Macedonia due a dispute with Greece.",
       "spellings": [
-        "macedonia"
+        "cabo",
+        "verde"
       ]
     },
     {
-      "name": "Norway",
+      "name": "Cameroon",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Poland",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Portugal",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Romania",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Russia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "San Marino",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Serbia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Slovakia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Slovenia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Spain",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Sweden",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Switzerland",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Turkey",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Ukraine",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "United Kingdom",
+      "name": "Central African Republic",
       "description": "",
       "spellings": [
-        "england",
-        "great britain",
-        "britain",
-        "scotland",
-        "north ireland",
-        "wales"
+        "car",
+        "central africa"
       ]
     },
     {
-      "name": "Vatican City (Holy See)",
+      "name": "Chad",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Comoros",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Democratic Republic of the Congo",
       "description": "",
       "spellings": [
-        "vatican",
-        "vatican city",
-        "holy see"
+        "democratic congo"
       ]
+    },
+    {
+      "name": "Republic of the Congo",
+      "description": "",
+      "spellings": [
+        "congo"
+      ]
+    },
+    {
+      "name": "Cote d'Ivoire",
+      "description": "",
+      "spellings": [
+        "ivory coast"
+      ]
+    },
+    {
+      "name": "Djibouti",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Egypt",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Equatorial Guinea",
+      "description": "",
+      "spellings": [
+        "guinea"
+      ]
+    },
+    {
+      "name": "Eritrea",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Eswatini",
+      "description": "Eswatini changed its name from Swaziland in 2018.",
+      "spellings": [
+        "swaziland"
+      ]
+    },
+    {
+      "name": "Ethiopia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Gabon",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Gambia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Ghana",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Guinea",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Guinea-Bissau",
+      "description": "",
+      "spellings": [
+        "bissau"
+      ]
+    },
+    {
+      "name": "Kenya",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Lesotho",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Liberia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Libya",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Madagascar",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Malawi",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Mali",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Mauritania",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Mauritius",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Morocco",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Mozambique",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Namibia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Niger",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Nigeria",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Rwanda",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "description": "",
+      "spellings": [
+        "principe",
+        "sao tome"
+      ]
+    },
+    {
+      "name": "Senegal",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Seychelles",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Sierra Leone",
+      "description": "",
+      "spellings": [
+        "sierra",
+        "leone"
+      ]
+    },
+    {
+      "name": "Somalia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "South Africa",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "South Sudan",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Sudan",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Tanzania",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Togo",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Tunisia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Uganda",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Zambia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Zimbabwe",
+      "description": "",
+      "spellings": []
     }
   ]
 }

@@ -1,15 +1,10 @@
 {
-  "id": "x9PF9pL5j9VdwEjBfZoLI",
-  "name": "Countries in Europe",
-  "description": "Names of countries in Europe, as of 2020.",
+  "id": "wYXH75HPUJArkb",
+  "name": "Countries in Asia",
+  "description": "Names of countries in Asia, as of 2020.",
   "items": [
     {
-      "name": "Albania",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Andorra",
+      "name": "Afghanistan",
       "description": "",
       "spellings": []
     },
@@ -19,41 +14,37 @@
       "spellings": []
     },
     {
-      "name": "Austria",
-      "description": "",
-      "spellings": []
-    },
-    {
       "name": "Azerbaijan",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Belarus",
+      "name": "Bahrain",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Belgium",
+      "name": "Bangladesh",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Bosnia and Herzegovina",
-      "description": "",
-      "spellings": [
-        "bosnia herzegovina",
-        "bosnia",
-        "herzegovina"
-      ]
-    },
-    {
-      "name": "Bulgaria",
+      "name": "Bhutan",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Croatia",
+      "name": "Brunei",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Cambodia",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "China",
       "description": "",
       "spellings": []
     },
@@ -63,62 +54,42 @@
       "spellings": []
     },
     {
-      "name": "Czechia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Denmark",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Estonia",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Finland",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "France",
-      "description": "",
-      "spellings": []
-    },
-    {
       "name": "Georgia",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Germany",
+      "name": "India",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Greece",
+      "name": "Indonesia",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Hungary",
+      "name": "Iran",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Iceland",
+      "name": "Iraq",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Ireland",
+      "name": "Israel",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Italy",
+      "name": "Japan",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Jordan",
       "description": "",
       "spellings": []
     },
@@ -128,79 +99,79 @@
       "spellings": []
     },
     {
-      "name": "Kosovo",
+      "name": "Kuwait",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Latvia",
+      "name": "Kyrgyzstan",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Liechtenstein",
+      "name": "Laos",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Lithuania",
+      "name": "Lebanon",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Luxembourg",
+      "name": "Malaysia",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Malta",
+      "name": "Maldives",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Moldova",
+      "name": "Mongolia",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Monaco",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Montenegro",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "Netherlands",
-      "description": "",
-      "spellings": []
-    },
-    {
-      "name": "North Macedonia",
-      "description": "North Macedonia changed its name in 2019 from just Macedonia due a dispute with Greece.",
+      "name": "Myanmar",
+      "description": "In 1989, the military government officially changed the country's name to Myanmar from Burma. The renaming remains a contested issue. Many political and ethnic opposition groups and countries continue to use Burma because they do not recognise the legitimacy of the ruling military government or its authority to rename the country.",
       "spellings": [
-        "macedonia"
+        "burma"
       ]
     },
     {
-      "name": "Norway",
+      "name": "Nepal",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Poland",
+      "name": "North Korea",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Portugal",
+      "name": "Oman",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Romania",
+      "name": "Pakistan",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Palestine",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Philippines",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Qatar",
       "description": "",
       "spellings": []
     },
@@ -210,39 +181,54 @@
       "spellings": []
     },
     {
-      "name": "San Marino",
+      "name": "Saudi Arabia",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Serbia",
+      "name": "Singapore",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Slovakia",
+      "name": "South Korea",
+      "description": "",
+      "spellings": [
+        "korea"
+      ]
+    },
+    {
+      "name": "Sri Lanka",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Slovenia",
+      "name": "Syria",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Spain",
+      "name": "Taiwan",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Sweden",
+      "name": "Tajikistan",
       "description": "",
       "spellings": []
     },
     {
-      "name": "Switzerland",
+      "name": "Thailand",
       "description": "",
       "spellings": []
+    },
+    {
+      "name": "Timor-Leste",
+      "description": "",
+      "spellings": [
+        "leste",
+        "timor"
+      ]
     },
     {
       "name": "Turkey",
@@ -250,30 +236,33 @@
       "spellings": []
     },
     {
-      "name": "Ukraine",
+      "name": "Turkmenistan",
       "description": "",
       "spellings": []
     },
     {
-      "name": "United Kingdom",
+      "name": "United Arab Emirates",
       "description": "",
       "spellings": [
-        "england",
-        "great britain",
-        "britain",
-        "scotland",
-        "north ireland",
-        "wales"
+        "uae",
+        "emirates",
+        "arab emirates"
       ]
     },
     {
-      "name": "Vatican City (Holy See)",
+      "name": "Uzbekistan",
       "description": "",
-      "spellings": [
-        "vatican",
-        "vatican city",
-        "holy see"
-      ]
+      "spellings": []
+    },
+    {
+      "name": "Vietnam",
+      "description": "",
+      "spellings": []
+    },
+    {
+      "name": "Yemen",
+      "description": "",
+      "spellings": []
     }
   ]
 }
