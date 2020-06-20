@@ -30,6 +30,7 @@ async function deleteCollection(collection) {
         require("./data/category/prime-numbers-below-twenty.json"),
         require("./data/category/paris-metro-line-4.json"),
         require("./data/category/c-sharp-keywords.json"),
+        require("./data/category/countries_europe.json"),
     ];
     const categoryCollectionName = "category";
 
