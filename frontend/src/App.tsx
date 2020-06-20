@@ -32,6 +32,9 @@ function App() {
                 <Link to="/">
                     <div className="navbar-brand">
                         <div className="navbar-item">
+                            <img src="/logo512.png" className="is-spaced" alt="Website logo"/>
+                        </div>
+                        <div className="navbar-item">
                             <span>{AppName}</span>
                         </div>
                     </div>
