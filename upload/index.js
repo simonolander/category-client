@@ -33,6 +33,7 @@ async function deleteCollection(collection) {
         require("./data/category/countries_europe.json"),
         require("./data/category/countries_africa.json"),
         require("./data/category/countries_asia.json"),
+        require("./data/category/currencies.json"),
     ];
     const categoryCollectionName = "category";
 

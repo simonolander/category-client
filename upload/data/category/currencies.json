@@ -1,0 +1,1266 @@
+{
+  "id": "VZcKInr6tbCOFlfxt",
+  "name": "Currencies",
+  "description": "Circulating currencies used in countries and territories, with a ISO 4217 code, as of year 2020.",
+  "items": [
+    {
+      "name": "United Arab Emirates dirham",
+      "description": "United Arab Emirates dirham (AED, د.إ) is used in United Arab Emirates.",
+      "spellings": [
+        "aed",
+        "arab dirham"
+      ]
+    },
+    {
+      "name": "Afghan afghani",
+      "description": "Afghan afghani (AFN, ؋) is used in Afghanistan.",
+      "spellings": [
+        "afn",
+        "afghani"
+      ]
+    },
+    {
+      "name": "Albanian lek",
+      "description": "Albanian lek (ALL, L) is used in Albania.",
+      "spellings": [
+        "all",
+        "lek"
+      ]
+    },
+    {
+      "name": "Armenian dram",
+      "description": "Armenian dram (AMD, ֏) is used in Armenia as well as in Artsakh.",
+      "spellings": [
+        "amd",
+        "dram"
+      ]
+    },
+    {
+      "name": "Netherlands Antillean guilder",
+      "description": "Netherlands Antillean guilder (ANG, ƒ) is used in Curaçao as well as in Sint Maarten.",
+      "spellings": [
+        "ang",
+        "guilder"
+      ]
+    },
+    {
+      "name": "Angolan kwanza",
+      "description": "Angolan kwanza (AOA, Kz) is used in Angola.",
+      "spellings": [
+        "aoa",
+        "kwanza"
+      ]
+    },
+    {
+      "name": "Argentine peso",
+      "description": "Argentine peso (ARS, $) is used in Argentina.",
+      "spellings": [
+        "ars"
+      ]
+    },
+    {
+      "name": "Australian dollar",
+      "description": "Australian dollar (AUD, $) is used in Australia, Kiribati, Nauru as well as in Tuvalu.",
+      "spellings": [
+        "aud"
+      ]
+    },
+    {
+      "name": "Aruban florin",
+      "description": "Aruban florin (AWG, ƒ) is used in Aruba.",
+      "spellings": [
+        "awg",
+        "florin"
+      ]
+    },
+    {
+      "name": "Azerbaijani manat",
+      "description": "Azerbaijani manat (AZN, ₼) is used in Azerbaijan.",
+      "spellings": [
+        "azn",
+        "manat"
+      ]
+    },
+    {
+      "name": "Bosnia and Herzegovina convertible mark",
+      "description": "Bosnia and Herzegovina convertible mark (BAM, KM or КМ) is used in Bosnia and Herzegovina.",
+      "spellings": [
+        "bam",
+        "mark"
+      ]
+    },
+    {
+      "name": "Barbadian dollar",
+      "description": "Barbadian dollar (BBD, $) is used in Barbados.",
+      "spellings": [
+        "bbd"
+      ]
+    },
+    {
+      "name": "Bangladeshi taka",
+      "description": "Bangladeshi taka (BDT, ৳) is used in Bangladesh.",
+      "spellings": [
+        "bdt",
+        "taka"
+      ]
+    },
+    {
+      "name": "Bulgarian lev",
+      "description": "Bulgarian lev (BGN, лв.) is used in Bulgaria.",
+      "spellings": [
+        "bgn",
+        "lev"
+      ]
+    },
+    {
+      "name": "Bahraini dinar",
+      "description": "Bahraini dinar (BHD, .د.ب) is used in Bahrain.",
+      "spellings": [
+        "bhd"
+      ]
+    },
+    {
+      "name": "Burundian franc",
+      "description": "Burundian franc (BIF, Fr) is used in Burundi.",
+      "spellings": [
+        "bif"
+      ]
+    },
+    {
+      "name": "Bermudian dollar",
+      "description": "Bermudian dollar (BMD, $) is used in Bermuda.",
+      "spellings": [
+        "bmd"
+      ]
+    },
+    {
+      "name": "Brunei dollar",
+      "description": "Brunei dollar (BND, $) is used in Brunei as well as in Singapore.",
+      "spellings": [
+        "bnd"
+      ]
+    },
+    {
+      "name": "Bolivian boliviano",
+      "description": "Bolivian boliviano (BOB, Bs.) is used in Bolivia.",
+      "spellings": [
+        "bob",
+        "boliviano"
+      ]
+    },
+    {
+      "name": "Brazilian real",
+      "description": "Brazilian real (BRL, R$) is used in Brazil.",
+      "spellings": [
+        "brl",
+        "real"
+      ]
+    },
+    {
+      "name": "Bahamian dollar",
+      "description": "Bahamian dollar (BSD, $) is used in Bahamas.",
+      "spellings": [
+        "bsd"
+      ]
+    },
+    {
+      "name": "Bhutanese ngultrum",
+      "description": "Bhutanese ngultrum (BTN, Nu.) is used in Bhutan.",
+      "spellings": [
+        "btn",
+        "ngultrum"
+      ]
+    },
+    {
+      "name": "Botswana pula",
+      "description": "Botswana pula (BWP, P) is used in Botswana.",
+      "spellings": [
+        "bwp",
+        "pula"
+      ]
+    },
+    {
+      "name": "Belarusian ruble",
+      "description": "Belarusian ruble (BYN, Br) is used in Belarus.",
+      "spellings": [
+        "byn"
+      ]
+    },
+    {
+      "name": "Belize dollar",
+      "description": "Belize dollar (BZD, $) is used in Belize.",
+      "spellings": [
+        "bzd"
+      ]
+    },
+    {
+      "name": "Canadian dollar",
+      "description": "Canadian dollar (CAD, $) is used in Canada.",
+      "spellings": [
+        "cad"
+      ]
+    },
+    {
+      "name": "Congolese franc",
+      "description": "Congolese franc (CDF, Fr) is used in Democratic Republic of the Congo.",
+      "spellings": [
+        "cdf"
+      ]
+    },
+    {
+      "name": "Swiss franc",
+      "description": "Swiss franc (CHF, Fr.) is used in Liechtenstein as well as in Switzerland.",
+      "spellings": [
+        "chf",
+        "franc"
+      ]
+    },
+    {
+      "name": "Cook Islands dollar",
+      "description": "Cook Islands dollar (CKD, $) is used in Cook Islands.",
+      "spellings": [
+        "ckd"
+      ]
+    },
+    {
+      "name": "Chilean peso",
+      "description": "Chilean peso (CLP, $) is used in Chile.",
+      "spellings": [
+        "clp"
+      ]
+    },
+    {
+      "name": "Chinese yuan",
+      "description": "Chinese yuan (CNY, ¥ or 元) is used in China.",
+      "spellings": [
+        "cny",
+        "yuan"
+      ]
+    },
+    {
+      "name": "Colombian peso",
+      "description": "Colombian peso (COP, $) is used in Colombia.",
+      "spellings": [
+        "cop"
+      ]
+    },
+    {
+      "name": "Costa Rican colón",
+      "description": "Costa Rican colón (CRC, ₡) is used in Costa Rica.",
+      "spellings": [
+        "crc",
+        "colón"
+      ]
+    },
+    {
+      "name": "Cuban convertible peso",
+      "description": "Cuban convertible peso (CUC, $) is used in Cuba.",
+      "spellings": [
+        "cuc"
+      ]
+    },
+    {
+      "name": "Cuban peso",
+      "description": "Cuban peso (CUP, $) is used in Cuba.",
+      "spellings": [
+        "cup"
+      ]
+    },
+    {
+      "name": "Cape Verdean escudo",
+      "description": "Cape Verdean escudo (CVE, Esc or $) is used in Cape Verde.",
+      "spellings": [
+        "cve",
+        "escudo"
+      ]
+    },
+    {
+      "name": "Czech koruna",
+      "description": "Czech koruna (CZK, Kč) is used in Czech Republic.",
+      "spellings": [
+        "czk",
+        "koruna"
+      ]
+    },
+    {
+      "name": "Djiboutian franc",
+      "description": "Djiboutian franc (DJF, Fr) is used in Djibouti.",
+      "spellings": [
+        "djf"
+      ]
+    },
+    {
+      "name": "Danish krone",
+      "description": "Danish krone (DKK, kr) is used in Denmark as well as in Faroe Islands.",
+      "spellings": [
+        "dkk",
+        "krone"
+      ]
+    },
+    {
+      "name": "Dominican peso",
+      "description": "Dominican peso (DOP, $) is used in Dominican Republic.",
+      "spellings": [
+        "dop"
+      ]
+    },
+    {
+      "name": "Algerian dinar",
+      "description": "Algerian dinar (DZD, د.ج) is used in Algeria as well as in Sahrawi Republic.",
+      "spellings": [
+        "dzd",
+        "dinar"
+      ]
+    },
+    {
+      "name": "Egyptian pound",
+      "description": "Egyptian pound (EGP, £ or ج.م) is used in Egypt.",
+      "spellings": [
+        "egp"
+      ]
+    },
+    {
+      "name": "Eritrean nakfa",
+      "description": "Eritrean nakfa (ERN, Nfk) is used in Eritrea.",
+      "spellings": [
+        "ern",
+        "nakfa"
+      ]
+    },
+    {
+      "name": "Ethiopian birr",
+      "description": "Ethiopian birr (ETB, Br) is used in Ethiopia.",
+      "spellings": [
+        "etb",
+        "birr"
+      ]
+    },
+    {
+      "name": "Euro",
+      "description": "Euro (EUR, €) is used in Akrotiri, Dhekelia, Andorra, Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Kosovo, Latvia, Lithuania, Luxembourg, Malta, Monaco, Montenegro, Netherlands, Portugal, San Marino, Slovakia, Slovenia, Spain as well as in Vatican City.",
+      "spellings": [
+        "eur",
+        "Euro"
+      ]
+    },
+    {
+      "name": "Fijian dollar",
+      "description": "Fijian dollar (FJD, $) is used in Fiji.",
+      "spellings": [
+        "fjd"
+      ]
+    },
+    {
+      "name": "Falkland Islands pound",
+      "description": "Falkland Islands pound (FKP, £) is used in Falkland Islands.",
+      "spellings": [
+        "fkp"
+      ]
+    },
+    {
+      "name": "Faroese króna",
+      "description": "Faroese króna (FOK, kr) is used in Faroe Islands.",
+      "spellings": [
+        "fok"
+      ]
+    },
+    {
+      "name": "British pound",
+      "description": "British pound (GBP, £) is used in Alderney, Guernsey, Isle of Man, Jersey as well as in United Kingdom.",
+      "spellings": [
+        "gbp"
+      ]
+    },
+    {
+      "name": "Georgian lari",
+      "description": "Georgian lari (GEL, ₾) is used in Georgia.",
+      "spellings": [
+        "gel",
+        "lari"
+      ]
+    },
+    {
+      "name": "Guernsey pound",
+      "description": "Guernsey pound (GGP, £) is used in Alderney as well as in Guernsey.",
+      "spellings": [
+        "ggp"
+      ]
+    },
+    {
+      "name": "Ghanaian cedi",
+      "description": "Ghanaian cedi (GHS, ₵) is used in Ghana.",
+      "spellings": [
+        "ghs",
+        "cedi"
+      ]
+    },
+    {
+      "name": "Gibraltar pound",
+      "description": "Gibraltar pound (GIP, £) is used in Gibraltar.",
+      "spellings": [
+        "gip"
+      ]
+    },
+    {
+      "name": "Gambian dalasi",
+      "description": "Gambian dalasi (GMD, D) is used in Gambia.",
+      "spellings": [
+        "gmd",
+        "dalasi"
+      ]
+    },
+    {
+      "name": "Guinean franc",
+      "description": "Guinean franc (GNF, Fr) is used in Guinea.",
+      "spellings": [
+        "gnf"
+      ]
+    },
+    {
+      "name": "Guatemalan quetzal",
+      "description": "Guatemalan quetzal (GTQ, Q) is used in Guatemala.",
+      "spellings": [
+        "gtq",
+        "quetzal"
+      ]
+    },
+    {
+      "name": "Guyanese dollar",
+      "description": "Guyanese dollar (GYD, $) is used in Guyana.",
+      "spellings": [
+        "gyd"
+      ]
+    },
+    {
+      "name": "Hong Kong dollar",
+      "description": "Hong Kong dollar (HKD, $) is used in Hong Kong.",
+      "spellings": [
+        "hkd"
+      ]
+    },
+    {
+      "name": "Honduran lempira",
+      "description": "Honduran lempira (HNL, L) is used in Honduras.",
+      "spellings": [
+        "hnl",
+        "lempira"
+      ]
+    },
+    {
+      "name": "Croatian kuna",
+      "description": "Croatian kuna (HRK, kn) is used in Croatia.",
+      "spellings": [
+        "hrk",
+        "kuna"
+      ]
+    },
+    {
+      "name": "Haitian gourde",
+      "description": "Haitian gourde (HTG, G) is used in Haiti.",
+      "spellings": [
+        "htg",
+        "gourde"
+      ]
+    },
+    {
+      "name": "Hungarian forint",
+      "description": "Hungarian forint (HUF, Ft) is used in Hungary.",
+      "spellings": [
+        "huf",
+        "forint"
+      ]
+    },
+    {
+      "name": "Indonesian rupiah",
+      "description": "Indonesian rupiah (IDR, Rp) is used in Indonesia.",
+      "spellings": [
+        "idr",
+        "rupiah"
+      ]
+    },
+    {
+      "name": "Israeli new shekel",
+      "description": "Israeli new shekel (ILS, ₪) is used in Israel as well as in Palestine.",
+      "spellings": [
+        "ils",
+        "shekel"
+      ]
+    },
+    {
+      "name": "Manx pound",
+      "description": "Manx pound (IMP, £) is used in Isle of Man.",
+      "spellings": [
+        "imp"
+      ]
+    },
+    {
+      "name": "Indian rupee",
+      "description": "Indian rupee (INR, ₹) is used in Bhutan as well as in India.",
+      "spellings": [
+        "inr",
+        "rupee"
+      ]
+    },
+    {
+      "name": "Iraqi dinar",
+      "description": "Iraqi dinar (IQD, ع.د) is used in Iraq.",
+      "spellings": [
+        "iqd"
+      ]
+    },
+    {
+      "name": "Iranian rial",
+      "description": "Iranian rial (IRR, ﷼) is used in Iran.",
+      "spellings": [
+        "irr",
+        "rial"
+      ]
+    },
+    {
+      "name": "Icelandic króna",
+      "description": "Icelandic króna (ISK, kr) is used in Iceland.",
+      "spellings": [
+        "isk",
+        "króna"
+      ]
+    },
+    {
+      "name": "Jersey pound",
+      "description": "Jersey pound (JEP, £) is used in Jersey.",
+      "spellings": [
+        "jep"
+      ]
+    },
+    {
+      "name": "Jamaican dollar",
+      "description": "Jamaican dollar (JMD, $) is used in Jamaica.",
+      "spellings": [
+        "jmd"
+      ]
+    },
+    {
+      "name": "Jordanian dinar",
+      "description": "Jordanian dinar (JOD, د.ا) is used in Jordan as well as in Palestine.",
+      "spellings": [
+        "jod"
+      ]
+    },
+    {
+      "name": "Japanese yen",
+      "description": "Japanese yen (JPY, ¥ or 円) is used in Japan.",
+      "spellings": [
+        "jpy",
+        "yen"
+      ]
+    },
+    {
+      "name": "Kenyan shilling",
+      "description": "Kenyan shilling (KES, Sh) is used in Kenya.",
+      "spellings": [
+        "kes",
+        "shilling"
+      ]
+    },
+    {
+      "name": "Kyrgyzstani som",
+      "description": "Kyrgyzstani som (KGS, с) is used in Kyrgyzstan.",
+      "spellings": [
+        "kgs",
+        "som"
+      ]
+    },
+    {
+      "name": "Cambodian riel",
+      "description": "Cambodian riel (KHR, ៛) is used in Cambodia.",
+      "spellings": [
+        "khr",
+        "riel"
+      ]
+    },
+    {
+      "name": "Kiribati dollar",
+      "description": "Kiribati dollar (KID, $) is used in Kiribati.",
+      "spellings": [
+        "kid"
+      ]
+    },
+    {
+      "name": "Comorian franc",
+      "description": "Comorian franc (KMF, Fr) is used in Comoros.",
+      "spellings": [
+        "kmf"
+      ]
+    },
+    {
+      "name": "North Korean won",
+      "description": "North Korean won (KPW, ₩) is used in North Korea.",
+      "spellings": [
+        "kpw"
+      ]
+    },
+    {
+      "name": "South Korean won",
+      "description": "South Korean won (KRW, ₩) is used in South Korea.",
+      "spellings": [
+        "krw",
+        "won"
+      ]
+    },
+    {
+      "name": "Kuwaiti dinar",
+      "description": "Kuwaiti dinar (KWD, د.ك) is used in Kuwait.",
+      "spellings": [
+        "kwd"
+      ]
+    },
+    {
+      "name": "Cayman Islands dollar",
+      "description": "Cayman Islands dollar (KYD, $) is used in Cayman Islands.",
+      "spellings": [
+        "kyd"
+      ]
+    },
+    {
+      "name": "Kazakhstani tenge",
+      "description": "Kazakhstani tenge (KZT, ₸) is used in Kazakhstan.",
+      "spellings": [
+        "kzt",
+        "tenge"
+      ]
+    },
+    {
+      "name": "Lao kip",
+      "description": "Lao kip (LAK, ₭) is used in Laos.",
+      "spellings": [
+        "lak",
+        "kip"
+      ]
+    },
+    {
+      "name": "Lebanese pound",
+      "description": "Lebanese pound (LBP, ل.ل) is used in Lebanon.",
+      "spellings": [
+        "lbp"
+      ]
+    },
+    {
+      "name": "Sri Lankan rupee",
+      "description": "Sri Lankan rupee (LKR, Rs or රු or ரூ) is used in Sri Lanka.",
+      "spellings": [
+        "lkr"
+      ]
+    },
+    {
+      "name": "Liberian dollar",
+      "description": "Liberian dollar (LRD, $) is used in Liberia.",
+      "spellings": [
+        "lrd"
+      ]
+    },
+    {
+      "name": "Lesotho loti",
+      "description": "Lesotho loti (LSL, L) is used in Lesotho.",
+      "spellings": [
+        "lsl",
+        "loti"
+      ]
+    },
+    {
+      "name": "Libyan dinar",
+      "description": "Libyan dinar (LYD, ل.د) is used in Libya.",
+      "spellings": [
+        "lyd"
+      ]
+    },
+    {
+      "name": "Moroccan dirham",
+      "description": "Moroccan dirham (MAD, د.م.) is used in Morocco as well as in Sahrawi Republic.",
+      "spellings": [
+        "mad",
+        "dirham"
+      ]
+    },
+    {
+      "name": "Moldovan leu",
+      "description": "Moldovan leu (MDL, L) is used in Moldova.",
+      "spellings": [
+        "mdl"
+      ]
+    },
+    {
+      "name": "Malagasy ariary",
+      "description": "Malagasy ariary (MGA, Ar) is used in Madagascar.",
+      "spellings": [
+        "mga",
+        "ariary"
+      ]
+    },
+    {
+      "name": "Macedonian denar",
+      "description": "Macedonian denar (MKD, ден) is used in North Macedonia.",
+      "spellings": [
+        "mkd",
+        "denar"
+      ]
+    },
+    {
+      "name": "Burmese kyat",
+      "description": "Burmese kyat (MMK, Ks) is used in Myanmar.",
+      "spellings": [
+        "mmk",
+        "kyat"
+      ]
+    },
+    {
+      "name": "Mongolian tögrög",
+      "description": "Mongolian tögrög (MNT, ₮) is used in Mongolia.",
+      "spellings": [
+        "mnt",
+        "tögrög"
+      ]
+    },
+    {
+      "name": "Macanese pataca",
+      "description": "Macanese pataca (MOP, P) is used in Macau.",
+      "spellings": [
+        "mop",
+        "pataca"
+      ]
+    },
+    {
+      "name": "Mauritanian ouguiya",
+      "description": "Mauritanian ouguiya (MRU, UM) is used in Mauritania as well as in Sahrawi Republic.",
+      "spellings": [
+        "mru",
+        "ouguiya"
+      ]
+    },
+    {
+      "name": "Mauritian rupee",
+      "description": "Mauritian rupee (MUR, ₨) is used in Mauritius.",
+      "spellings": [
+        "mur"
+      ]
+    },
+    {
+      "name": "Maldivian rufiyaa",
+      "description": "Maldivian rufiyaa (MVR, .ރ) is used in Maldives.",
+      "spellings": [
+        "mvr",
+        "rufiyaa"
+      ]
+    },
+    {
+      "name": "Malawian kwacha",
+      "description": "Malawian kwacha (MWK, MK) is used in Malawi.",
+      "spellings": [
+        "mwk",
+        "kwacha"
+      ]
+    },
+    {
+      "name": "Mexican peso",
+      "description": "Mexican peso (MXN, $) is used in Mexico.",
+      "spellings": [
+        "mxn",
+        "peso"
+      ]
+    },
+    {
+      "name": "Malaysian ringgit",
+      "description": "Malaysian ringgit (MYR, RM) is used in Malaysia.",
+      "spellings": [
+        "myr",
+        "ringgit"
+      ]
+    },
+    {
+      "name": "Mozambican metical",
+      "description": "Mozambican metical (MZN, MT) is used in Mozambique.",
+      "spellings": [
+        "mzn",
+        "metical"
+      ]
+    },
+    {
+      "name": "Namibian dollar",
+      "description": "Namibian dollar (NAD, $) is used in Namibia.",
+      "spellings": [
+        "nad"
+      ]
+    },
+    {
+      "name": "Nigerian naira",
+      "description": "Nigerian naira (NGN, ₦) is used in Nigeria.",
+      "spellings": [
+        "ngn",
+        "naira"
+      ]
+    },
+    {
+      "name": "Nicaraguan córdoba",
+      "description": "Nicaraguan córdoba (NIO, C$) is used in Nicaragua.",
+      "spellings": [
+        "nio",
+        "córdoba"
+      ]
+    },
+    {
+      "name": "Norwegian krone",
+      "description": "Norwegian krone (NOK, kr) is used in Norway.",
+      "spellings": [
+        "nok"
+      ]
+    },
+    {
+      "name": "Nepalese rupee",
+      "description": "Nepalese rupee (NPR, रू) is used in Nepal.",
+      "spellings": [
+        "npr"
+      ]
+    },
+    {
+      "name": "New Zealand dollar",
+      "description": "New Zealand dollar (NZD, $) is used in Cook Islands, New Zealand, Niue as well as in Pitcairn Islands.",
+      "spellings": [
+        "nzd"
+      ]
+    },
+    {
+      "name": "Omani rial",
+      "description": "Omani rial (OMR, ر.ع.) is used in Oman.",
+      "spellings": [
+        "omr"
+      ]
+    },
+    {
+      "name": "Panamanian balboa",
+      "description": "Panamanian balboa (PAB, B/.) is used in Panama.",
+      "spellings": [
+        "pab",
+        "balboa"
+      ]
+    },
+    {
+      "name": "Peruvian sol",
+      "description": "Peruvian sol (PEN, S/.) is used in Peru.",
+      "spellings": [
+        "pen",
+        "sol"
+      ]
+    },
+    {
+      "name": "Papua New Guinean kina",
+      "description": "Papua New Guinean kina (PGK, K) is used in Papua New Guinea.",
+      "spellings": [
+        "pgk",
+        "kina"
+      ]
+    },
+    {
+      "name": "Philippine peso",
+      "description": "Philippine peso (PHP, ₱) is used in Philippines.",
+      "spellings": [
+        "php"
+      ]
+    },
+    {
+      "name": "Pakistani rupee",
+      "description": "Pakistani rupee (PKR, ₨) is used in Pakistan.",
+      "spellings": [
+        "pkr"
+      ]
+    },
+    {
+      "name": "Polish złoty",
+      "description": "Polish złoty (PLN, zł) is used in Poland.",
+      "spellings": [
+        "pln",
+        "złoty"
+      ]
+    },
+    {
+      "name": "Pitcairn Islands dollar",
+      "description": "Pitcairn Islands dollar (PND, $) is used in Pitcairn Islands.",
+      "spellings": [
+        "pnd"
+      ]
+    },
+    {
+      "name": "Transnistrian ruble",
+      "description": "Transnistrian ruble (PRB, р.) is used in Transnistria.",
+      "spellings": [
+        "prb"
+      ]
+    },
+    {
+      "name": "Paraguayan guaraní",
+      "description": "Paraguayan guaraní (PYG, ₲) is used in Paraguay.",
+      "spellings": [
+        "pyg",
+        "guaraní"
+      ]
+    },
+    {
+      "name": "Qatari riyal",
+      "description": "Qatari riyal (QAR, ر.ق) is used in Qatar.",
+      "spellings": [
+        "qar"
+      ]
+    },
+    {
+      "name": "Romanian leu",
+      "description": "Romanian leu (RON, lei) is used in Romania.",
+      "spellings": [
+        "ron",
+        "leu"
+      ]
+    },
+    {
+      "name": "Serbian dinar",
+      "description": "Serbian dinar (RSD, дин. or din.) is used in Serbia.",
+      "spellings": [
+        "rsd"
+      ]
+    },
+    {
+      "name": "Russian ruble",
+      "description": "Russian ruble (RUB, ₽) is used in Abkhazia, Russia, South Ossetia as well as in Ukraine.",
+      "spellings": [
+        "rub",
+        "ruble"
+      ]
+    },
+    {
+      "name": "Rwandan franc",
+      "description": "Rwandan franc (RWF, Fr) is used in Rwanda.",
+      "spellings": [
+        "rwf"
+      ]
+    },
+    {
+      "name": "Saudi riyal",
+      "description": "Saudi riyal (SAR, ر.س) is used in Saudi Arabia.",
+      "spellings": [
+        "sar",
+        "riyal"
+      ]
+    },
+    {
+      "name": "Solomon Islands dollar",
+      "description": "Solomon Islands dollar (SBD, $) is used in Solomon Islands.",
+      "spellings": [
+        "sbd"
+      ]
+    },
+    {
+      "name": "Seychellois rupee",
+      "description": "Seychellois rupee (SCR, ₨) is used in Seychelles.",
+      "spellings": [
+        "scr"
+      ]
+    },
+    {
+      "name": "Sudanese pound",
+      "description": "Sudanese pound (SDG, ج.س.) is used in Sudan.",
+      "spellings": [
+        "sdg"
+      ]
+    },
+    {
+      "name": "Swedish krona",
+      "description": "Swedish krona (SEK, kr) is used in Sweden.",
+      "spellings": [
+        "sek",
+        "krona"
+      ]
+    },
+    {
+      "name": "Singapore dollar",
+      "description": "Singapore dollar (SGD, $) is used in Brunei as well as in Singapore.",
+      "spellings": [
+        "sgd"
+      ]
+    },
+    {
+      "name": "Saint Helena pound",
+      "description": "Saint Helena pound (SHP, £) is used in Ascension Island as well as in Saint Helena.",
+      "spellings": [
+        "shp"
+      ]
+    },
+    {
+      "name": "Sierra Leonean leone",
+      "description": "Sierra Leonean leone (SLL, Le) is used in Sierra Leone.",
+      "spellings": [
+        "sll",
+        "leone"
+      ]
+    },
+    {
+      "name": "Somaliland shilling",
+      "description": "Somaliland shilling (SLS, Sl) is used in Somaliland.",
+      "spellings": [
+        "sls"
+      ]
+    },
+    {
+      "name": "Somali shilling",
+      "description": "Somali shilling (SOS, Sh) is used in Somalia.",
+      "spellings": [
+        "sos"
+      ]
+    },
+    {
+      "name": "Surinamese dollar",
+      "description": "Surinamese dollar (SRD, $) is used in Suriname.",
+      "spellings": [
+        "srd"
+      ]
+    },
+    {
+      "name": "South Sudanese pound",
+      "description": "South Sudanese pound (SSP, £) is used in South Sudan.",
+      "spellings": [
+        "ssp"
+      ]
+    },
+    {
+      "name": "São Tomé and Príncipe dobra",
+      "description": "São Tomé and Príncipe dobra (STN, Db) is used in São Tomé and Príncipe.",
+      "spellings": [
+        "stn",
+        "dobra"
+      ]
+    },
+    {
+      "name": "Syrian pound",
+      "description": "Syrian pound (SYP, £ or ل.س) is used in Syria.",
+      "spellings": [
+        "syp"
+      ]
+    },
+    {
+      "name": "Swazi lilangeni",
+      "description": "Swazi lilangeni (SZL, L) is used in Eswatini.",
+      "spellings": [
+        "szl",
+        "lilangeni"
+      ]
+    },
+    {
+      "name": "Thai baht",
+      "description": "Thai baht (THB, ฿) is used in Thailand.",
+      "spellings": [
+        "thb",
+        "baht"
+      ]
+    },
+    {
+      "name": "Tajikistani somoni",
+      "description": "Tajikistani somoni (TJS, ЅМ) is used in Tajikistan.",
+      "spellings": [
+        "tjs",
+        "somoni"
+      ]
+    },
+    {
+      "name": "Turkmenistan manat",
+      "description": "Turkmenistan manat (TMT, m) is used in Turkmenistan.",
+      "spellings": [
+        "tmt"
+      ]
+    },
+    {
+      "name": "Tunisian dinar",
+      "description": "Tunisian dinar (TND, د.ت) is used in Tunisia.",
+      "spellings": [
+        "tnd"
+      ]
+    },
+    {
+      "name": "Tongan paʻanga",
+      "description": "Tongan paʻanga (TOP, T$) is used in Tonga.",
+      "spellings": [
+        "top",
+        "paʻanga",
+        "paanga"
+      ]
+    },
+    {
+      "name": "Turkish lira",
+      "description": "Turkish lira (TRY, ₺) is used in Northern Cyprus as well as in Turkey.",
+      "spellings": [
+        "try",
+        "lira"
+      ]
+    },
+    {
+      "name": "Trinidad and Tobago dollar",
+      "description": "Trinidad and Tobago dollar (TTD, $) is used in Trinidad and Tobago.",
+      "spellings": [
+        "ttd",
+        "trinidad dollar",
+        "tobago dollar"
+      ]
+    },
+    {
+      "name": "Tuvaluan dollar",
+      "description": "Tuvaluan dollar (TVD, $) is used in Tuvalu.",
+      "spellings": [
+        "tvd"
+      ]
+    },
+    {
+      "name": "New Taiwan dollar",
+      "description": "New Taiwan dollar (TWD, $) is used in Taiwan.",
+      "spellings": [
+        "twd",
+        "taiwan dollar"
+      ]
+    },
+    {
+      "name": "Tanzanian shilling",
+      "description": "Tanzanian shilling (TZS, Sh) is used in Tanzania.",
+      "spellings": [
+        "tzs"
+      ]
+    },
+    {
+      "name": "Ukrainian hryvnia",
+      "description": "Ukrainian hryvnia (UAH, ₴) is used in Ukraine.",
+      "spellings": [
+        "uah",
+        "hryvnia"
+      ]
+    },
+    {
+      "name": "Ugandan shilling",
+      "description": "Ugandan shilling (UGX, Sh) is used in Uganda.",
+      "spellings": [
+        "ugx"
+      ]
+    },
+    {
+      "name": "United States dollar",
+      "description": "United States dollar (USD, $) is used in Bonaire, British Indian Ocean Territory, British Virgin Islands, East Timor, Ecuador, El Salvador, Marshall Islands, Micronesia, Palau, Panama, Saba, Sint Eustatius, Turks and Caicos Islands as well as in United States.",
+      "spellings": [
+        "usd",
+        "dollar"
+      ]
+    },
+    {
+      "name": "Uruguayan peso",
+      "description": "Uruguayan peso (UYU, $) is used in Uruguay.",
+      "spellings": [
+        "uyu"
+      ]
+    },
+    {
+      "name": "Uzbekistani soʻm",
+      "description": "Uzbekistani soʻm (UZS, so'm or сўм) is used in Uzbekistan.",
+      "spellings": [
+        "uzs",
+        "soʻm",
+        "so'm"
+      ]
+    },
+    {
+      "name": "Venezuelan bolívar soberano",
+      "description": "Venezuelan bolívar soberano (VES, Bs.S. or Bs.) is used in Venezuela.",
+      "spellings": [
+        "ves",
+        "soberano"
+      ]
+    },
+    {
+      "name": "Vietnamese đồng",
+      "description": "Vietnamese đồng (VND, ₫) is used in Vietnam.",
+      "spellings": [
+        "vnd",
+        "đồng",
+        "dong"
+      ]
+    },
+    {
+      "name": "Vanuatu vatu",
+      "description": "Vanuatu vatu (VUV, Vt) is used in Vanuatu.",
+      "spellings": [
+        "vuv",
+        "vatu"
+      ]
+    },
+    {
+      "name": "Samoan tālā",
+      "description": "Samoan tālā (WST, T) is used in Samoa.",
+      "spellings": [
+        "wst",
+        "tālā",
+        "tala"
+      ]
+    },
+    {
+      "name": "Central African CFA franc",
+      "description": "Central African CFA franc (XAF, Fr) is used in Cameroon, Central African Republic, Chad, Republic of the Congo, Equatorial Guinea as well as in Gabon.",
+      "spellings": [
+        "xaf",
+        "central african franc"
+      ]
+    },
+    {
+      "name": "Eastern Caribbean dollar",
+      "description": "Eastern Caribbean dollar (XCD, $) is used in Anguilla, Antigua and Barbuda, Dominica, Grenada, Montserrat, Saint Kitts and Nevis, Saint Lucia as well as in Saint Vincent and the Grenadines.",
+      "spellings": [
+        "xcd",
+        "caribbean dollar"
+      ]
+    },
+    {
+      "name": "West African CFA franc",
+      "description": "West African CFA franc (XOF, Fr) is used in Benin, Burkina Faso, Côte d'Ivoire, Guinea-Bissau, Mali, Niger, Senegal as well as in Togo.",
+      "spellings": [
+        "xof",
+        "cfa",
+        "west african franc"
+      ]
+    },
+    {
+      "name": "CFP franc",
+      "description": "CFP franc (XPF, ₣) is used in French Polynesia, New Caledonia as well as in Wallis and Futuna.",
+      "spellings": [
+        "xpf",
+        "cfp"
+      ]
+    },
+    {
+      "name": "Yemeni rial",
+      "description": "Yemeni rial (YER, ر.ي) is used in Yemen.",
+      "spellings": [
+        "yer"
+      ]
+    },
+    {
+      "name": "South African rand",
+      "description": "South African rand (ZAR, R) is used in Eswatini, Lesotho, Namibia as well as in South Africa.",
+      "spellings": [
+        "zar",
+        "rand"
+      ]
+    },
+    {
+      "name": "Zambian kwacha",
+      "description": "Zambian kwacha (ZMW, ZK) is used in Zambia.",
+      "spellings": [
+        "zmw"
+      ]
+    },
+    {
+      "name": "RTGS dollar",
+      "description": "RTGS dollar (ZWL) was introduced in Zimbabwe the year 2019.",
+      "spellings": [
+        "zwl",
+        "rtgs"
+      ]
+    }
+  ]
+}
