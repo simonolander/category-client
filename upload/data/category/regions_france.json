@@ -1,0 +1,200 @@
+{
+  "id": "TVJGkUaMC0OoLUwzMC0v56RiFSSRGGrO5ooCs6jy",
+  "name": "Regions in France",
+  "description": "Names of the regions in france, both mainland and overseas, as of 2020.",
+  "items": [
+    {
+      "name": "Auvergne-Rhône-Alpes",
+      "description": "Auvergne-Rhône-Alpes (84) is one of the mainland regions of France. Its capital is Lyon and it has an area of 69,711 km². The president of the regions as of 2020 is Laurent Wauquiez. Previously, the region consisted of the former regions Auvergne and Rhône-Alpes.",
+      "spellings": [
+        "auvergne",
+        "auvergne-rhône-alps",
+        "auvèrnhe-ròse-aups",
+        "rhône-alpes",
+        "Ôvèrgne-rôno-arpes"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Auvergne-Rh%C3%B4ne-Alpes_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Auvergne-Rh%C3%B4ne-Alpes"
+    },
+    {
+      "name": "Bourgogne-Franche-Comté",
+      "description": "Bourgogne-Franche-Comté (27) is one of the mainland regions of France. Its capital is Dijon and it has an area of 47,784 km². The president of the regions as of 2020 is Marie-Guite Dufay. Previously, the region consisted of the former regions Burgundy and Franche-Comté.",
+      "spellings": [
+        "borgogne-franche-comtàt",
+        "burgundy",
+        "burgundy-free county",
+        "franche-comté"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Bourgogne-Franche-Comt%C3%A9_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Bourgogne-Franche-Comt%C3%A9"
+    },
+    {
+      "name": "Bretagne",
+      "description": "Bretagne (53) is one of the mainland regions of France. Its capital is Rennes and it has an area of 27,208 km². The president of the regions as of 2020 is Loïg Chesnais-Girard.",
+      "spellings": [
+        "bertaèyn",
+        "breizh",
+        "brittany"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Brittany_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Brittany_(administrative_region)"
+    },
+    {
+      "name": "Centre-Val de Loire",
+      "description": "Centre-Val de Loire (24) is one of the mainland regions of France. Its capital is Orléans and it has an area of 39,151 km². The president of the regions as of 2020 is François Bonneau. Previously, the region consisted of the former region Centre.",
+      "spellings": [
+        "centre",
+        "centre-loire valley"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Centre-Val_de_Loire_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Centre-Val_de_Loire"
+    },
+    {
+      "name": "Corse",
+      "description": "Corse (94) is one of the mainland regions of France. Its capital is Ajaccio and it has an area of 8,680 km². The president of the regions as of 2020 is Jean-Guy Talamoni.",
+      "spellings": [
+        "corsica"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Corsica_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Corsica"
+    },
+    {
+      "name": "Grand Est",
+      "description": "Grand Est (44) is one of the mainland regions of France. Its capital is Strasbourg and it has an area of 57,441 km². The president of the regions as of 2020 is Jean Rottner. Previously, the region consisted of the former regions Alsace, Champagne-Ardenne and Lorraine.",
+      "spellings": [
+        "alsace",
+        "champagne-ardenne",
+        "great east",
+        "großer osten",
+        "lorraine"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Grand_Est_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Grand_Est"
+    },
+    {
+      "name": "Hauts-de-France",
+      "description": "Hauts-de-France (32) is one of the mainland regions of France. Its capital is Lille and it has an area of 31,806 km². The president of the regions as of 2020 is Xavier Bertrand. Previously, the region consisted of the former regions Nord-Pas-de-Calais and Picardy.",
+      "spellings": [
+        "nord-pas-de-calais",
+        "picardy",
+        "upper france"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hauts-de-France_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Hauts-de-France"
+    },
+    {
+      "name": "Île-de-France",
+      "description": "Île-de-France (11) is one of the mainland regions of France. Its capital is Paris and it has an area of 12,011 km². The president of the regions as of 2020 is Valérie Pécresse.",
+      "spellings": [
+        "island of france"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/%C3%8Ele-de-France_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/%C3%8Ele-de-France"
+    },
+    {
+      "name": "Normandie",
+      "description": "Normandie (28) is one of the mainland regions of France. Its capital is Rouen and it has an area of 29,907 km². The president of the regions as of 2020 is Hervé Morin. Previously, the region consisted of the former regions Upper Normandy and Lower Normandy.",
+      "spellings": [
+        "lower normandy",
+        "normandy",
+        "normaundie",
+        "upper normandy"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Normandy_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Normandy"
+    },
+    {
+      "name": "Nouvelle-Aquitaine",
+      "description": "Nouvelle-Aquitaine (75) is one of the mainland regions of France. Its capital is Bordeaux and it has an area of 84,036 km². The president of the regions as of 2020 is Alain Rousset. Previously, the region consisted of the former regions Aquitaine, Limousin and Poitou-Charentes.",
+      "spellings": [
+        "akitania berria",
+        "aquitaine",
+        "limousin",
+        "new aquitaine",
+        "nòva aquitània / nava aquitània / novela aquitània",
+        "poitou-charentes"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Nouvelle-Aquitaine_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Nouvelle-Aquitaine"
+    },
+    {
+      "name": "Occitanie",
+      "description": "Occitanie (76) is one of the mainland regions of France. Its capital is Toulouse and it has an area of 72,724 km². The president of the regions as of 2020 is Carole Delga. Previously, the region consisted of the former regions Languedoc-Roussillon and Midi-Pyrénées.",
+      "spellings": [
+        "languedoc-roussillon",
+        "midi-pyrénées",
+        "occitània"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Occitanie_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Occitanie"
+    },
+    {
+      "name": "Pays de la Loire",
+      "description": "Pays de la Loire (52) is one of the mainland regions of France. Its capital is Nantes and it has an area of 32,082 km². The president of the regions as of 2020 is Christelle Morançais.",
+      "spellings": [
+        "broioù al liger",
+        "loire countries"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pays_de_la_Loire_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Pays_de_la_Loire"
+    },
+    {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "description": "Provence-Alpes-Côte d'Azur (93) is one of the mainland regions of France. Its capital is Marseille and it has an area of 31,400 km². The president of the regions as of 2020 is Renaud Muselier.",
+      "spellings": [
+        "prouvènço-aup-costo d'azur",
+        "provence-alps-azure coast",
+        "provença-aups-còsta d'azur"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/55/Provence-Alpes-C%C3%B4te_d%27Azur_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Provence-Alpes-C%C3%B4te_d%27Azur"
+    },
+    {
+      "name": "Guadeloupe",
+      "description": "Guadeloupe (01) is one of the overseas regions of France. Its capital is Basse-Terre and it has an area of 1,628 km². The president of the regions as of 2020 is Ary Chalus.",
+      "spellings": [
+        "gwadloup"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Guadeloupe_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Guadeloupe"
+    },
+    {
+      "name": "Guyane",
+      "description": "Guyane (03) is one of the overseas regions of France. Its capital is Cayenne and it has an area of 83,534 km². The president of the regions as of 2020 is Rodolphe Alexandre.",
+      "spellings": [
+        "french guiana"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/French_Guiana_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/French_Guiana"
+    },
+    {
+      "name": "La Réunion",
+      "description": "La Réunion (04) is one of the overseas regions of France. Its capital is Saint-Denis and it has an area of 2,504 km². The president of the regions as of 2020 is Didier Robert.",
+      "spellings": [
+        "la rényon",
+        "réunion"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/01/D%C3%A9partement_974_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/R%C3%A9union"
+    },
+    {
+      "name": "Martinique",
+      "description": "Martinique (02) is one of the overseas regions of France. Its capital is Fort-de-France and it has an area of 1,128 km². The president of the regions as of 2020 is Claude Lise.",
+      "spellings": [
+        "matinik"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Martinique_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Martinique"
+    },
+    {
+      "name": "Mayotte",
+      "description": "Mayotte (06) is one of the overseas regions of France. Its capital is Mamoudzou and it has an area of 374 km². The president of the regions as of 2020 is Soibahadine Ibrahim Ramadani.",
+      "spellings": [
+        "mahori",
+        "maore"
+      ],
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mayotte_in_France_2016.svg",
+      "url": "https://en.wikipedia.org/wiki/Mayotte"
+    }
+  ]
+}

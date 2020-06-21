@@ -59,6 +59,7 @@ function verifyCategory(category) {
         require("./data/category/countries_asia.json"),
         require("./data/category/currencies.json"),
         require("./data/category/dinosaurs.json"),
+        require("./data/category/regions_france.json"),
     ];
     const categoryCollectionName = "category";
 
