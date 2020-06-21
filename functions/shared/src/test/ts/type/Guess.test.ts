@@ -5,7 +5,9 @@ it('test duplicate', function () {
         categoryItem: {
             name: "category_name",
             spellings: [],
-            description: "category_description"
+            description: "category_description",
+            imageUrl: null,
+            url: null
         },
         createdTime: 123,
         error: "duplicate",

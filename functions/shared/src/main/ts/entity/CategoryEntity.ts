@@ -1,14 +1,12 @@
-import {JsonDecoder} from "ts.data.json";
-import {CategoryItem, categoryItemDecoder} from "./CategoryItem";
-import {IStorable, levenshtein} from "../..";
+import {JsonDecoder} from "ts.data.json"
+import {CategoryItem, categoryItemDecoder} from "./CategoryItem"
+import {IStorable, levenshtein} from "../.."
 
 export interface CategoryEntity {
-    readonly id: string;
-    readonly name: string;
-    readonly description: string;
-    readonly items: Array<CategoryItem>;
-    readonly url: string | null
-    readonly imageUrl: string | null
+    readonly id: string
+    readonly name: string
+    readonly description: string
+    readonly items: Array<CategoryItem>
 }
 
 export const categoryDecoder = JsonDecoder.object<CategoryEntity>({
@@ -16,9 +14,7 @@ export const categoryDecoder = JsonDecoder.object<CategoryEntity>({
     name: JsonDecoder.string,
     description: JsonDecoder.string,
     items: JsonDecoder.array(categoryItemDecoder, "CategoryItem[]"),
-    url: JsonDecoder.failover(null, JsonDecoder.string),
-    imageUrl: JsonDecoder.failover(null, JsonDecoder.string),
-}, "Category");
+}, "Category")
 
 export class Category implements IStorable<CategoryEntity> {
     constructor(
@@ -26,8 +22,6 @@ export class Category implements IStorable<CategoryEntity> {
         public readonly name: string,
         public readonly description: string,
         public readonly items: Array<CategoryItem>,
-        public readonly url: string | null,
-        public readonly imageUrl: string | null,
     ) {
     }
 
@@ -61,8 +55,8 @@ export class Category implements IStorable<CategoryEntity> {
 
         const maxLevenshteinDistance = 2
         const closestItemsByName = this.items.reduce(
-            (reduction: { distance: number; items: CategoryItem[] }, item) => {
-                const distance = levenshtein(item.name.toLowerCase(), lowerCaseGuess, maxLevenshteinDistance + 1);
+            (reduction: { distance: number, items: CategoryItem[] }, item) => {
+                const distance = levenshtein(item.name.toLowerCase(), lowerCaseGuess, maxLevenshteinDistance + 1)
                 if (distance === reduction.distance) {
                     reduction.items.push(item)
                     return reduction
@@ -79,13 +73,13 @@ export class Category implements IStorable<CategoryEntity> {
                 distance: Infinity,
                 items: []
             }
-        );
+        )
         if (closestItemsByName.distance <= maxLevenshteinDistance && closestItemsByName.items.length === 1) {
             return closestItemsByName.items[0]
         }
 
         const closestItemsBySpelling = this.items.reduce(
-            (reduction: { distance: number; items: CategoryItem[] }, item) => {
+            (reduction: { distance: number, items: CategoryItem[] }, item) => {
                 const distance = item.spellings.reduce((previousDistance, spelling) => Math.min(previousDistance, levenshtein(spelling, lowerCaseGuess, maxLevenshteinDistance + 1)), Infinity)
                 if (distance === reduction.distance) {
                     reduction.items.push(item)
@@ -103,7 +97,7 @@ export class Category implements IStorable<CategoryEntity> {
                 distance: Infinity,
                 items: []
             }
-        );
+        )
         if (closestItemsBySpelling.distance <= maxLevenshteinDistance && closestItemsBySpelling.items.length === 1) {
             return closestItemsBySpelling.items[0]
         }
@@ -117,8 +111,6 @@ export class Category implements IStorable<CategoryEntity> {
             name: this.name,
             description: this.description,
             items: this.items,
-            imageUrl: this.imageUrl,
-            url: this.url,
         }
     }
 
@@ -128,8 +120,6 @@ export class Category implements IStorable<CategoryEntity> {
             entity.name,
             entity.description,
             entity.items,
-            entity.imageUrl,
-            entity.url,
         )
     }
 }

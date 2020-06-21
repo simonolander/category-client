@@ -3,7 +3,9 @@ import {Category, CategoryItem} from "../../../main";
 const bulbasaur: CategoryItem = {
     name: "Bulbasaur",
     description: "Pokemon #1",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const nidoran_female: CategoryItem = {
     name: "Nidoran♀",
@@ -12,12 +14,16 @@ const nidoran_female: CategoryItem = {
         "nidoran",
         "nidoran female",
         "female nidoran"
-    ]
+    ],
+    url: null,
+    imageUrl: null,
 }
 const nidorina: CategoryItem = {
     name: "Nidorina",
     description: "Pokemon #30",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const nidoran_male: CategoryItem = {
     name: "Nidoran♂",
@@ -25,32 +31,44 @@ const nidoran_male: CategoryItem = {
     spellings: [
         "nidoran male",
         "male nidoran"
-    ]
+    ],
+    url: null,
+    imageUrl: null,
 }
 const abra: CategoryItem = {
     name: "Abra",
     description: "Pokemon #63",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const golem: CategoryItem = {
     name: "Golem",
     description: "Pokemon #76",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const farfetchd: CategoryItem = {
     name: "Farfetch'd",
     description: "Pokemon #83",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const seel: CategoryItem = {
     name: "Seel",
     description: "Pokemon #86",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const muk: CategoryItem = {
     name: "Muk",
     description: "Pokemon #89",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 const mrmime: CategoryItem = {
     name: "Mr. Mime",
@@ -58,12 +76,16 @@ const mrmime: CategoryItem = {
     spellings: [
         "mister mime",
         "mime"
-    ]
+    ],
+    url: null,
+    imageUrl: null,
 }
 const mew: CategoryItem = {
     name: "Mew",
     description: "Pokemon #151",
-    spellings: []
+    spellings: [],
+    url: null,
+    imageUrl: null,
 }
 
 const category: Category =
@@ -84,8 +106,6 @@ const category: Category =
             mrmime,
             mew,
         ],
-        null,
-        null,
     )
 
 it.each<[string, CategoryItem | null]>([
