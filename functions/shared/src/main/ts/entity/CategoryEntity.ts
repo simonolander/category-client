@@ -7,6 +7,8 @@ export interface CategoryEntity {
     readonly name: string;
     readonly description: string;
     readonly items: Array<CategoryItem>;
+    readonly url: string | null
+    readonly imageUrl: string | null
 }
 
 export const categoryDecoder = JsonDecoder.object<CategoryEntity>({
@@ -14,6 +16,8 @@ export const categoryDecoder = JsonDecoder.object<CategoryEntity>({
     name: JsonDecoder.string,
     description: JsonDecoder.string,
     items: JsonDecoder.array(categoryItemDecoder, "CategoryItem[]"),
+    url: JsonDecoder.failover(null, JsonDecoder.string),
+    imageUrl: JsonDecoder.failover(null, JsonDecoder.string),
 }, "Category");
 
 export class Category implements IStorable<CategoryEntity> {
@@ -22,6 +26,8 @@ export class Category implements IStorable<CategoryEntity> {
         public readonly name: string,
         public readonly description: string,
         public readonly items: Array<CategoryItem>,
+        public readonly url: string | null,
+        public readonly imageUrl: string | null,
     ) {
     }
 
@@ -111,6 +117,8 @@ export class Category implements IStorable<CategoryEntity> {
             name: this.name,
             description: this.description,
             items: this.items,
+            imageUrl: this.imageUrl,
+            url: this.url,
         }
     }
 
@@ -120,6 +128,8 @@ export class Category implements IStorable<CategoryEntity> {
             entity.name,
             entity.description,
             entity.items,
+            entity.imageUrl,
+            entity.url,
         )
     }
 }

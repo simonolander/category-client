@@ -83,7 +83,9 @@ const category: Category =
             muk,
             mrmime,
             mew,
-        ]
+        ],
+        null,
+        null,
     )
 
 it.each<[string, CategoryItem | null]>([
