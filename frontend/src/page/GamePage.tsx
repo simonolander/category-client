@@ -323,6 +323,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
         return <code>no current guesser !</code>
     }
     const isCurrentGuesser = userId === currentGuesser.id
+    const anyHasDescription = game.participants.some(({id}) => game.getLatestGuess(id)?.categoryItem?.description)
     return (
         <div>
             <section className="section">
@@ -334,7 +335,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                             <th>Name</th>
                             <th>Last guess</th>
                             <th className="is-hidden-mobile">Object</th>
-                            <th className="is-hidden-mobile">Description</th>
+                            {anyHasDescription && <th className="is-hidden-mobile">Description</th>}
                             <th>Status</th>
                             <th>Time</th>
                         </tr>
@@ -348,7 +349,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                     <td>{name}</td>
                                     <td>{latestGuess?.value}</td>
                                     <td className="is-hidden-mobile">{latestGuess?.categoryItem?.name}</td>
-                                    <td className="is-hidden-mobile">{latestGuess?.categoryItem?.description}</td>
+                                    {anyHasDescription && <td className="is-hidden-mobile">{latestGuess?.categoryItem?.description}</td>}
                                     <td>{latestGuess && <StatusIcon guess={latestGuess}/>}</td>
                                     <td className="is-family-code">{isCurrentGuesser && (remainingGuessTime / 1000).toFixed(2)}</td>
                                 </tr>
