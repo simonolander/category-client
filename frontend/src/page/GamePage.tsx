@@ -449,6 +449,10 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
             return <p>Waiting for <strong>{game.admin.name}</strong> to create a new game.</p>
         }
     }
+    const someGuessHasObject = game.guesses.some(guess => guess.categoryItem)
+    const someGuessHasDescription = game.guesses.some(guess => guess.categoryItem?.description)
+    const someGuessHasUrl = game.guesses.some(guess => guess.categoryItem?.url)
+    const someGuessHasImageUrl = game.guesses.some(guess => guess.categoryItem?.imageUrl)
     return (
         <div>
             <section className="section">
@@ -515,9 +519,11 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                             <th>#</th>
                             <th>Guesser</th>
                             <th>Guessed value</th>
-                            <th>Object</th>
-                            <th>Description</th>
+                            {someGuessHasObject && <th>Object</th>}
+                            {someGuessHasDescription && <th>Description</th>}
                             <th>Status</th>
+                            {someGuessHasUrl && <th>Info</th>}
+                            {someGuessHasImageUrl && <th>Image</th>}
                         </tr>
                         </thead>
                         <tbody>
@@ -527,9 +533,11 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                                     <td>{index + 1}</td>
                                     <td>{guess.guesser.name}</td>
                                     <td>{guess.value}</td>
-                                    <td>{guess.categoryItem?.name}</td>
-                                    <td>{guess.categoryItem?.description}</td>
+                                    {someGuessHasObject && <td>{guess.categoryItem?.name}</td>}
+                                    {someGuessHasDescription && <td>{guess.categoryItem?.description}</td>}
                                     <td><StatusIcon guess={guess}/></td>
+                                    {someGuessHasUrl && <td>{guess.categoryItem?.url && <a href={guess.categoryItem.url}>Learn more</a>}</td>}
+                                    {someGuessHasImageUrl && <td>{guess.categoryItem?.imageUrl && <img style={{maxHeight: "10em"}} src={guess.categoryItem.imageUrl} alt="Object image"/>}</td>}
                                 </tr>
                             )
                         })}
