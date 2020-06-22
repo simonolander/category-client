@@ -6,142 +6,198 @@
     {
       "name": "Bulbasaur",
       "description": "Pokemon #1",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Bulbasaur",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png"
     },
     {
       "name": "Ivysaur",
       "description": "Pokemon #2",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Ivysaur",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/73/002Ivysaur.png/250px-002Ivysaur.png"
     },
     {
       "name": "Venusaur",
       "description": "Pokemon #3",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Venusaur",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png"
     },
     {
       "name": "Charmander",
       "description": "Pokemon #4",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Charmander",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png"
     },
     {
       "name": "Charmeleon",
       "description": "Pokemon #5",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Charmeleon",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/4a/005Charmeleon.png/250px-005Charmeleon.png"
     },
     {
       "name": "Charizard",
       "description": "Pokemon #6",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Charizard",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png"
     },
     {
       "name": "Squirtle",
       "description": "Pokemon #7",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Squirtle",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png"
     },
     {
       "name": "Wartortle",
       "description": "Pokemon #8",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Wartortle",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/0c/008Wartortle.png/250px-008Wartortle.png"
     },
     {
       "name": "Blastoise",
       "description": "Pokemon #9",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Blastoise",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/250px-009Blastoise.png"
     },
     {
       "name": "Caterpie",
       "description": "Pokemon #10",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Caterpie",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/5/5d/010Caterpie.png/250px-010Caterpie.png"
     },
     {
       "name": "Metapod",
       "description": "Pokemon #11",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Metapod",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cd/011Metapod.png/250px-011Metapod.png"
     },
     {
       "name": "Butterfree",
       "description": "Pokemon #12",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Butterfree",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/d1/012Butterfree.png/250px-012Butterfree.png"
     },
     {
       "name": "Weedle",
       "description": "Pokemon #13",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Weedle",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/df/013Weedle.png/250px-013Weedle.png"
     },
     {
       "name": "Kakuna",
       "description": "Pokemon #14",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Kakuna",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f0/014Kakuna.png/250px-014Kakuna.png"
     },
     {
       "name": "Beedrill",
       "description": "Pokemon #15",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Beedrill",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/61/015Beedrill.png/250px-015Beedrill.png"
     },
     {
       "name": "Pidgey",
       "description": "Pokemon #16",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Pidgey",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/5/55/016Pidgey.png/250px-016Pidgey.png"
     },
     {
       "name": "Pidgeotto",
       "description": "Pokemon #17",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Pidgeotto",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/7a/017Pidgeotto.png/250px-017Pidgeotto.png"
     },
     {
       "name": "Pidgeot",
       "description": "Pokemon #18",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Pidgeot",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/5/57/018Pidgeot.png/250px-018Pidgeot.png"
     },
     {
       "name": "Rattata",
       "description": "Pokemon #19",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Rattata",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/46/019Rattata.png/250px-019Rattata.png"
     },
     {
       "name": "Raticate",
       "description": "Pokemon #20",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Raticate",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f4/020Raticate.png/250px-020Raticate.png"
     },
     {
       "name": "Spearow",
       "description": "Pokemon #21",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Spearow",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/8b/021Spearow.png/250px-021Spearow.png"
     },
     {
       "name": "Fearow",
       "description": "Pokemon #22",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Fearow",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a0/022Fearow.png/250px-022Fearow.png"
     },
     {
       "name": "Ekans",
       "description": "Pokemon #23",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Ekans",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/fa/023Ekans.png/250px-023Ekans.png"
     },
     {
       "name": "Arbok",
       "description": "Pokemon #24",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Arbok",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cd/024Arbok.png/250px-024Arbok.png"
     },
     {
       "name": "Pikachu",
       "description": "Pokemon #25",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Pikachu",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png"
     },
     {
       "name": "Raichu",
       "description": "Pokemon #26",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Raichu",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/88/026Raichu.png/250px-026Raichu.png"
     },
     {
       "name": "Sandshrew",
       "description": "Pokemon #27",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/9e/027Sandshrew.png/250px-027Sandshrew.png"
     },
     {
       "name": "Sandslash",
       "description": "Pokemon #28",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Sandslash",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/0b/028Sandslash.png/250px-028Sandslash.png"
     },
     {
       "name": "Nidoran♀",
@@ -150,17 +206,23 @@
         "nidoran",
         "nidoran female",
         "female nidoran"
-      ]
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Nidoran♀",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/81/029Nidoran.png/250px-029Nidoran.png"
     },
     {
       "name": "Nidorina",
       "description": "Pokemon #30",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Nidorina",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cd/030Nidorina.png/250px-030Nidorina.png"
     },
     {
       "name": "Nidoqueen",
       "description": "Pokemon #31",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Nidoqueen",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/bf/031Nidoqueen.png/250px-031Nidoqueen.png"
     },
     {
       "name": "Nidoran♂",
@@ -168,452 +230,632 @@
       "spellings": [
         "nidoran male",
         "male nidoran"
-      ]
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Nidoran♂",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/4a/032Nidoran.png/250px-032Nidoran.png"
     },
     {
       "name": "Nidorino",
       "description": "Pokemon #33",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Nidorino",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/9f/033Nidorino.png/250px-033Nidorino.png"
     },
     {
       "name": "Nidoking",
       "description": "Pokemon #34",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Nidoking",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/c6/034Nidoking.png/250px-034Nidoking.png"
     },
     {
       "name": "Clefairy",
       "description": "Pokemon #35",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Clefairy",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f4/035Clefairy.png/250px-035Clefairy.png"
     },
     {
       "name": "Clefable",
       "description": "Pokemon #36",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Clefable",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a9/036Clefable.png/250px-036Clefable.png"
     },
     {
       "name": "Vulpix",
       "description": "Pokemon #37",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Vulpix",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/60/037Vulpix.png/250px-037Vulpix.png"
     },
     {
       "name": "Ninetales",
       "description": "Pokemon #38",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Ninetales",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/05/038Ninetales.png/250px-038Ninetales.png"
     },
     {
       "name": "Jigglypuff",
       "description": "Pokemon #39",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Jigglypuff",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/3e/039Jigglypuff.png/250px-039Jigglypuff.png"
     },
     {
       "name": "Wigglytuff",
       "description": "Pokemon #40",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Wigglytuff",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/92/040Wigglytuff.png/250px-040Wigglytuff.png"
     },
     {
       "name": "Zubat",
       "description": "Pokemon #41",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Zubat",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/da/041Zubat.png/250px-041Zubat.png"
     },
     {
       "name": "Golbat",
       "description": "Pokemon #42",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Golbat",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/0c/042Golbat.png/250px-042Golbat.png"
     },
     {
       "name": "Oddish",
       "description": "Pokemon #43",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Oddish",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/43/043Oddish.png/250px-043Oddish.png"
     },
     {
       "name": "Gloom",
       "description": "Pokemon #44",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Gloom",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/2a/044Gloom.png/250px-044Gloom.png"
     },
     {
       "name": "Vileplume",
       "description": "Pokemon #45",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Vileplume",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/6a/045Vileplume.png/250px-045Vileplume.png"
     },
     {
       "name": "Paras",
       "description": "Pokemon #46",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Paras",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/d4/046Paras.png/250px-046Paras.png"
     },
     {
       "name": "Parasect",
       "description": "Pokemon #47",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Parasect",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/80/047Parasect.png/250px-047Parasect.png"
     },
     {
       "name": "Venonat",
       "description": "Pokemon #48",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Venonat",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/ad/048Venonat.png/250px-048Venonat.png"
     },
     {
       "name": "Venomoth",
       "description": "Pokemon #49",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Venomoth",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/d3/049Venomoth.png/250px-049Venomoth.png"
     },
     {
       "name": "Diglett",
       "description": "Pokemon #50",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Diglett",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/31/050Diglett.png/250px-050Diglett.png"
     },
     {
       "name": "Dugtrio",
       "description": "Pokemon #51",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/e/e5/051Dugtrio.png/250px-051Dugtrio.png"
     },
     {
       "name": "Meowth",
       "description": "Pokemon #52",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Meowth",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/d6/052Meowth.png/250px-052Meowth.png"
     },
     {
       "name": "Persian",
       "description": "Pokemon #53",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Persian",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/1/13/053Persian.png/250px-053Persian.png"
     },
     {
       "name": "Psyduck",
       "description": "Pokemon #54",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Psyduck",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/5/53/054Psyduck.png/250px-054Psyduck.png"
     },
     {
       "name": "Golduck",
       "description": "Pokemon #55",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Golduck",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/fe/055Golduck.png/250px-055Golduck.png"
     },
     {
       "name": "Mankey",
       "description": "Pokemon #56",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Mankey",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/41/056Mankey.png/250px-056Mankey.png"
     },
     {
       "name": "Primeape",
       "description": "Pokemon #57",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Primeape",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/9a/057Primeape.png/250px-057Primeape.png"
     },
     {
       "name": "Growlithe",
       "description": "Pokemon #58",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Growlithe",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png"
     },
     {
       "name": "Arcanine",
       "description": "Pokemon #59",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Arcanine",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/b8/059Arcanine.png/250px-059Arcanine.png"
     },
     {
       "name": "Poliwag",
       "description": "Pokemon #60",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Poliwag",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/49/060Poliwag.png/250px-060Poliwag.png"
     },
     {
       "name": "Poliwhirl",
       "description": "Pokemon #61",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Poliwhirl",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a9/061Poliwhirl.png/250px-061Poliwhirl.png"
     },
     {
       "name": "Poliwrath",
       "description": "Pokemon #62",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Poliwrath",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/2d/062Poliwrath.png/250px-062Poliwrath.png"
     },
     {
       "name": "Abra",
       "description": "Pokemon #63",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Abra",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/62/063Abra.png/250px-063Abra.png"
     },
     {
       "name": "Kadabra",
       "description": "Pokemon #64",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Kadabra",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/97/064Kadabra.png/250px-064Kadabra.png"
     },
     {
       "name": "Alakazam",
       "description": "Pokemon #65",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Alakazam",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cc/065Alakazam.png/250px-065Alakazam.png"
     },
     {
       "name": "Machop",
       "description": "Pokemon #66",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Machop",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/85/066Machop.png/250px-066Machop.png"
     },
     {
       "name": "Machoke",
       "description": "Pokemon #67",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Machoke",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/8e/067Machoke.png/250px-067Machoke.png"
     },
     {
       "name": "Machamp",
       "description": "Pokemon #68",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Machamp",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/8f/068Machamp.png/250px-068Machamp.png"
     },
     {
       "name": "Bellsprout",
       "description": "Pokemon #69",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Bellsprout",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a2/069Bellsprout.png/250px-069Bellsprout.png"
     },
     {
       "name": "Weepinbell",
       "description": "Pokemon #70",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Weepinbell",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/9f/070Weepinbell.png/250px-070Weepinbell.png"
     },
     {
       "name": "Victreebel",
       "description": "Pokemon #71",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Victreebel",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/be/071Victreebel.png/250px-071Victreebel.png"
     },
     {
       "name": "Tentacool",
       "description": "Pokemon #72",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Tentacool",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/4e/072Tentacool.png/250px-072Tentacool.png"
     },
     {
       "name": "Tentacruel",
       "description": "Pokemon #73",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Tentacruel",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f6/073Tentacruel.png/250px-073Tentacruel.png"
     },
     {
       "name": "Geodude",
       "description": "Pokemon #74",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Geodude",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/98/074Geodude.png/250px-074Geodude.png"
     },
     {
       "name": "Graveler",
       "description": "Pokemon #75",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Graveler",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/75/075Graveler.png/250px-075Graveler.png"
     },
     {
       "name": "Golem",
       "description": "Pokemon #76",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Golem",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f2/076Golem.png/250px-076Golem.png"
     },
     {
       "name": "Ponyta",
       "description": "Pokemon #77",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Ponyta",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/3b/077Ponyta.png/250px-077Ponyta.png"
     },
     {
       "name": "Rapidash",
       "description": "Pokemon #78",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Rapidash",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/3f/078Rapidash.png/250px-078Rapidash.png"
     },
     {
       "name": "Slowpoke",
       "description": "Pokemon #79",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/70/079Slowpoke.png/250px-079Slowpoke.png"
     },
     {
       "name": "Slowbro",
       "description": "Pokemon #80",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Slowbro",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/80/080Slowbro.png/250px-080Slowbro.png"
     },
     {
       "name": "Magnemite",
       "description": "Pokemon #81",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Magnemite",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/6c/081Magnemite.png/250px-081Magnemite.png"
     },
     {
       "name": "Magneton",
       "description": "Pokemon #82",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Magneton",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/72/082Magneton.png/250px-082Magneton.png"
     },
     {
-      "name": "Farfetch\"d",
+      "name": "Farfetch'd",
       "description": "Pokemon #83",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Farfetch'd",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f8/083Farfetch%27d.png/250px-083Farfetch%27d.png"
     },
     {
       "name": "Doduo",
       "description": "Pokemon #84",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Doduo",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/5/54/084Doduo.png/250px-084Doduo.png"
     },
     {
       "name": "Dodrio",
       "description": "Pokemon #85",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Dodrio",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/93/085Dodrio.png/250px-085Dodrio.png"
     },
     {
       "name": "Seel",
       "description": "Pokemon #86",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Seel",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/1/1f/086Seel.png/250px-086Seel.png"
     },
     {
       "name": "Dewgong",
       "description": "Pokemon #87",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Dewgong",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/c7/087Dewgong.png/250px-087Dewgong.png"
     },
     {
       "name": "Grimer",
       "description": "Pokemon #88",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Grimer",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a0/088Grimer.png/250px-088Grimer.png"
     },
     {
       "name": "Muk",
       "description": "Pokemon #89",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Muk",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/7c/089Muk.png/250px-089Muk.png"
     },
     {
       "name": "Shellder",
       "description": "Pokemon #90",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Shellder",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/40/090Shellder.png/250px-090Shellder.png"
     },
     {
       "name": "Cloyster",
       "description": "Pokemon #91",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Cloyster",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/1/1d/091Cloyster.png/250px-091Cloyster.png"
     },
     {
       "name": "Gastly",
       "description": "Pokemon #92",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Gastly",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/ca/092Gastly.png/250px-092Gastly.png"
     },
     {
       "name": "Haunter",
       "description": "Pokemon #93",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Haunter",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png"
     },
     {
       "name": "Gengar",
       "description": "Pokemon #94",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Gengar",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/c6/094Gengar.png/250px-094Gengar.png"
     },
     {
       "name": "Onix",
       "description": "Pokemon #95",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Onix",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/9a/095Onix.png/250px-095Onix.png"
     },
     {
       "name": "Drowzee",
       "description": "Pokemon #96",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Drowzee",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/3e/096Drowzee.png/250px-096Drowzee.png"
     },
     {
       "name": "Hypno",
       "description": "Pokemon #97",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Hypno",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/0a/097Hypno.png/250px-097Hypno.png"
     },
     {
       "name": "Krabby",
       "description": "Pokemon #98",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Krabby",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a7/098Krabby.png/250px-098Krabby.png"
     },
     {
       "name": "Kingler",
       "description": "Pokemon #99",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Kingler",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/71/099Kingler.png/250px-099Kingler.png"
     },
     {
       "name": "Voltorb",
       "description": "Pokemon #100",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Voltorb",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/da/100Voltorb.png/250px-100Voltorb.png"
     },
     {
       "name": "Electrode",
       "description": "Pokemon #101",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Electrode",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/84/101Electrode.png/250px-101Electrode.png"
     },
     {
       "name": "Exeggcute",
       "description": "Pokemon #102",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Exeggcute",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/af/102Exeggcute.png/250px-102Exeggcute.png"
     },
     {
       "name": "Exeggutor",
       "description": "Pokemon #103",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/24/103Exeggutor.png/250px-103Exeggutor.png"
     },
     {
       "name": "Cubone",
       "description": "Pokemon #104",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Cubone",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/2a/104Cubone.png/250px-104Cubone.png"
     },
     {
       "name": "Marowak",
       "description": "Pokemon #105",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Marowak",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/98/105Marowak.png/250px-105Marowak.png"
     },
     {
       "name": "Hitmonlee",
       "description": "Pokemon #106",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Hitmonlee",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/32/106Hitmonlee.png/250px-106Hitmonlee.png"
     },
     {
       "name": "Hitmonchan",
       "description": "Pokemon #107",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Hitmonchan",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/a3/107Hitmonchan.png/250px-107Hitmonchan.png"
     },
     {
       "name": "Lickitung",
       "description": "Pokemon #108",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Lickitung",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/00/108Lickitung.png/250px-108Lickitung.png"
     },
     {
       "name": "Koffing",
       "description": "Pokemon #109",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Koffing",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/1/17/109Koffing.png/250px-109Koffing.png"
     },
     {
       "name": "Weezing",
       "description": "Pokemon #110",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Weezing",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/42/110Weezing.png/250px-110Weezing.png"
     },
     {
       "name": "Rhyhorn",
       "description": "Pokemon #111",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Rhyhorn",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/9b/111Rhyhorn.png/250px-111Rhyhorn.png"
     },
     {
       "name": "Rhydon",
       "description": "Pokemon #112",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Rhydon",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/47/112Rhydon.png/250px-112Rhydon.png"
     },
     {
       "name": "Chansey",
       "description": "Pokemon #113",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Chansey",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cd/113Chansey.png/250px-113Chansey.png"
     },
     {
       "name": "Tangela",
       "description": "Pokemon #114",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Tangela",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/3e/114Tangela.png/250px-114Tangela.png"
     },
     {
       "name": "Kangaskhan",
       "description": "Pokemon #115",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Kangaskhan",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/4e/115Kangaskhan.png/250px-115Kangaskhan.png"
     },
     {
       "name": "Horsea",
       "description": "Pokemon #116",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Horsea",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/5/5a/116Horsea.png/250px-116Horsea.png"
     },
     {
       "name": "Seadra",
       "description": "Pokemon #117",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Seadra",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/26/117Seadra.png/250px-117Seadra.png"
     },
     {
       "name": "Goldeen",
       "description": "Pokemon #118",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Goldeen",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/7b/118Goldeen.png/250px-118Goldeen.png"
     },
     {
       "name": "Seaking",
       "description": "Pokemon #119",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Seaking",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/6a/119Seaking.png/250px-119Seaking.png"
     },
     {
       "name": "Staryu",
       "description": "Pokemon #120",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Staryu",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/4f/120Staryu.png/250px-120Staryu.png"
     },
     {
       "name": "Starmie",
       "description": "Pokemon #121",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Starmie",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cd/121Starmie.png/250px-121Starmie.png"
     },
     {
       "name": "Mr. Mime",
@@ -621,152 +863,212 @@
       "spellings": [
         "mister mime",
         "mime"
-      ]
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/e/ec/122Mr._Mime.png/250px-122Mr._Mime.png"
     },
     {
       "name": "Scyther",
       "description": "Pokemon #123",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Scyther",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/ba/123Scyther.png/250px-123Scyther.png"
     },
     {
       "name": "Jynx",
       "description": "Pokemon #124",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Jynx",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/7c/124Jynx.png/250px-124Jynx.png"
     },
     {
       "name": "Electabuzz",
       "description": "Pokemon #125",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Electabuzz",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/de/125Electabuzz.png/250px-125Electabuzz.png"
     },
     {
       "name": "Magmar",
       "description": "Pokemon #126",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Magmar",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/8c/126Magmar.png/250px-126Magmar.png"
     },
     {
       "name": "Pinsir",
       "description": "Pokemon #127",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Pinsir",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/71/127Pinsir.png/250px-127Pinsir.png"
     },
     {
       "name": "Tauros",
       "description": "Pokemon #128",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Tauros",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/b8/128Tauros.png/250px-128Tauros.png"
     },
     {
       "name": "Magikarp",
       "description": "Pokemon #129",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Magikarp",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png"
     },
     {
       "name": "Gyarados",
       "description": "Pokemon #130",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Gyarados",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/41/130Gyarados.png/250px-130Gyarados.png"
     },
     {
       "name": "Lapras",
       "description": "Pokemon #131",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Lapras",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/a/ab/131Lapras.png/250px-131Lapras.png"
     },
     {
       "name": "Ditto",
       "description": "Pokemon #132",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Ditto",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/3/36/132Ditto.png/250px-132Ditto.png"
     },
     {
       "name": "Eevee",
       "description": "Pokemon #133",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Eevee",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/e/e2/133Eevee.png/250px-133Eevee.png"
     },
     {
       "name": "Vaporeon",
       "description": "Pokemon #134",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Vaporeon",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/fd/134Vaporeon.png/250px-134Vaporeon.png"
     },
     {
       "name": "Jolteon",
       "description": "Pokemon #135",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Jolteon",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/bb/135Jolteon.png/250px-135Jolteon.png"
     },
     {
       "name": "Flareon",
       "description": "Pokemon #136",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Flareon",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/d/dd/136Flareon.png/250px-136Flareon.png"
     },
     {
       "name": "Porygon",
       "description": "Pokemon #137",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Porygon",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png"
     },
     {
       "name": "Omanyte",
       "description": "Pokemon #138",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Omanyte",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/79/138Omanyte.png/250px-138Omanyte.png"
     },
     {
       "name": "Omastar",
       "description": "Pokemon #139",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Omastar",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/43/139Omastar.png/250px-139Omastar.png"
     },
     {
       "name": "Kabuto",
       "description": "Pokemon #140",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Kabuto",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/f9/140Kabuto.png/250px-140Kabuto.png"
     },
     {
       "name": "Kabutops",
       "description": "Pokemon #141",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Kabutops",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/2/29/141Kabutops.png/250px-141Kabutops.png"
     },
     {
       "name": "Aerodactyl",
       "description": "Pokemon #142",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Aerodactyl",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/e/e8/142Aerodactyl.png/250px-142Aerodactyl.png"
     },
     {
       "name": "Snorlax",
       "description": "Pokemon #143",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Snorlax",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/f/fb/143Snorlax.png/250px-143Snorlax.png"
     },
     {
       "name": "Articuno",
       "description": "Pokemon #144",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Articuno",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/4/4e/144Articuno.png/250px-144Articuno.png"
     },
     {
       "name": "Zapdos",
       "description": "Pokemon #145",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Zapdos",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/e/e3/145Zapdos.png/250px-145Zapdos.png"
     },
     {
       "name": "Moltres",
       "description": "Pokemon #146",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Moltres",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/1/1b/146Moltres.png/250px-146Moltres.png"
     },
     {
       "name": "Dratini",
       "description": "Pokemon #147",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Dratini",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png"
     },
     {
       "name": "Dragonair",
       "description": "Pokemon #148",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Dragonair",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/9/93/148Dragonair.png/250px-148Dragonair.png"
     },
     {
       "name": "Dragonite",
       "description": "Pokemon #149",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Dragonite",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/8/8b/149Dragonite.png/250px-149Dragonite.png"
     },
     {
       "name": "Mewtwo",
       "description": "Pokemon #150",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Mewtwo",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/7/78/150Mewtwo.png/250px-150Mewtwo.png"
     },
     {
       "name": "Mew",
       "description": "Pokemon #151",
-      "spellings": []
+      "spellings": [],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Mew",
+      "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/b1/151Mew.png/250px-151Mew.png"
     }
   ]
 }
