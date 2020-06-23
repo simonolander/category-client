@@ -3,7 +3,7 @@ import {JsonDecoder} from "ts.data.json"
 export interface CategoryItem {
     readonly name: string
     readonly description: string
-    readonly spellings: Array<string>
+    readonly spellings: string[]
     readonly url: string | null
     readonly imageUrl: string | null
 }
