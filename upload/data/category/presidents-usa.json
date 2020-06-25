@@ -4,308 +4,308 @@
   "description": "Names of the current and previous presidents of the United States, as of June 2020.",
   "items": [
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/George_Washington",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/320px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
       "name": "George Washington",
       "url": "https://en.wikipedia.org/wiki/George_Washington",
       "description": "George Washington is the 1th president, unaffiliated to any party. He was president from April 30, 1789 to March 4, 1797.",
       "spellings": ["washington"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/John_Adams",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/John_Adams%2C_Gilbert_Stuart%2C_c1800_1815.jpg/320px-John_Adams%2C_Gilbert_Stuart%2C_c1800_1815.jpg",
       "name": "John Adams",
       "url": "https://en.wikipedia.org/wiki/John_Adams",
       "description": "John Adams is the 2th president, representing the Federalist party. He was president from March 4, 1797 to March 4, 1801.",
       "spellings": ["adams"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/320px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg",
       "name": "Thomas Jefferson",
       "url": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
       "description": "Thomas Jefferson is the 3th president, representing the Democratic-Republican party. He was president from March 4, 1801 to March 4, 1809.",
       "spellings": ["jefferson"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/James_Madison",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Madison.jpg/320px-James_Madison.jpg",
       "name": "James Madison",
       "url": "https://en.wikipedia.org/wiki/James_Madison",
       "description": "James Madison is the 4th president, representing the Democratic-Republican party. He was president from March 4, 1809 to March 4, 1817.",
       "spellings": ["madison"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/James_Monroe",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/James_Monroe_White_House_portrait_1819.jpg/320px-James_Monroe_White_House_portrait_1819.jpg",
       "name": "James Monroe",
       "url": "https://en.wikipedia.org/wiki/James_Monroe",
       "description": "James Monroe is the 5th president, representing the Democratic-Republican party. He was president from March 4, 1817 to March 4, 1825.",
       "spellings": ["monroe"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/John_Quincy_Adams",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/JQA_Photo.tif/lossy-page1-320px-JQA_Photo.tif.jpg",
       "name": "John Quincy Adams",
       "url": "https://en.wikipedia.org/wiki/John_Quincy_Adams",
       "description": "John Quincy Adams is the 6th president, representing the Democratic-Republican party. He was president from March 4, 1825 to March 4, 1829.",
       "spellings": ["quincy"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Andrew_Jackson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Andrew_jackson_head.jpg/330px-Andrew_jackson_head.jpg",
       "name": "Andrew Jackson",
       "url": "https://en.wikipedia.org/wiki/Andrew_Jackson",
       "description": "Andrew Jackson is the 7th president, representing the Democratic party. He was president from March 4, 1829 to March 4, 1837.",
       "spellings": ["jackson"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Martin_Van_Buren",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Martin_Van_Buren_edit.jpg/320px-Martin_Van_Buren_edit.jpg",
       "name": "Martin Van Buren",
       "url": "https://en.wikipedia.org/wiki/Martin_Van_Buren",
       "description": "Martin Van Buren is the 8th president, representing the Democratic party. He was president from March 4, 1837 to March 4, 1841.",
       "spellings": ["buren", "van buren", "martin buren"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/William_Henry_Harrison",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/William_Henry_Harrison_daguerreotype_edit.jpg/320px-William_Henry_Harrison_daguerreotype_edit.jpg",
       "name": "William Henry Harrison",
       "url": "https://en.wikipedia.org/wiki/William_Henry_Harrison",
       "description": "William Henry Harrison is the 9th president, representing the Whig party. He was president from March 4, 1841 to April 4, 1841.",
       "spellings": ["william h harrison", "william harrison", "henry harrison"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/John_Tyler",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Tyler%2C_Jr.jpg/320px-John_Tyler%2C_Jr.jpg",
       "name": "John Tyler",
       "url": "https://en.wikipedia.org/wiki/John_Tyler",
       "description": "John Tyler is the 10th president, representing the Whig party. He was president from April 4, 1841 to March 4, 1845.",
       "spellings": ["tyler"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/James_K._Polk",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/JKP.jpg/320px-JKP.jpg",
       "name": "James K. Polk",
       "url": "https://en.wikipedia.org/wiki/James_K._Polk",
       "description": "James Knox Polk is the 11th president, representing the Democratic party. He was president from March 4, 1845 to March 4, 1849.",
       "spellings": ["polk", "james polk", "james knox polk"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Zachary_Taylor",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Zachary_Taylor_restored_and_cropped.jpg/320px-Zachary_Taylor_restored_and_cropped.jpg",
       "name": "Zachary Taylor",
       "url": "https://en.wikipedia.org/wiki/Zachary_Taylor",
       "description": "Zachary Taylor is the 12th president, representing the Whig party. He was president from March 4, 1849 to July 9, 1850.",
       "spellings": ["taylor"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Millard_Fillmore",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Millard_Fillmore_by_Brady_Studio_1855-65-crop.jpg/320px-Millard_Fillmore_by_Brady_Studio_1855-65-crop.jpg",
       "name": "Millard Fillmore",
       "url": "https://en.wikipedia.org/wiki/Millard_Fillmore",
       "description": "Millard Fillmore is the 13th president, representing the Whig party. He was president from July 9, 1850 to March 4, 1853.",
       "spellings": ["fillmore"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Franklin_Pierce",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29.jpg/320px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop_%28cropped%29.jpg",
       "name": "Franklin Pierce",
       "url": "https://en.wikipedia.org/wiki/Franklin_Pierce",
       "description": "Franklin Pierce is the 14th president, representing the Democratic party. He was president from March 4, 1853 to March 4, 1857.",
       "spellings": ["pierce"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/James_Buchanan",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/James_Buchanan.jpg/320px-James_Buchanan.jpg",
       "name": "James Buchanan",
       "url": "https://en.wikipedia.org/wiki/James_Buchanan",
       "description": "James Buchanan is the 15th president, representing the Democratic party. He was president from March 4, 1857 to March 4, 1861.",
       "spellings": ["buchanan"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/320px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
       "name": "Abraham Lincoln",
       "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
       "description": "Abraham Lincoln is the 16th president, representing the Republican party. He was president from March 4, 1861 to April 15, 1865.",
       "spellings": ["lincoln"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Andrew_Johnson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg/320px-Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg",
       "name": "Andrew Johnson",
       "url": "https://en.wikipedia.org/wiki/Andrew_Johnson",
       "description": "Andrew Johnson is the 17th president, representing the National Union party. He was president from April 15, 1865 to March 4, 1869.",
       "spellings": ["johnson"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ulysses_S_Grant_by_Brady_c1870-restored.jpg/320px-Ulysses_S_Grant_by_Brady_c1870-restored.jpg",
       "name": "Ulysses S. Grant",
       "url": "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
       "description": "Ulysses Sam Grant is the 18th president, representing the Republican party. He was president from March 4, 1869 to March 4, 1877.",
       "spellings": ["grant", "ulysses grant"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Rutherford_B._Hayes",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/President_Rutherford_Hayes_1870_-_1880_Restored.jpg/320px-President_Rutherford_Hayes_1870_-_1880_Restored.jpg",
       "name": "Rutherford B. Hayes",
       "url": "https://en.wikipedia.org/wiki/Rutherford_B._Hayes",
       "description": "Rutherford Birchard Hayes is the 19th president, representing the Republican party. He was president from March 4, 1877 to March 4, 1881.",
       "spellings": ["hayes", "rutherford hayes"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/James_A._Garfield",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/James_Abram_Garfield%2C_photo_portrait_seated.jpg/320px-James_Abram_Garfield%2C_photo_portrait_seated.jpg",
       "name": "James A. Garfield",
       "url": "https://en.wikipedia.org/wiki/James_A._Garfield",
       "description": "James Abram Garfield is the 20th president, representing the Republican party. He was president from March 4, 1881 to September 19, 1881.",
       "spellings": ["garfield", "james garfield"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Chester_A._Arthur",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Chester_Alan_Arthur.jpg/320px-Chester_Alan_Arthur.jpg",
       "name": "Chester A. Arthur",
       "url": "https://en.wikipedia.org/wiki/Chester_A._Arthur",
       "description": "Chester A. Arthur is the 21th president, representing the Republican party. He was president from September 19, 1881 to March 4, 1885.",
       "spellings": ["arthur", "chester arthur"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Grover_Cleveland",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Grover_Cleveland_-_NARA_-_518139_%28cropped%29.jpg/320px-Grover_Cleveland_-_NARA_-_518139_%28cropped%29.jpg",
       "name": "Grover Cleveland",
       "url": "https://en.wikipedia.org/wiki/Grover_Cleveland",
       "description": "Grover Cleveland is the 22th and the 24th president, representing the Democratic party. He was president from March 4, 1885 to March 4, 1889, and then again from from March 4, 1893 to March 4, 1897.",
       "spellings": ["cleveland"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Benjamin_Harrison",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Benjamin_Harrison%2C_head_and_shoulders_bw_photo%2C_1896.jpg/320px-Benjamin_Harrison%2C_head_and_shoulders_bw_photo%2C_1896.jpg",
       "name": "Benjamin Harrison",
       "url": "https://en.wikipedia.org/wiki/Benjamin_Harrison",
       "description": "Benjamin Harrison is the 23th president, representing the Republican party. He was president from March 4, 1889 to March 4, 1893.",
       "spellings": ["harrison"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/William_McKinley",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mckinley.jpg/320px-Mckinley.jpg",
       "name": "William McKinley",
       "url": "https://en.wikipedia.org/wiki/William_McKinley",
       "description": "William McKinley is the 25th president, representing the Republican party. He was president from March 4, 1897 to September 14, 1901.",
       "spellings": ["mckinley"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Theodore_Roosevelt",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/President_Roosevelt_-_Pach_Bros.jpg/320px-President_Roosevelt_-_Pach_Bros.jpg",
       "name": "Theodore Roosevelt",
       "url": "https://en.wikipedia.org/wiki/Theodore_Roosevelt",
       "description": "Theodore Roosevelt is the 26th president, representing the Republican party. He was president from September 14, 1901 to March 4, 1909.",
       "spellings": ["roosevelt"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/William_Howard_Taft",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/William_Howard_Taft%2C_head-and-shoulders_portrait%2C_facing_front.jpg/320px-William_Howard_Taft%2C_head-and-shoulders_portrait%2C_facing_front.jpg",
       "name": "William Howard Taft",
       "url": "https://en.wikipedia.org/wiki/William_Howard_Taft",
       "description": "William Howard Taft is the 27th president, representing the Republican party. He was president from March 4, 1909 to March 4, 1913.",
       "spellings": ["taft"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Woodrow_Wilson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Woodrow_Wilson-H%26E.jpg/320px-Woodrow_Wilson-H%26E.jpg",
       "name": "Woodrow Wilson",
       "url": "https://en.wikipedia.org/wiki/Woodrow_Wilson",
       "description": "Woodrow Wilson is the 28th president, representing the Democratic party. He was president from March 4, 1913 to March 4, 1921.",
       "spellings": ["wilson"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Warren_G._Harding",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Warren_G_Harding-Harris_%26_Ewing.jpg/320px-Warren_G_Harding-Harris_%26_Ewing.jpg",
       "name": "Warren G. Harding",
       "url": "https://en.wikipedia.org/wiki/Warren_G._Harding",
       "description": "Warren G. Harding is the 29th president, representing the Republican party. He was president from March 4, 1921 to August 2, 1923.",
       "spellings": ["harding", "warren harding"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Calvin_Coolidge",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Calvin_Coolidge_cph.3g10777_%28cropped%29.jpg/320px-Calvin_Coolidge_cph.3g10777_%28cropped%29.jpg",
       "name": "Calvin Coolidge",
       "url": "https://en.wikipedia.org/wiki/Calvin_Coolidge",
       "description": "Calvin Coolidge is the 30th president, representing the Republican party. He was president from August 2, 1923 to March 4, 1929.",
       "spellings": ["coolidge"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Herbert_Hoover",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/President_Hoover_portrait.jpg/330px-President_Hoover_portrait.jpg",
       "name": "Herbert Hoover",
       "url": "https://en.wikipedia.org/wiki/Herbert_Hoover",
       "description": "Herbert Hoover is the 31th president, representing the Republican party. He was president from March 4, 1929 to March 4, 1933.",
       "spellings": ["hoover"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/FDR_1944_Color_Portrait.jpg/320px-FDR_1944_Color_Portrait.jpg",
       "name": "Franklin D. Roosevelt",
       "url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
       "description": "Franklin D. Roosevelt is the 32th president, representing the Democratic party. He was president from March 4, 1933 to April 12, 1945.",
       "spellings": ["franklin roosevelt"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Harry_S._Truman",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/TRUMAN_58-766-06_CROPPED.jpg/320px-TRUMAN_58-766-06_CROPPED.jpg",
       "name": "Harry S. Truman",
       "url": "https://en.wikipedia.org/wiki/Harry_S._Truman",
       "description": "Harry S. Truman is the 33th president, representing the Democratic party. He was president from April 12, 1945 to January 20, 1953.",
       "spellings": ["truman", "harry truman"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg/320px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959.jpg",
       "name": "Dwight D. Eisenhower",
       "url": "https://en.wikipedia.org/wiki/Dwight_D._Eisenhower",
       "description": "Dwight D. Eisenhower is the 34th president, representing the Republican party. He was president from January 20, 1953 to January 20, 1961.",
       "spellings": ["eisenhower", "dwight eisenhower"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/John_F._Kennedy",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/320px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg",
       "name": "John F. Kennedy",
       "url": "https://en.wikipedia.org/wiki/John_F._Kennedy",
       "description": "John F. Kennedy is the 35th president, representing the Democratic party. He was president from January 20, 1961 to November 22, 1963.",
       "spellings": ["kennedy", "john kennedy"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Lyndon_B._Johnson",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/37_Lyndon_Johnson_3x4.jpg/320px-37_Lyndon_Johnson_3x4.jpg",
       "name": "Lyndon B. Johnson",
       "url": "https://en.wikipedia.org/wiki/Lyndon_B._Johnson",
       "description": "Lyndon B. Johnson is the 36th president, representing the Democratic party. He was president from November 22, 1963 to January 20, 1969.",
       "spellings": ["lyndon johnson"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Richard_Nixon",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Richard_Nixon_presidential_portrait.jpg/320px-Richard_Nixon_presidential_portrait.jpg",
       "name": "Richard Nixon",
       "url": "https://en.wikipedia.org/wiki/Richard_Nixon",
       "description": "Richard Nixon is the 37th president, representing the Republican party. He was president from January 20, 1969 to August 9, 1974.",
       "spellings": ["nixon"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Gerald_Ford",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Gerald_Ford_presidential_portrait.jpg/320px-Gerald_Ford_presidential_portrait.jpg",
       "name": "Gerald Ford",
       "url": "https://en.wikipedia.org/wiki/Gerald_Ford",
       "description": "Gerald Ford is the 38th president, representing the Republican party. He was president from August 9, 1974 to January 20, 1977.",
       "spellings": ["ford"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Jimmy_Carter",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/JimmyCarterPortrait2.jpg/320px-JimmyCarterPortrait2.jpg",
       "name": "Jimmy Carter",
       "url": "https://en.wikipedia.org/wiki/Jimmy_Carter",
       "description": "Jimmy Carter is the 39th president, representing the Democratic party. He was president from January 20, 1977 to January 20, 1981.",
       "spellings": ["carter"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Ronald_Reagan",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/330px-Official_Portrait_of_President_Reagan_1981.jpg",
       "name": "Ronald Reagan",
       "url": "https://en.wikipedia.org/wiki/Ronald_Reagan",
       "description": "Ronald Reagan is the 40th president, representing the Republican party. He was president from January 20, 1981 to January 20, 1989.",
       "spellings": ["reagan"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/George_H._W._Bush",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/George_H._W._Bush%2C_President_of_the_United_States%2C_1989_official_portrait_%28cropped%29.jpg/320px-George_H._W._Bush%2C_President_of_the_United_States%2C_1989_official_portrait_%28cropped%29.jpg",
       "name": "George H. W. Bush",
       "url": "https://en.wikipedia.org/wiki/George_H._W._Bush",
       "description": "George H. W. Bush is the 41th president, representing the Republican party. He was president from January 20, 1989 to January 20, 1993.",
       "spellings": ["george h w bush", "h w bush"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Bill_Clinton",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/320px-Bill_Clinton.jpg",
       "name": "Bill Clinton",
       "url": "https://en.wikipedia.org/wiki/Bill_Clinton",
       "description": "Bill Clinton is the 42th president, representing the Democratic party. He was president from January 20, 1993 to January 20, 2001.",
       "spellings": ["clinton"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/George_W._Bush",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/320px-George-W-Bush.jpeg",
       "name": "George W. Bush",
       "url": "https://en.wikipedia.org/wiki/George_W._Bush",
       "description": "George W. Bush is the 43th president, representing the Republican party. He was president from January 20, 2001 to January 20, 2009.",
       "spellings": ["bush", "george bush"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Barack_Obama",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Official_portrait_of_Barack_Obama.jpg/320px-Official_portrait_of_Barack_Obama.jpg",
       "name": "Barack Obama",
       "url": "https://en.wikipedia.org/wiki/Barack_Obama",
       "description": "Barack Obama is the 44th president, representing the Democratic party. He was president from January 20, 2009 to January 20, 2017.",
       "spellings": ["obama"]
     },
     {
-      "imageUrl": "https://en.wikipedia.org/wiki/Donald_Trump",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/320px-Donald_Trump_official_portrait.jpg",
       "name": "Donald Trump",
       "url": "https://en.wikipedia.org/wiki/Donald_Trump",
       "description": "Donald Trump is the 45th president, representing the Republican party. He was president from January 20, 2017 and still is as of June 25, 2020.",
