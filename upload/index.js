@@ -60,6 +60,7 @@ function verifyCategory(category) {
         require("./data/category/currencies.json"),
         require("./data/category/dinosaurs.json"),
         require("./data/category/regions_france.json"),
+        require("./data/category/presidents-usa.json"),
     ];
     const categoryCollectionName = "category";
 
