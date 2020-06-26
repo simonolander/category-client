@@ -352,7 +352,9 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                     <td>{name}</td>
                                     <td>{latestGuess?.value}</td>
                                     <td className="is-hidden-mobile">{latestGuess?.categoryItem?.name}</td>
-                                    {anyHasDescription && <td className="is-hidden-mobile">{latestGuess?.categoryItem?.description}</td>}
+                                    {anyHasDescription && (
+                                        <td className="is-hidden-mobile">{latestGuess?.categoryItem?.description}</td>
+                                    )}
                                     <td>{latestGuess && <StatusIcon guess={latestGuess}/>}</td>
                                     <td className="is-family-code">{isCurrentGuesser && (remainingGuessTime / 1000).toFixed(2)}</td>
                                 </tr>
@@ -424,7 +426,12 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
     const NextGameSection = function () {
         const [createGame, remoteData] = useCreateGame({variables: {previousGameId: game.id}});
         if (game.nextGameId) {
-            return <Link to={`/game/${game.nextGameId}`}>Next game</Link>
+            return (
+                <Link className="button is-primary" to={`/game/${game.nextGameId}`}>
+                    <span className="icon"><i className="fas fa-arrow-right"/></span>
+                    <span>Next game</span>
+                </Link>
+            )
         } else if (admin) {
             if (is.failure(remoteData)) {
                 return <ErrorPage error={remoteData.error}/>
@@ -538,11 +545,31 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                                     <td>{index + 1}</td>
                                     <td>{guess.guesser.name}</td>
                                     <td>{guess.value}</td>
-                                    {someGuessHasObject && <td>{guess.categoryItem?.name}</td>}
-                                    {someGuessHasDescription && <td>{guess.categoryItem?.description}</td>}
+                                    {someGuessHasObject && (
+                                        <td>{guess.categoryItem?.name}</td>
+                                    )}
+                                    {someGuessHasDescription && (
+                                        <td>{guess.categoryItem?.description}</td>
+                                    )}
                                     <td><StatusIcon guess={guess}/></td>
-                                    {someGuessHasUrl && <td>{guess.categoryItem?.url && <a href={guess.categoryItem.url}>Learn more</a>}</td>}
-                                    {someGuessHasImageUrl && <td>{guess.categoryItem?.imageUrl && <img style={{maxHeight: "10em"}} src={guess.categoryItem.imageUrl} alt="Object image"/>}</td>}
+                                    {someGuessHasUrl && (
+                                        <td>
+                                            {guess.categoryItem?.url && (
+                                                <a href={guess.categoryItem.url}>Learn more</a>
+                                            )}
+                                        </td>
+                                    )}
+                                    {someGuessHasImageUrl && (
+                                        <td>
+                                            {guess.categoryItem?.imageUrl && (
+                                                <img
+                                                    style={{maxHeight: "10em"}}
+                                                    src={guess.categoryItem.imageUrl}
+                                                    alt="Object image"
+                                                />
+                                            )}
+                                        </td>
+                                    )}
                                 </tr>
                             )
                         })}
