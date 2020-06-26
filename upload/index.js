@@ -68,11 +68,14 @@ function verifyCategory(category) {
         verifyCategory(category)
     }
 
-    const collections = await firestore.listCollections()
-    console.log("Fetched collections")
-    for (const collection of collections) {
-        await deleteCollection(collection)
-        console.log(`Deleted collection ${collection.path}`)
+    const cleanUpload = false
+    if (cleanUpload) {
+        const collections = await firestore.listCollections()
+        console.log("Fetched collections")
+        for (const collection of collections) {
+            await deleteCollection(collection)
+            console.log(`Deleted collection ${collection.path}`)
+        }
     }
 
     for (const category of categories) {
