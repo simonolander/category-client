@@ -63,9 +63,9 @@ function AdminControls({game}: { game: Lobby }) {
     const [selectedCategoryId, setSelectedCategoryId] = useState<string>("")
     const [startGame, startGameRemoteData] = useStartGame();
     const starting = is.loading(startGameRemoteData)
+    const categoriesRemoteData = useCategories()
 
     const CategoriesSelect = function () {
-        const categoriesRemoteData = useCategories()
         let selectedCategory = undefined
         const classes: { [key: string]: boolean } = {
             "select": true,
@@ -91,6 +91,7 @@ function AdminControls({game}: { game: Lobby }) {
             ]
             selectedCategory = categoriesRemoteData.data.categories.find(category => category.id === selectedCategoryId)
         }
+        const selectDisabled = starting || !is.success(categoriesRemoteData)
 
         return (
             <div className="field">
@@ -102,7 +103,7 @@ function AdminControls({game}: { game: Lobby }) {
                         <select
                             name="categoryId"
                             required
-                            disabled={starting}
+                            disabled={selectDisabled}
                             onChange={event => setSelectedCategoryId(event.currentTarget.value)}
                             value={selectedCategoryId}
                         >
@@ -114,6 +115,8 @@ function AdminControls({game}: { game: Lobby }) {
             </div>
         )
     }
+
+    const submitDisabled = starting || !is.success(categoriesRemoteData)
 
     return (
         <section className="section">
@@ -169,7 +172,7 @@ function AdminControls({game}: { game: Lobby }) {
                                 <div className="control">
                                     <button
                                         type="submit"
-                                        disabled={starting}
+                                        disabled={submitDisabled}
                                         className={classNames({
                                             "button": true,
                                             "is-primary": true,
