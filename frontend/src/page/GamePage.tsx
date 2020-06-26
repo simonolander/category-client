@@ -434,7 +434,8 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                 <button
                     className={classNames({
                         "button": true,
-                        "loading": creatingGame,
+                        "is-primary": true,
+                        "is-loading": creatingGame,
                     })}
                     disabled={creatingGame}
                     onClick={async () => {
@@ -445,7 +446,8 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                         }
                     }}
                 >
-                    Play another game
+                    <span className="icon"><i className="fas fa-redo-alt"/></span>
+                    <span>Play another game</span>
                 </button>
             )
         } else {
