@@ -22,7 +22,7 @@ import {
     faCrown,
     faHourglassEnd,
     faPlay,
-    faRedoAlt,
+    faRedoAlt, faThumbsUp,
     faTimes,
     faUserMinus,
     faUserPlus,
@@ -351,6 +351,8 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
             <section className="section">
                 <div className="container">
                     <h1 className="title">{game.category.name}</h1>
+                    <h1 className="subtitle is-spaced">{game.category.description}</h1>
+                    <h1 className="title is-4">Guesses</h1>
                     <table className="table">
                         <thead>
                         <tr>
@@ -382,6 +384,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                         </tbody>
                     </table>
                 </div>
+                <br/>
                 {isCurrentGuesser && (
                     <div className="container">
                         <form
@@ -424,7 +427,10 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                                     "is-fullwidth": true,
                                                 })}
                                             >
-                                                Make guess
+                                                <span className="icon">
+                                                    <FontAwesomeIcon icon={faThumbsUp}/>
+                                                </span>
+                                                <span>Make guess</span>
                                             </button>
                                         </div>
                                     </div>
