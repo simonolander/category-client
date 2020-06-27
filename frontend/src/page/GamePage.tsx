@@ -346,6 +346,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
     }
     const isCurrentGuesser = userId === currentGuesser.id
     const anyHasDescription = game.participants.some(({id}) => game.getLatestGuess(id)?.categoryItem?.description)
+    const anyHasImageUrl = game.participants.some(({id}) => game.getLatestGuess(id)?.categoryItem?.imageUrl)
     return (
         <div>
             <section className="section">
@@ -361,6 +362,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                             <th className="is-hidden-mobile">Object</th>
                             {anyHasDescription && <th className="is-hidden-mobile">Description</th>}
                             <th>Status</th>
+                            {anyHasImageUrl && <th className="is-hidden-mobile">Image</th>}
                             <th>Time</th>
                         </tr>
                         </thead>
@@ -377,6 +379,17 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                         <td className="is-hidden-mobile">{latestGuess?.categoryItem?.description}</td>
                                     )}
                                     <td>{latestGuess && <StatusIcon guess={latestGuess}/>}</td>
+                                    {anyHasImageUrl && (
+                                        <td>
+                                            {latestGuess?.categoryItem?.imageUrl && (
+                                                <img
+                                                    style={{maxHeight: "2.5em"}}
+                                                    src={latestGuess.categoryItem.imageUrl}
+                                                    alt="Object image"
+                                                />
+                                            )}
+                                        </td>
+                                    )}
                                     <td className="is-family-code">{isCurrentGuesser && (remainingGuessTime / 1000).toFixed(2)}</td>
                                 </tr>
                             )
