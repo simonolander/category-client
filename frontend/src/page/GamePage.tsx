@@ -13,8 +13,23 @@ import {useCategories} from "../graphql/query/Categories";
 import {useStartGame} from "../graphql/mutation/StartGame";
 import {useLeaveGame} from "../graphql/mutation/LeaveGame";
 import {useJoinGame} from "../graphql/mutation/JoinGame";
-import {useTimeout} from "../graphql/mutation/Timeout";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {
+    faArrowRight,
+    faCheck,
+    faCog,
+    faCopy,
+    faCrown,
+    faHourglassEnd,
+    faPlay,
+    faRedoAlt,
+    faTimes,
+    faUserMinus,
+    faUserPlus,
+    faUsers
+} from "@fortawesome/free-solid-svg-icons";
 import {useMakeGuess} from "../graphql/mutation/MakeGuess";
+import {useTimeout} from "../graphql/mutation/Timeout";
 import {useCreateGame} from "../graphql/mutation/CreateGame";
 
 function useAnimationFrame(callback: (time: number) => void) {
@@ -35,25 +50,25 @@ function StatusIcon({guess}: { guess: TGuess }) {
     if (guess.isCorrect()) {
         return (
             <span className="icon has-text-primary" title="Correct">
-                <i className="fas fa-check"/>
+                <FontAwesomeIcon icon={faCheck}/>
             </span>
         )
     } else if (guess.isIncorrect()) {
         return (
             <span className="icon" title="Incorrect">
-                <i className="fas fa-times"/>
+                <FontAwesomeIcon icon={faTimes}/>
             </span>
         )
     } else if (guess.isDuplicate()) {
         return (
             <span className="icon" title="Already guessed">
-                <i className="fas fa-copy"/>
+                <FontAwesomeIcon icon={faCopy}/>
             </span>
         )
     } else {
         return (
             <span className="icon" title="Timed out">
-                <i className="fas fa-hourglass-end"/>
+                <FontAwesomeIcon icon={faHourglassEnd}/>
             </span>
         )
     }
@@ -121,7 +136,9 @@ function AdminControls({game}: { game: Lobby }) {
     return (
         <section className="section">
             <div className="container">
-                <h1 className="title is-4"><i className="fas fa-cog"/> Game options</h1>
+                <h1 className="title is-4">
+                    <FontAwesomeIcon icon={faCog}/> Game options
+                </h1>
                 <form onSubmit={async event => {
                     event.preventDefault()
                     const formData = new FormData(event.currentTarget)
@@ -160,7 +177,7 @@ function AdminControls({game}: { game: Lobby }) {
                                         defaultValue={30}
                                     />
                                     <span className="icon is-small is-left">
-                                    <i className="fas fa-hourglass-end"/>
+                                    <FontAwesomeIcon icon={faHourglassEnd}/>
                                 </span>
                                 </div>
                             </div>
@@ -181,7 +198,7 @@ function AdminControls({game}: { game: Lobby }) {
                                         })}
                                     >
                                     <span className="icon">
-                                        <i className="fas fa-play"/>
+                                        <FontAwesomeIcon icon={faPlay}/>
                                     </span>
                                         <span>Start game</span>
                                     </button>
@@ -231,7 +248,7 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
                                             })}
                                         >
                                             <span className="icon">
-                                                <i className="fas fa-user-plus"/>
+                                                <FontAwesomeIcon icon={faUserPlus}/>
                                             </span>
                                             <span>Join game</span>
                                         </button>
@@ -257,7 +274,7 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
                                             })}
                                         >
                                             <span className="icon">
-                                                <i className="fas fa-user-minus"/>
+                                                <FontAwesomeIcon icon={faUserMinus}/>
                                             </span>
                                             <span>Leave game</span>
                                         </button>
@@ -271,7 +288,9 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
             {game.admin.id === userId && <AdminControls game={game}/>}
             <section className="section">
                 <div className="container">
-                    <h1 className="title is-4"><i className="fas fa-users"/> Players</h1>
+                    <h1 className="title is-4">
+                        <FontAwesomeIcon icon={faUsers}/> Players
+                    </h1>
                     <table className="table">
                         <thead>
                         <tr>
@@ -284,7 +303,7 @@ function LobbyView({game, userId}: { game: Lobby, userId: string }) {
                                 game.admin.id === id
                                     ? (
                                         <span className="icon has-text-warning" title="Admin">
-                                            <i className="fas fa-crown"/>
+                                            <FontAwesomeIcon icon={faCrown}/>
                                         </span>
                                     )
                                     : null
@@ -428,7 +447,9 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
         if (game.nextGameId) {
             return (
                 <Link className="button is-primary" to={`/game/${game.nextGameId}`}>
-                    <span className="icon"><i className="fas fa-arrow-right"/></span>
+                    <span className="icon">
+                        <FontAwesomeIcon icon={faArrowRight}/>
+                    </span>
                     <span>Next game</span>
                 </Link>
             )
@@ -453,7 +474,9 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                         }
                     }}
                 >
-                    <span className="icon"><i className="fas fa-redo-alt"/></span>
+                    <span className="icon">
+                        <FontAwesomeIcon icon={faRedoAlt}/>
+                    </span>
                     <span>Play another game</span>
                 </button>
             )

@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link, useHistory} from 'react-router-dom';
 import {AppName} from "../Constants";
 import classNames from "classnames";
 import {ErrorPage} from "../component/ErrorPage";
-import {is, RemoteData} from "remote-data-ts";
+import {is} from "remote-data-ts";
 import {useCreateGame} from "../graphql/mutation/CreateGame";
 import {useGames} from "../graphql/query/Games";
 import {Loading} from "../component/Loading";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGamepad} from "@fortawesome/free-solid-svg-icons";
 
 function GamesTableView() {
     const gamesRD = useGames({variables: {limit: 10, orderByField: "createdTime", orderByDirection: "desc"}});
@@ -53,7 +55,8 @@ function GamesTableView() {
 
                         return (
                             <tr key={game.id}>
-                                <td><Link className="is-family-code is-word-break-all" to={`/game/${game.id}`}>{game.id}</Link></td>
+                                <td><Link className="is-family-code is-word-break-all"
+                                          to={`/game/${game.id}`}>{game.id}</Link></td>
                                 <td>{status}</td>
                                 <td>{categoryName}</td>
                                 <td>{game.admin.name}</td>
@@ -115,9 +118,9 @@ export default function HomePage() {
                                     }
                                 }}
                             >
-                        <span className="icon">
-                            <i className="fas fa-gamepad"/>
-                        </span>
+                                <span className="icon">
+                                    <FontAwesomeIcon icon={faGamepad}/>
+                                </span>
                                 <span>Create new game</span>
                             </button>
                         </div>
