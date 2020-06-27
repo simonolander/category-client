@@ -117,6 +117,10 @@ abstract class AStartedGame extends AGame {
         return this.participants.filter(participant => !incorrectGuessers[participant.id])
     }
 
+    isRemainingParticipant(userId: string) {
+        return this.getRemainingParticipants().some(({id}) => id === userId)
+    }
+
     getLatestGuess(userId?: string): TGuess | undefined {
         if (!userId) {
             return this.guesses[this.guesses.length - 1]
@@ -274,14 +278,21 @@ export class RunningGame extends AStartedGame {
             return remainingParticipants[0]
         }
 
-        for (let i = 0; i < remainingParticipants.length; ++i) {
-            const participant = remainingParticipants[i];
-            if (participant.id === latestGuess.guesser.id) {
-                return remainingParticipants[(i + 1) % remainingParticipants.length]
+        const latestGuesserIndex = this.participants.findIndex(({id}) => id === latestGuess.guesser.id)
+        if (latestGuesserIndex === -1) {
+            console.error(`Latest guesser is not a participant, game id ${this.id}`)
+            return remainingParticipants[0]
+        }
+
+        for (let offset = 0; offset < this.participants.length; ++offset) {
+            const nextParticipantIndex = (latestGuesserIndex + offset + 1) % this.participants.length
+            const nextParticipant = this.participants[nextParticipantIndex]
+            if (this.isRemainingParticipant(nextParticipant.id)) {
+                return nextParticipant
             }
         }
 
-        console.error(`Latest guesser is not a participant, game id ${this.id}`)
+        console.error(`Could not find next remaining participant, game id ${this.id}`)
         return remainingParticipants[0]
     }
 
