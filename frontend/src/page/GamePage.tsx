@@ -32,6 +32,39 @@ import {useMakeGuess} from "../graphql/mutation/MakeGuess";
 import {useTimeout} from "../graphql/mutation/Timeout";
 import {useCreateGame} from "../graphql/mutation/CreateGame";
 
+function millisToString(milliseconds: number): any {
+    if (milliseconds < 0) {
+        return <progress className="progress is-small is-light" title="Sending time out"/>
+    }
+    const secondsInMillis = 1000
+    const minutesInMillis = secondsInMillis * 60
+    const hoursInMillis = minutesInMillis * 60
+    const daysInMillis = hoursInMillis * 24
+
+    let remainingTime = milliseconds
+    const days = Math.floor(remainingTime / daysInMillis)
+    remainingTime %= daysInMillis
+    const hours = Math.floor(remainingTime / hoursInMillis)
+    remainingTime %= hoursInMillis
+    const minutes = Math.floor(remainingTime / minutesInMillis)
+    remainingTime %= minutesInMillis
+    const seconds = Math.floor(remainingTime / secondsInMillis)
+    remainingTime %= secondsInMillis
+    const millis = remainingTime
+    if (days) {
+        return `${days.toString().padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${millis.toString().padStart(3, "0")}`
+    }
+    else if (hours) {
+        return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${millis.toString().padStart(3, "0")}`
+    }
+    else if (minutes) {
+        return `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}.${millis.toString().padStart(3, "0")}`
+    }
+    else {
+        return `${seconds.toString().padStart(2, "0")}.${millis.toString().padStart(3, "0")}`
+    }
+}
+
 function useAnimationFrame(callback: (time: number) => void) {
     const handle = useRef(0);
 
@@ -390,7 +423,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                             )}
                                         </td>
                                     )}
-                                    <td className="is-family-code">{isCurrentGuesser && (remainingGuessTime / 1000).toFixed(2)}</td>
+                                    <td className="is-family-code">{isCurrentGuesser && millisToString(remainingGuessTime)}</td>
                                 </tr>
                             )
                         })}
