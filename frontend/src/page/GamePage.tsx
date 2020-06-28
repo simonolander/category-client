@@ -538,7 +538,6 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
     }
     const someGuessHasObject = game.guesses.some(guess => guess.categoryItem)
     const someGuessHasDescription = game.guesses.some(guess => guess.categoryItem?.description)
-    const someGuessHasUrl = game.guesses.some(guess => guess.categoryItem?.url)
     const someGuessHasImageUrl = game.guesses.some(guess => guess.categoryItem?.imageUrl)
     return (
         <div>
