@@ -413,7 +413,7 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                                     )}
                                     <td>{latestGuess && <StatusIcon guess={latestGuess}/>}</td>
                                     {anyHasImageUrl && (
-                                        <td>
+                                        <td className="is-hidden-mobile">
                                             {latestGuess?.categoryItem?.imageUrl && (
                                                 <img
                                                     style={{maxHeight: "2.5em"}}
