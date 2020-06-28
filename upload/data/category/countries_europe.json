@@ -2,6 +2,8 @@
   "id": "x9PF9pL5j9VdwEjBfZoLI",
   "name": "Countries in Europe",
   "description": "Names of countries in Europe, as of 2020.",
+  "languages": ["english"],
+  "tags": ["geography"],
   "items": [
     {
       "name": "Albania",

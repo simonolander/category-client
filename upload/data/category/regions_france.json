@@ -2,6 +2,8 @@
   "id": "TVJGkUaMC0OoLUwzMC0v56RiFSSRGGrO5ooCs6jy",
   "name": "Regions in France",
   "description": "Names of the regions in france, both mainland and overseas, as of 2020.",
+  "languages": ["english", "french"],
+  "tags": ["geography"],
   "items": [
     {
       "name": "Auvergne-Rhône-Alpes",

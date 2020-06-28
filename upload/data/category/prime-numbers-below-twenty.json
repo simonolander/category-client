@@ -2,6 +2,8 @@
   "id": "683b09365a7ca0a8bb77",
   "name": "Prime numbers below twenty",
   "description": "Remember, one is not prime.",
+  "languages": ["english"],
+  "tags": ["test", "math"],
   "items": [
     {
       "name": "2",

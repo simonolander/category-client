@@ -2,6 +2,8 @@
   "id": "FNAujGy2MMyAVdLDrZIFU",
   "name": "Countries in Africa",
   "description": "Names of countries in Africa, as of 2020.",
+  "languages": ["english", "french"],
+  "tags": ["geography"],
   "items": [
     {
       "name": "Algeria",

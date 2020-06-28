@@ -2,6 +2,8 @@
   "id": "v0lYUB69fBgGKnWKC200tR",
   "name": "Dinosaurs",
   "description": "The name of most of the dinosaurs.",
+  "languages": ["english"],
+  "tags": ["biology", "history"],
   "items": [
     {
       "name": "Aardonyx",

@@ -2,6 +2,8 @@
   "id": "pvPdCTSF",
   "name": "Metro stations, Paris, Line 4",
   "description": "The names of the metro stations on line number 4 in Paris, as of 2020.",
+  "languages": ["french"],
+  "tags": ["geography"],
   "items": [
     {
       "name": "Porte de Clignancourt",

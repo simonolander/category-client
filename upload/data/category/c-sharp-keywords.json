@@ -2,6 +2,8 @@
   "id": "2LG1FfY3QEoRyJntizNmBl0lFJmt5Y7jNKVjA",
   "name": "C# keywords",
   "description": "Reserved words in the C# programming language that cannot be used as identifiers.",
+  "languages": ["english"],
+  "tags": ["programming"],
   "items": [
     {
       "name": "abstract",

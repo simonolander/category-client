@@ -2,6 +2,8 @@
   "id": "ePkqK3vnwHbqtfUkEWiu",
   "name": "Letters in the Swedish alphabet",
   "description": "Like the latin alphabet, but spicier.",
+  "languages": ["swedish"],
+  "tags": ["test"],
   "items": [
     {
       "name": "A",

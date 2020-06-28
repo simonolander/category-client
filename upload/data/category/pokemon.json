@@ -2,6 +2,8 @@
   "id": "ihaM5azta9MqbBAGTT4X",
   "name": "Pokémon",
   "description": "Names of pokémon in first gen.",
+  "languages": ["english", "french"],
+  "tags": ["game"],
   "items": [
     {
       "name": "Bulbasaur",

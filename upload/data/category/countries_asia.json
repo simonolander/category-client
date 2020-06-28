@@ -2,6 +2,8 @@
   "id": "wYXH75HPUJArkb",
   "name": "Countries in Asia",
   "description": "Names of countries in Asia, as of 2020.",
+  "languages": ["english"],
+  "tags": ["geography"],
   "items": [
     {
       "name": "Afghanistan",

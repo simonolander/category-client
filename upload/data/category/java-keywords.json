@@ -2,6 +2,8 @@
   "id": "DHhd9aq1CGRAdhq2K7M9",
   "name": "Java keywords",
   "description": "Reserved words in the java programming language that cannot be used as identifiers.",
+  "languages": ["english"],
+  "tags": ["programming"],
   "items": [
     {
       "name": "abstract",

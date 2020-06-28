@@ -2,6 +2,8 @@
   "id": "presidents-us",
   "name": "Presidents of the USA",
   "description": "Names of the current and previous presidents of the United States, as of June 2020.",
+  "languages": ["english"],
+  "tags": ["history"],
   "items": [
     {
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/320px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
