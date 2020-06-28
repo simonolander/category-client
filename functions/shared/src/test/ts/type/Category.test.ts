@@ -106,6 +106,8 @@ const category: Category =
             mrmime,
             mew,
         ],
+        [],
+        []
     )
 
 it.each<[string, CategoryItem | null]>([

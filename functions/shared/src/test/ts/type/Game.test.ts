@@ -34,7 +34,7 @@ for (const index in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) {
         imageUrl: null
     })
 }
-const category = new Category("X1", "category", "description", items)
+const category = new Category("X1", "category", "description", items, [], [])
 
 it('Test game 1. All guesses correct.', function () {
     let runningGame = lobby.start(category, 30000, now)
