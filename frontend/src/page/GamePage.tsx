@@ -609,7 +609,6 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                             {someGuessHasObject && <th>Object</th>}
                             {someGuessHasDescription && <th>Description</th>}
                             <th>Status</th>
-                            {someGuessHasUrl && <th>Info</th>}
                             {someGuessHasImageUrl && <th>Image</th>}
                         </tr>
                         </thead>
@@ -621,26 +620,24 @@ function FinishedGameView({game, userId}: { game: FinishedGame, userId: string }
                                     <td>{guess.guesser.name}</td>
                                     <td>{guess.value}</td>
                                     {someGuessHasObject && (
-                                        <td>{guess.categoryItem?.name}</td>
+                                        <td>
+                                            {guess.categoryItem?.url
+                                                ? <a href={guess.categoryItem.url}>{guess.categoryItem.name}</a>
+                                                : guess.categoryItem?.name
+                                            }
+                                        </td>
                                     )}
                                     {someGuessHasDescription && (
                                         <td>{guess.categoryItem?.description}</td>
                                     )}
                                     <td><StatusIcon guess={guess}/></td>
-                                    {someGuessHasUrl && (
-                                        <td>
-                                            {guess.categoryItem?.url && (
-                                                <a href={guess.categoryItem.url}>Learn more</a>
-                                            )}
-                                        </td>
-                                    )}
                                     {someGuessHasImageUrl && (
                                         <td>
                                             {guess.categoryItem?.imageUrl && (
                                                 <img
                                                     style={{maxHeight: "10em"}}
                                                     src={guess.categoryItem.imageUrl}
-                                                    alt="Object image"
+                                                    alt={`Image depicting ${guess.categoryItem.name}`}
                                                 />
                                             )}
                                         </td>
