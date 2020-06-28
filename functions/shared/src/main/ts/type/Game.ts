@@ -280,7 +280,7 @@ export class RunningGame extends AStartedGame {
 
         const latestGuesserIndex = this.participants.findIndex(({id}) => id === latestGuess.guesser.id)
         if (latestGuesserIndex === -1) {
-            console.error(`Latest guesser is not a participant, game id ${this.id}`)
+            console.error(`Latest guesser ${latestGuess.guesser.id} is not a participant in game id ${this.id}`)
             return remainingParticipants[0]
         }
 
