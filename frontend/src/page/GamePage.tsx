@@ -31,6 +31,10 @@ import {
 import {useMakeGuess} from "../graphql/mutation/MakeGuess";
 import {useTimeout} from "../graphql/mutation/Timeout";
 import {useCreateGame} from "../graphql/mutation/CreateGame";
+import unknown from "../image/language-flags/borduria.png";
+import french from "../image/language-flags/french.svg";
+import english from "../image/language-flags/english.svg";
+import swedish from "../image/language-flags/swedish.svg";
 
 function millisToString(milliseconds: number): any {
     if (milliseconds < 0) {
@@ -386,6 +390,35 @@ function RunningGameView({game, userId}: { game: RunningGame, userId: string }) 
                 <div className="container">
                     <h1 className="title">{game.category.name}</h1>
                     <h1 className="subtitle is-spaced">{game.category.description}</h1>
+                    <div className="tags">
+                        {game.category.languages.map(language => {
+                            let src = unknown
+                            switch (language) {
+                                case "french":
+                                    src = french
+                                    break
+                                case "english":
+                                    src = english
+                                    break
+                                case "swedish":
+                                    src = swedish
+                                    break
+                            }
+                            const style = {
+                                maxWidth: "32px",
+                                maxHeight: "21px",
+                                margin: "5px"
+                            }
+                            return (
+                                <img
+                                    src={src}
+                                    alt={language}
+                                    style={style}
+                                    title={`Answers available in ${language}`}
+                                />
+                            )
+                        })}
+                    </div>
                     <h1 className="title is-4">Guesses</h1>
                     <table className="table">
                         <thead>
