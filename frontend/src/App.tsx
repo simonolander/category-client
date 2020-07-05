@@ -6,6 +6,8 @@ import {useSelector} from "react-redux";
 import AnonymousPage from "./page/AnonymousPage";
 import 'bulma/css/bulma.css'
 import {AppName} from "./Constants";
+import CategoriesPage from "./page/CategoriesPage";
+import {categoriesPagePath} from "./navigation";
 
 function App() {
     const username = useSelector(state => state.user.name);
@@ -19,6 +21,9 @@ function App() {
                 </Route>
                 <Route exact path="/game/:gameId">
                     <GamePage/>
+                </Route>
+                <Route exact path={categoriesPagePath}>
+                    <CategoriesPage/>
                 </Route>
             </Switch>
         )

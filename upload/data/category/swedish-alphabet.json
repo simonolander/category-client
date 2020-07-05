@@ -2,8 +2,12 @@
   "id": "ePkqK3vnwHbqtfUkEWiu",
   "name": "Letters in the Swedish alphabet",
   "description": "Like the latin alphabet, but spicier.",
-  "languages": ["swedish"],
-  "tags": ["test"],
+  "languages": [
+    "swedish"
+  ],
+  "tags": [
+    "test"
+  ],
   "items": [
     {
       "name": "A",
@@ -150,5 +154,6 @@
       "description": "29th letter of the alphabet",
       "spellings": []
     }
-  ]
+  ],
+  "imageUrl": "https://i.ytimg.com/vi/78-tJZ_SXhE/maxresdefault.jpg"
 }

@@ -2,8 +2,13 @@
   "id": "TVJGkUaMC0OoLUwzMC0v56RiFSSRGGrO5ooCs6jy",
   "name": "Regions in France",
   "description": "Names of the regions in france, both mainland and overseas, as of 2020.",
-  "languages": ["english", "french"],
-  "tags": ["geography"],
+  "languages": [
+    "english",
+    "french"
+  ],
+  "tags": [
+    "geography"
+  ],
   "items": [
     {
       "name": "Auvergne-Rhône-Alpes",
@@ -204,5 +209,6 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Mayotte_in_France_2016.svg",
       "url": "https://en.wikipedia.org/wiki/Mayotte"
     }
-  ]
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/France_base_map_18_regions.png/400px-France_base_map_18_regions.png"
 }

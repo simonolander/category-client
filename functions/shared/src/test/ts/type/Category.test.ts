@@ -107,7 +107,8 @@ const category: Category =
             mew,
         ],
         [],
-        []
+        [],
+        ""
     )
 
 it.each<[string, CategoryItem | null]>([

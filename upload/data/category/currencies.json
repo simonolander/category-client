@@ -2,8 +2,13 @@
   "id": "VZcKInr6tbCOFlfxt",
   "name": "Currencies",
   "description": "Circulating currencies used in countries and territories, with a ISO 4217 code, as of year 2020.",
-  "languages": ["english"],
-  "tags": ["geography", "economy"],
+  "languages": [
+    "english"
+  ],
+  "tags": [
+    "geography",
+    "economy"
+  ],
   "items": [
     {
       "name": "United Arab Emirates dirham",
@@ -1265,5 +1270,6 @@
         "rtgs"
       ]
     }
-  ]
+  ],
+  "imageUrl": "https://i.huffpost.com/gen/1501689/images/o-CURRENCY-facebook.jpg"
 }

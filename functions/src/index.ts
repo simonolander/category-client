@@ -1,19 +1,3 @@
-/**
- * Copyright 2016 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import {Request} from 'express'
@@ -23,6 +7,7 @@ import {Context} from "./Context";
 import {createGame, games, joinGame, leaveGame, makeGuess, startGame, timeout} from "./resolver/resolver";
 import {CategoryEntity} from "shared";
 import {categoryRepository} from "./repository";
+import * as about from "./about.json";
 
 admin.initializeApp({
     credential: admin.credential.cert(credentials),
@@ -38,6 +23,7 @@ const typeDefs = gql`
         categories: [Category]
         category(categoryId: ID!): Category
         games(limit: Int, startAt: String, endAt: String, orderByField: GameOrderByField, orderByDirection: OrderByDirection): [Game]
+        about: About!
     }
 
     type Mutation {
@@ -59,6 +45,9 @@ const typeDefs = gql`
         name: String
         description: String
         items: [CategoryItem]
+        languages: [String]
+        tags: [String]
+        imageUrl: String
     }
 
     type CategoryItem {
@@ -98,6 +87,11 @@ const typeDefs = gql`
         asc
         desc
     }
+    
+    type About {
+        version: String!
+        buildTime: String!
+    }
 `
 
 const resolvers = {
@@ -110,7 +104,10 @@ const resolvers = {
             return categoryRepository.findById(categoryId)
                 .then(category => category && category.toEntity())
         },
-        games
+        games,
+        async about() {
+            return about
+        }
     },
     Mutation: {
         createGame,

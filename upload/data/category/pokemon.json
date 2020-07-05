@@ -2,8 +2,13 @@
   "id": "ihaM5azta9MqbBAGTT4X",
   "name": "Pokémon",
   "description": "Names of pokémon in first gen.",
-  "languages": ["english", "french"],
-  "tags": ["game"],
+  "languages": [
+    "english",
+    "french"
+  ],
+  "tags": [
+    "game"
+  ],
   "items": [
     {
       "name": "Bulbasaur",
@@ -1311,5 +1316,6 @@
       "url": "https://bulbapedia.bulbagarden.net/wiki/Mew",
       "imageUrl": "https://cdn.bulbagarden.net/upload/thumb/b/b1/151Mew.png/250px-151Mew.png"
     }
-  ]
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
 }

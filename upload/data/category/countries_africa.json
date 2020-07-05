@@ -2,13 +2,20 @@
   "id": "FNAujGy2MMyAVdLDrZIFU",
   "name": "Countries in Africa",
   "description": "Names of countries in Africa, as of 2020.",
-  "languages": ["english", "french"],
-  "tags": ["geography"],
+  "languages": [
+    "english",
+    "french"
+  ],
+  "tags": [
+    "geography"
+  ],
   "items": [
     {
       "name": "Algeria",
       "description": "",
-      "spellings": ["algérie"]
+      "spellings": [
+        "algérie"
+      ]
     },
     {
       "name": "Angola",
@@ -18,7 +25,9 @@
     {
       "name": "Benin",
       "description": "",
-      "spellings": ["bénin"]
+      "spellings": [
+        "bénin"
+      ]
     },
     {
       "name": "Botswana",
@@ -41,7 +50,8 @@
     {
       "name": "Cabo Verde",
       "description": "",
-      "spellings": ["cap-vert",
+      "spellings": [
+        "cap-vert",
         "cabo",
         "verde"
       ]
@@ -49,12 +59,15 @@
     {
       "name": "Cameroon",
       "description": "",
-      "spellings": ["cameroun"]
+      "spellings": [
+        "cameroun"
+      ]
     },
     {
       "name": "Central African Republic",
       "description": "",
-      "spellings": ["république centrafricaine",
+      "spellings": [
+        "république centrafricaine",
         "car",
         "central africa"
       ]
@@ -62,55 +75,70 @@
     {
       "name": "Chad",
       "description": "",
-      "spellings": ["tchad"]
+      "spellings": [
+        "tchad"
+      ]
     },
     {
       "name": "Comoros",
       "description": "",
-      "spellings": ["comores"]
+      "spellings": [
+        "comores"
+      ]
     },
     {
       "name": "Democratic Republic of the Congo",
       "description": "",
-      "spellings": ["république démocratique du congo",
+      "spellings": [
+        "république démocratique du congo",
         "democratic congo"
       ]
     },
     {
       "name": "Republic of the Congo",
       "description": "",
-      "spellings": ["république du congo",
+      "spellings": [
+        "république du congo",
         "congo"
       ]
     },
     {
       "name": "Cote d'Ivoire",
       "description": "",
-      "spellings": ["elfenbenskusten",
+      "spellings": [
+        "elfenbenskusten",
         "ivory coast"
       ]
     },
     {
       "name": "Djibouti",
       "description": "",
-      "spellings": ["djibouti"]
+      "spellings": [
+        "djibouti"
+      ]
     },
     {
       "name": "Egypt",
       "description": "",
-      "spellings": ["égypte", "egypten"]
+      "spellings": [
+        "égypte",
+        "egypten"
+      ]
     },
     {
       "name": "Equatorial Guinea",
       "description": "",
-      "spellings": ["guinée équatoriale",
+      "spellings": [
+        "guinée équatoriale",
         "guinea"
       ]
     },
     {
       "name": "Eritrea",
       "description": "",
-      "spellings": ["érythrée"]
+      "spellings": [
+        "érythrée"
+      ]
     },
     {
       "name": "Eswatini",
@@ -122,7 +150,9 @@
     {
       "name": "Ethiopia",
       "description": "",
-      "spellings": ["éthiopie"]
+      "spellings": [
+        "éthiopie"
+      ]
     },
     {
       "name": "Gabon",
@@ -132,7 +162,9 @@
     {
       "name": "Gambia",
       "description": "",
-      "spellings": ["gambie"]
+      "spellings": [
+        "gambie"
+      ]
     },
     {
       "name": "Ghana",
@@ -142,12 +174,15 @@
     {
       "name": "Guinea",
       "description": "",
-      "spellings": ["guinée"]
+      "spellings": [
+        "guinée"
+      ]
     },
     {
       "name": "Guinea-Bissau",
       "description": "",
-      "spellings": ["guinée-bissau",
+      "spellings": [
+        "guinée-bissau",
         "bissau"
       ]
     },
@@ -169,7 +204,9 @@
     {
       "name": "Libya",
       "description": "",
-      "spellings": ["libye"]
+      "spellings": [
+        "libye"
+      ]
     },
     {
       "name": "Madagascar",
@@ -189,17 +226,23 @@
     {
       "name": "Mauritania",
       "description": "",
-      "spellings": ["mauritanie"]
+      "spellings": [
+        "mauritanie"
+      ]
     },
     {
       "name": "Mauritius",
       "description": "",
-      "spellings": ["maurice"]
+      "spellings": [
+        "maurice"
+      ]
     },
     {
       "name": "Morocco",
       "description": "",
-      "spellings": ["maroc"]
+      "spellings": [
+        "maroc"
+      ]
     },
     {
       "name": "Mozambique",
@@ -209,7 +252,9 @@
     {
       "name": "Namibia",
       "description": "",
-      "spellings": ["namibie"]
+      "spellings": [
+        "namibie"
+      ]
     },
     {
       "name": "Niger",
@@ -229,7 +274,8 @@
     {
       "name": "Sao Tome and Principe",
       "description": "",
-      "spellings": ["sao tomé-et-principe",
+      "spellings": [
+        "sao tomé-et-principe",
         "principe",
         "sao tome"
       ]
@@ -237,7 +283,9 @@
     {
       "name": "Senegal",
       "description": "",
-      "spellings": ["sénégal"]
+      "spellings": [
+        "sénégal"
+      ]
     },
     {
       "name": "Seychelles",
@@ -255,27 +303,37 @@
     {
       "name": "Somalia",
       "description": "",
-      "spellings": ["somalie"]
+      "spellings": [
+        "somalie"
+      ]
     },
     {
       "name": "South Africa",
       "description": "",
-      "spellings": ["afrique du sud"]
+      "spellings": [
+        "afrique du sud"
+      ]
     },
     {
       "name": "South Sudan",
       "description": "",
-      "spellings": ["soudan du sud"]
+      "spellings": [
+        "soudan du sud"
+      ]
     },
     {
       "name": "Sudan",
       "description": "",
-      "spellings": ["soudan"]
+      "spellings": [
+        "soudan"
+      ]
     },
     {
       "name": "Tanzania",
       "description": "",
-      "spellings": ["tanzanie"]
+      "spellings": [
+        "tanzanie"
+      ]
     },
     {
       "name": "Togo",
@@ -285,22 +343,29 @@
     {
       "name": "Tunisia",
       "description": "",
-      "spellings": ["tunisie"]
+      "spellings": [
+        "tunisie"
+      ]
     },
     {
       "name": "Uganda",
       "description": "",
-      "spellings": ["ouganda"]
+      "spellings": [
+        "ouganda"
+      ]
     },
     {
       "name": "Zambia",
       "description": "",
-      "spellings": ["zambie"]
+      "spellings": [
+        "zambie"
+      ]
     },
     {
       "name": "Zimbabwe",
       "description": "",
       "spellings": []
     }
-  ]
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/BLANK_in_Africa_%28-mini_map_-rivers%29.svg/1084px-BLANK_in_Africa_%28-mini_map_-rivers%29.svg.png"
 }

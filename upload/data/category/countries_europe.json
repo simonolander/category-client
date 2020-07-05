@@ -2,8 +2,12 @@
   "id": "x9PF9pL5j9VdwEjBfZoLI",
   "name": "Countries in Europe",
   "description": "Names of countries in Europe, as of 2020.",
-  "languages": ["english"],
-  "tags": ["geography"],
+  "languages": [
+    "english"
+  ],
+  "tags": [
+    "geography"
+  ],
   "items": [
     {
       "name": "Albania",
@@ -277,5 +281,6 @@
         "holy see"
       ]
     }
-  ]
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Europe_blank_laea_location_map.svg/1198px-Europe_blank_laea_location_map.svg.png"
 }

@@ -9,6 +9,7 @@ import {useGames} from "../graphql/query/Games";
 import {Loading} from "../component/Loading";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGamepad} from "@fortawesome/free-solid-svg-icons";
+import {categoriesPagePath} from "../navigation";
 
 function GamesTableView() {
     const gamesRD = useGames({variables: {limit: 10, orderByField: "createdTime", orderByDirection: "desc"}});
@@ -99,6 +100,7 @@ export default function HomePage() {
                     </p>
                     <p className="content">
                         You can either create a new game, or search for a game to join below.
+                        You can also <Link to={categoriesPagePath}>browse the various categories</Link>.
                     </p>
                     <div className="columns">
                         <div className="column is-narrow">

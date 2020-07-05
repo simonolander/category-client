@@ -61,6 +61,7 @@ function verifyCategory(category) {
         require("./data/category/dinosaurs.json"),
         require("./data/category/regions_france.json"),
         require("./data/category/presidents-usa.json"),
+        require("./data/category/periodic-table.json"),
     ];
     const categoryCollectionName = "category";
 

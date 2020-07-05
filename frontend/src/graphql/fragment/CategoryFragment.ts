@@ -9,15 +9,21 @@ export const categoryFragment = gql`
             name
             description
         }
+        languages
+        tags
+        imageUrl
     }
 `
 
 export interface CategoryFragment {
-    id: string
-    name: string
-    description: string
-    items: {
-        name: string
-        description: string
+    readonly id: string
+    readonly name: string
+    readonly description: string
+    readonly items: {
+        readonly name: string
+        readonly description: string
     }[]
+    readonly languages: string[],
+    readonly tags: string[],
+    readonly imageUrl: string,
 }

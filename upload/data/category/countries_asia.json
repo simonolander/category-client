@@ -2,8 +2,12 @@
   "id": "wYXH75HPUJArkb",
   "name": "Countries in Asia",
   "description": "Names of countries in Asia, as of 2020.",
-  "languages": ["english"],
-  "tags": ["geography"],
+  "languages": [
+    "english"
+  ],
+  "tags": [
+    "geography"
+  ],
   "items": [
     {
       "name": "Afghanistan",
@@ -266,5 +270,6 @@
       "description": "",
       "spellings": []
     }
-  ]
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Asie.svg/1009px-Asie.svg.png"
 }

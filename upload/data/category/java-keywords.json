@@ -2,8 +2,12 @@
   "id": "DHhd9aq1CGRAdhq2K7M9",
   "name": "Java keywords",
   "description": "Reserved words in the java programming language that cannot be used as identifiers.",
-  "languages": ["english"],
-  "tags": ["programming"],
+  "languages": [
+    "english"
+  ],
+  "tags": [
+    "programming"
+  ],
   "items": [
     {
       "name": "abstract",
@@ -270,5 +274,6 @@
       "description": "Although reserved as a keyword in Java, goto is not used and has no function.",
       "spellings": []
     }
-  ]
+  ],
+  "imageUrl": "https://clipartsworld.com/images/java-pngs-5.jpg"
 }

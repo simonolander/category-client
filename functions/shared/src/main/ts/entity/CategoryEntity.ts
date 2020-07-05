@@ -9,6 +9,7 @@ export interface CategoryEntity {
     readonly items: CategoryItem[]
     readonly languages: string[]
     readonly tags: string[]
+    readonly imageUrl: string
 }
 
 export const categoryDecoder = JsonDecoder.object<CategoryEntity>({
@@ -18,6 +19,7 @@ export const categoryDecoder = JsonDecoder.object<CategoryEntity>({
     items: JsonDecoder.array(categoryItemDecoder, "CategoryItem[]"),
     languages: JsonDecoder.failover([], JsonDecoder.array(JsonDecoder.string, "string[]")),
     tags: JsonDecoder.failover([], JsonDecoder.array(JsonDecoder.string, "string[]")),
+    imageUrl: JsonDecoder.string,
 }, "Category")
 
 export class Category implements IStorable<CategoryEntity> {
@@ -28,6 +30,7 @@ export class Category implements IStorable<CategoryEntity> {
         public readonly items: CategoryItem[],
         public readonly languages: string[],
         public readonly tags: string[],
+        public readonly imageUrl: string,
     ) {
     }
 
@@ -119,6 +122,7 @@ export class Category implements IStorable<CategoryEntity> {
             items: this.items,
             languages: this.languages,
             tags: this.tags,
+            imageUrl: this.imageUrl,
         }
     }
 
@@ -130,6 +134,7 @@ export class Category implements IStorable<CategoryEntity> {
             entity.items,
             entity.languages,
             entity.tags,
+            entity.imageUrl,
         )
     }
 }

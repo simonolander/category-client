@@ -4,6 +4,6 @@
         "upload": "cd upload && yarn upload",
         "shared": "(cd functions/shared && rm -rf package && yarn package) && for project in upload functions frontend; do (cd ${project} && rm -rf node_modules/shared && yarn install --ignore-engines --check-files); done",
         "host": "(cd frontend && yarn prod && yarn build && yarn dev) && firebase deploy --only=hosting",
-        "functions": "yarn clean && yarn shared && (cd functions && npm run build) && firebase deploy --only=functions"
+        "functions": "yarn clean && yarn shared && (cd functions && npm run build) && firebase functions:delete graphql && firebase deploy --only=functions"
     }
 }

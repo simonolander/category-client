@@ -2,48 +2,70 @@
   "id": "683b09365a7ca0a8bb77",
   "name": "Prime numbers below twenty",
   "description": "Remember, one is not prime.",
-  "languages": ["english"],
-  "tags": ["test", "math"],
+  "languages": [
+    "english"
+  ],
+  "tags": [
+    "test",
+    "math"
+  ],
   "items": [
     {
       "name": "2",
       "description": "1st prime number",
-      "spellings": ["two"]
+      "spellings": [
+        "two"
+      ]
     },
     {
       "name": "3",
       "description": "2nd prime number",
-      "spellings": ["three"]
+      "spellings": [
+        "three"
+      ]
     },
     {
       "name": "5",
       "description": "3rd prime number",
-      "spellings": ["five"]
+      "spellings": [
+        "five"
+      ]
     },
     {
       "name": "7",
       "description": "4th prime number",
-      "spellings": ["seven"]
+      "spellings": [
+        "seven"
+      ]
     },
     {
       "name": "11",
       "description": "5th prime number",
-      "spellings": ["eleven"]
+      "spellings": [
+        "eleven"
+      ]
     },
     {
       "name": "13",
       "description": "6th prime number",
-      "spellings": ["thirteen"]
+      "spellings": [
+        "thirteen"
+      ]
     },
     {
       "name": "17",
       "description": "7th prime number",
-      "spellings": ["seventeen"]
+      "spellings": [
+        "seventeen"
+      ]
     },
     {
       "name": "19",
       "description": "8th prime number",
-      "spellings": ["nineteen"]
+      "spellings": [
+        "nineteen"
+      ]
     }
-  ]
+  ],
+  "imageUrl": "https://static.topyaps.com/wp-content/uploads/2013/03/Prime-Number.png"
 }
